@@ -1,0 +1,2589 @@
+[
+  {
+    "MethodName": "stockSymbolSearch",
+    "Slug": "search-symbol",
+    "Title": "Stock Symbol Search API",
+    "Path": "/stable/search-symbol",
+    "SampleUrl": "https://financialmodelingprep.com/stable/search-symbol?query=AAPL",
+    "Parameters": [
+      "query"
+    ]
+  },
+  {
+    "MethodName": "companyNameSearch",
+    "Slug": "search-name",
+    "Title": "Company Name Search API",
+    "Path": "/stable/search-name",
+    "SampleUrl": "https://financialmodelingprep.com/stable/search-name?query=AA",
+    "Parameters": [
+      "query"
+    ]
+  },
+  {
+    "MethodName": "cik",
+    "Slug": "search-cik",
+    "Title": "CIK API",
+    "Path": "/stable/search-cik",
+    "SampleUrl": "https://financialmodelingprep.com/stable/search-cik?cik=320193",
+    "Parameters": [
+      "cik"
+    ]
+  },
+  {
+    "MethodName": "cusip",
+    "Slug": "search-cusip",
+    "Title": "CUSIP API",
+    "Path": "/stable/search-cusip",
+    "SampleUrl": "https://financialmodelingprep.com/stable/search-cusip?cusip=037833100",
+    "Parameters": [
+      "cusip"
+    ]
+  },
+  {
+    "MethodName": "isin",
+    "Slug": "search-isin",
+    "Title": "ISIN API",
+    "Path": "/stable/search-isin",
+    "SampleUrl": "https://financialmodelingprep.com/stable/search-isin?isin=US0378331005",
+    "Parameters": [
+      "isin"
+    ]
+  },
+  {
+    "MethodName": "stockScreener",
+    "Slug": "search-company-screener",
+    "Title": "Stock Screener API",
+    "Path": "/stable/company-screener",
+    "SampleUrl": "https://financialmodelingprep.com/stable/company-screener",
+    "Parameters": []
+  },
+  {
+    "MethodName": "exchangeVariants",
+    "Slug": "search-exchange-variants",
+    "Title": "Exchange Variants API",
+    "Path": "/stable/search-exchange-variants",
+    "SampleUrl": "https://financialmodelingprep.com/stable/search-exchange-variants?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "companySymbolsList",
+    "Slug": "company-symbols-list",
+    "Title": "Company Symbols List API",
+    "Path": "/stable/stock-list",
+    "SampleUrl": "https://financialmodelingprep.com/stable/stock-list",
+    "Parameters": []
+  },
+  {
+    "MethodName": "financialStatementSymbolsList",
+    "Slug": "financial-symbols-list",
+    "Title": "Financial Statement Symbols List API",
+    "Path": "/stable/financial-statement-symbol-list",
+    "SampleUrl": "https://financialmodelingprep.com/stable/financial-statement-symbol-list",
+    "Parameters": []
+  },
+  {
+    "MethodName": "cikList",
+    "Slug": "cik-list",
+    "Title": "CIK List API",
+    "Path": "/stable/cik-list",
+    "SampleUrl": "https://financialmodelingprep.com/stable/cik-list?page=0&limit=1000",
+    "Parameters": [
+      "page",
+      "limit"
+    ]
+  },
+  {
+    "MethodName": "symbolChangesList",
+    "Slug": "symbol-changes-list",
+    "Title": "Symbol Changes List API",
+    "Path": "/stable/symbol-change",
+    "SampleUrl": "https://financialmodelingprep.com/stable/symbol-change",
+    "Parameters": []
+  },
+  {
+    "MethodName": "etfSymbolSearch",
+    "Slug": "etfs-list",
+    "Title": "ETF Symbol Search API",
+    "Path": "/stable/etf-list",
+    "SampleUrl": "https://financialmodelingprep.com/stable/etf-list",
+    "Parameters": []
+  },
+  {
+    "MethodName": "activelyTradingList",
+    "Slug": "actively-trading-list",
+    "Title": "Actively Trading List API",
+    "Path": "/stable/actively-trading-list",
+    "SampleUrl": "https://financialmodelingprep.com/stable/actively-trading-list",
+    "Parameters": []
+  },
+  {
+    "MethodName": "earningsTranscriptList",
+    "Slug": "earnings-transcript-list",
+    "Title": "Earnings Transcript List API",
+    "Path": "/stable/earnings-transcript-list",
+    "SampleUrl": "https://financialmodelingprep.com/stable/earnings-transcript-list",
+    "Parameters": []
+  },
+  {
+    "MethodName": "availableExchanges",
+    "Slug": "available-exchanges",
+    "Title": "Available Exchanges API",
+    "Path": "/stable/available-exchanges",
+    "SampleUrl": "https://financialmodelingprep.com/stable/available-exchanges",
+    "Parameters": []
+  },
+  {
+    "MethodName": "availableSectors",
+    "Slug": "available-sectors",
+    "Title": "Available Sectors API",
+    "Path": "/stable/available-sectors",
+    "SampleUrl": "https://financialmodelingprep.com/stable/available-sectors",
+    "Parameters": []
+  },
+  {
+    "MethodName": "availableIndustries",
+    "Slug": "available-industries",
+    "Title": "Available Industries API",
+    "Path": "/stable/available-industries",
+    "SampleUrl": "https://financialmodelingprep.com/stable/available-industries",
+    "Parameters": []
+  },
+  {
+    "MethodName": "availableCountries",
+    "Slug": "available-countries",
+    "Title": "Available Countries API",
+    "Path": "/stable/available-countries",
+    "SampleUrl": "https://financialmodelingprep.com/stable/available-countries",
+    "Parameters": []
+  },
+  {
+    "MethodName": "companyProfileData",
+    "Slug": "profile-symbol",
+    "Title": "Company Profile Data API",
+    "Path": "/stable/profile",
+    "SampleUrl": "https://financialmodelingprep.com/stable/profile?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "companyProfileByCik",
+    "Slug": "profile-cik",
+    "Title": "Company Profile by CIK API",
+    "Path": "/stable/profile-cik",
+    "SampleUrl": "https://financialmodelingprep.com/stable/profile-cik?cik=320193",
+    "Parameters": [
+      "cik"
+    ]
+  },
+  {
+    "MethodName": "companyNotes",
+    "Slug": "company-notes",
+    "Title": "Company Notes API",
+    "Path": "/stable/company-notes",
+    "SampleUrl": "https://financialmodelingprep.com/stable/company-notes?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "stockPeerComparison",
+    "Slug": "peers",
+    "Title": "Stock Peer Comparison API",
+    "Path": "/stable/stock-peers",
+    "SampleUrl": "https://financialmodelingprep.com/stable/stock-peers?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "delistedCompanies",
+    "Slug": "delisted-companies",
+    "Title": "Delisted Companies API",
+    "Path": "/stable/delisted-companies",
+    "SampleUrl": "https://financialmodelingprep.com/stable/delisted-companies?page=0&limit=100",
+    "Parameters": [
+      "page",
+      "limit"
+    ]
+  },
+  {
+    "MethodName": "companyEmployeeCount",
+    "Slug": "employee-count",
+    "Title": "Company Employee Count API",
+    "Path": "/stable/employee-count",
+    "SampleUrl": "https://financialmodelingprep.com/stable/employee-count?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "companyHistoricalEmployeeCount",
+    "Slug": "historical-employee-count",
+    "Title": "Company Historical Employee Count API",
+    "Path": "/stable/historical-employee-count",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-employee-count?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "companyMarketCap",
+    "Slug": "market-cap",
+    "Title": "Company Market Cap API",
+    "Path": "/stable/market-capitalization",
+    "SampleUrl": "https://financialmodelingprep.com/stable/market-capitalization?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "batchMarketCap",
+    "Slug": "batch-market-cap",
+    "Title": "Batch Market Cap API",
+    "Path": "/stable/market-capitalization-batch",
+    "SampleUrl": "https://financialmodelingprep.com/stable/market-capitalization-batch?symbols=AAPL,MSFT,GOOG",
+    "Parameters": [
+      "symbols"
+    ]
+  },
+  {
+    "MethodName": "historicalMarketCap",
+    "Slug": "historical-market-cap",
+    "Title": "Historical Market Cap API",
+    "Path": "/stable/historical-market-capitalization",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-market-capitalization?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "companyShareFloatLiquidity",
+    "Slug": "shares-float",
+    "Title": "Company Share Float & Liquidity API",
+    "Path": "/stable/shares-float",
+    "SampleUrl": "https://financialmodelingprep.com/stable/shares-float?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "allSharesFloat",
+    "Slug": "all-shares-float",
+    "Title": "All Shares Float API",
+    "Path": "/stable/shares-float-all",
+    "SampleUrl": "https://financialmodelingprep.com/stable/shares-float-all?page=0&limit=1000",
+    "Parameters": [
+      "page",
+      "limit"
+    ]
+  },
+  {
+    "MethodName": "latestMergersAcquisitions",
+    "Slug": "latest-mergers-acquisitions",
+    "Title": "Latest Mergers & Acquisitions API",
+    "Path": "/stable/mergers-acquisitions-latest",
+    "SampleUrl": "https://financialmodelingprep.com/stable/mergers-acquisitions-latest?page=0&limit=100",
+    "Parameters": [
+      "page",
+      "limit"
+    ]
+  },
+  {
+    "MethodName": "searchMergersAcquisitions",
+    "Slug": "search-mergers-acquisitions",
+    "Title": "Search Mergers & Acquisitions API",
+    "Path": "/stable/mergers-acquisitions-search",
+    "SampleUrl": "https://financialmodelingprep.com/stable/mergers-acquisitions-search?name=Apple",
+    "Parameters": [
+      "name"
+    ]
+  },
+  {
+    "MethodName": "companyExecutives",
+    "Slug": "company-executives",
+    "Title": "Company Executives API",
+    "Path": "/stable/key-executives",
+    "SampleUrl": "https://financialmodelingprep.com/stable/key-executives?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "executiveCompensation",
+    "Slug": "executive-compensation",
+    "Title": "Executive Compensation API",
+    "Path": "/stable/governance-executive-compensation",
+    "SampleUrl": "https://financialmodelingprep.com/stable/governance-executive-compensation?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "executiveCompensationBenchmark",
+    "Slug": "executive-compensation-benchmark",
+    "Title": "Executive Compensation Benchmark API",
+    "Path": "/stable/executive-compensation-benchmark",
+    "SampleUrl": "https://financialmodelingprep.com/stable/executive-compensation-benchmark",
+    "Parameters": []
+  },
+  {
+    "MethodName": "stockQuote",
+    "Slug": "quote",
+    "Title": "Stock Quote API",
+    "Path": "/stable/quote",
+    "SampleUrl": "https://financialmodelingprep.com/stable/quote?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "stockQuoteShort",
+    "Slug": "quote-short",
+    "Title": "Stock Quote Short API",
+    "Path": "/stable/quote-short",
+    "SampleUrl": "https://financialmodelingprep.com/stable/quote-short?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "aftermarketTrade",
+    "Slug": "aftermarket-trade",
+    "Title": "Aftermarket Trade API",
+    "Path": "/stable/aftermarket-trade",
+    "SampleUrl": "https://financialmodelingprep.com/stable/aftermarket-trade?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "aftermarketQuote",
+    "Slug": "aftermarket-quote",
+    "Title": "Aftermarket Quote API",
+    "Path": "/stable/aftermarket-quote",
+    "SampleUrl": "https://financialmodelingprep.com/stable/aftermarket-quote?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "stockPriceChange",
+    "Slug": "quote-change",
+    "Title": "Stock Price Change API",
+    "Path": "/stable/stock-price-change",
+    "SampleUrl": "https://financialmodelingprep.com/stable/stock-price-change?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "stockBatchQuote",
+    "Slug": "batch-quote",
+    "Title": "Stock Batch Quote API",
+    "Path": "/stable/batch-quote",
+    "SampleUrl": "https://financialmodelingprep.com/stable/batch-quote?symbols=AAPL",
+    "Parameters": [
+      "symbols"
+    ]
+  },
+  {
+    "MethodName": "stockBatchQuoteShort",
+    "Slug": "batch-quote-short",
+    "Title": "Stock Batch Quote Short API",
+    "Path": "/stable/batch-quote-short",
+    "SampleUrl": "https://financialmodelingprep.com/stable/batch-quote-short?symbols=AAPL",
+    "Parameters": [
+      "symbols"
+    ]
+  },
+  {
+    "MethodName": "batchAftermarketTrade",
+    "Slug": "batch-aftermarket-trade",
+    "Title": "Batch Aftermarket Trade API",
+    "Path": "/stable/batch-aftermarket-trade",
+    "SampleUrl": "https://financialmodelingprep.com/stable/batch-aftermarket-trade?symbols=AAPL",
+    "Parameters": [
+      "symbols"
+    ]
+  },
+  {
+    "MethodName": "batchAftermarketQuote",
+    "Slug": "batch-aftermarket-quote",
+    "Title": "Batch Aftermarket Quote API",
+    "Path": "/stable/batch-aftermarket-quote",
+    "SampleUrl": "https://financialmodelingprep.com/stable/batch-aftermarket-quote?symbols=AAPL",
+    "Parameters": [
+      "symbols"
+    ]
+  },
+  {
+    "MethodName": "exchangeStockQuotes",
+    "Slug": "full-exchange-quotes",
+    "Title": "Exchange Stock Quotes API",
+    "Path": "/stable/batch-exchange-quote",
+    "SampleUrl": "https://financialmodelingprep.com/stable/batch-exchange-quote?exchange=NASDAQ",
+    "Parameters": [
+      "exchange"
+    ]
+  },
+  {
+    "MethodName": "mutualFundPriceQuotes",
+    "Slug": "full-mutualfund-quotes",
+    "Title": "Mutual Fund Price Quotes API",
+    "Path": "/stable/batch-mutualfund-quotes",
+    "SampleUrl": "https://financialmodelingprep.com/stable/batch-mutualfund-quotes",
+    "Parameters": []
+  },
+  {
+    "MethodName": "etfPriceQuotes",
+    "Slug": "full-etf-quotes",
+    "Title": "ETF Price Quotes API",
+    "Path": "/stable/batch-etf-quotes",
+    "SampleUrl": "https://financialmodelingprep.com/stable/batch-etf-quotes",
+    "Parameters": []
+  },
+  {
+    "MethodName": "fullCommoditiesQuotes",
+    "Slug": "full-commodities-quotes",
+    "Title": "Full Commodities Quotes API",
+    "Path": "/stable/batch-commodity-quotes",
+    "SampleUrl": "https://financialmodelingprep.com/stable/batch-commodity-quotes",
+    "Parameters": []
+  },
+  {
+    "MethodName": "fullCryptocurrencyQuotes",
+    "Slug": "full-cryptocurrency-quotes",
+    "Title": "Full Cryptocurrency Quotes API",
+    "Path": "/stable/batch-crypto-quotes",
+    "SampleUrl": "https://financialmodelingprep.com/stable/batch-crypto-quotes",
+    "Parameters": []
+  },
+  {
+    "MethodName": "fullForexQuote",
+    "Slug": "full-forex-quotes",
+    "Title": "Full Forex Quote API",
+    "Path": "/stable/batch-forex-quotes",
+    "SampleUrl": "https://financialmodelingprep.com/stable/batch-forex-quotes",
+    "Parameters": []
+  },
+  {
+    "MethodName": "fullIndexQuotes",
+    "Slug": "full-index-quotes",
+    "Title": "Full Index Quotes API",
+    "Path": "/stable/batch-index-quotes",
+    "SampleUrl": "https://financialmodelingprep.com/stable/batch-index-quotes",
+    "Parameters": []
+  },
+  {
+    "MethodName": "incomeStatement",
+    "Slug": "income-statement",
+    "Title": "Income Statement API",
+    "Path": "/stable/income-statement",
+    "SampleUrl": "https://financialmodelingprep.com/stable/income-statement?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "balanceSheetStatement",
+    "Slug": "balance-sheet-statement",
+    "Title": "Balance Sheet Statement API",
+    "Path": "/stable/balance-sheet-statement",
+    "SampleUrl": "https://financialmodelingprep.com/stable/balance-sheet-statement?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "cashFlowStatement",
+    "Slug": "cashflow-statement",
+    "Title": "Cash Flow Statement API",
+    "Path": "/stable/cash-flow-statement",
+    "SampleUrl": "https://financialmodelingprep.com/stable/cash-flow-statement?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "latestFinancialStatements",
+    "Slug": "latest-financial-statements",
+    "Title": "Latest Financial Statements API",
+    "Path": "/stable/latest-financial-statements",
+    "SampleUrl": "https://financialmodelingprep.com/stable/latest-financial-statements?page=0&limit=250",
+    "Parameters": [
+      "page",
+      "limit"
+    ]
+  },
+  {
+    "MethodName": "incomeStatementsTtm",
+    "Slug": "income-statements-ttm",
+    "Title": "Income Statements TTM API",
+    "Path": "/stable/income-statement-ttm",
+    "SampleUrl": "https://financialmodelingprep.com/stable/income-statement-ttm?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "balanceSheetStatementsTtm",
+    "Slug": "balance-sheet-statements-ttm",
+    "Title": "Balance Sheet Statements TTM API",
+    "Path": "/stable/balance-sheet-statement-ttm",
+    "SampleUrl": "https://financialmodelingprep.com/stable/balance-sheet-statement-ttm?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "cashflowStatementsTtm",
+    "Slug": "cashflow-statements-ttm",
+    "Title": "Cashflow Statements TTM API",
+    "Path": "/stable/cash-flow-statement-ttm",
+    "SampleUrl": "https://financialmodelingprep.com/stable/cash-flow-statement-ttm?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "keyMetrics",
+    "Slug": "key-metrics",
+    "Title": "Key Metrics API",
+    "Path": "/stable/key-metrics",
+    "SampleUrl": "https://financialmodelingprep.com/stable/key-metrics?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "financialRatios",
+    "Slug": "metrics-ratios",
+    "Title": "Financial Ratios API",
+    "Path": "/stable/ratios",
+    "SampleUrl": "https://financialmodelingprep.com/stable/ratios?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "keyMetricsTtm",
+    "Slug": "key-metrics-ttm",
+    "Title": "Key Metrics TTM API",
+    "Path": "/stable/key-metrics-ttm",
+    "SampleUrl": "https://financialmodelingprep.com/stable/key-metrics-ttm?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "financialRatiosTtm",
+    "Slug": "metrics-ratios-ttm",
+    "Title": "Financial Ratios TTM API",
+    "Path": "/stable/ratios-ttm",
+    "SampleUrl": "https://financialmodelingprep.com/stable/ratios-ttm?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "financialScores",
+    "Slug": "financial-scores",
+    "Title": "Financial Scores API",
+    "Path": "/stable/financial-scores",
+    "SampleUrl": "https://financialmodelingprep.com/stable/financial-scores?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "ownerEarnings",
+    "Slug": "owner-earnings",
+    "Title": "Owner Earnings API",
+    "Path": "/stable/owner-earnings",
+    "SampleUrl": "https://financialmodelingprep.com/stable/owner-earnings?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "enterpriseValues",
+    "Slug": "enterprise-values",
+    "Title": "Enterprise Values API",
+    "Path": "/stable/enterprise-values",
+    "SampleUrl": "https://financialmodelingprep.com/stable/enterprise-values?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "incomeStatementGrowth",
+    "Slug": "income-statement-growth",
+    "Title": "Income Statement Growth API",
+    "Path": "/stable/income-statement-growth",
+    "SampleUrl": "https://financialmodelingprep.com/stable/income-statement-growth?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "balanceSheetStatementGrowth",
+    "Slug": "balance-sheet-statement-growth",
+    "Title": "Balance Sheet Statement Growth API",
+    "Path": "/stable/balance-sheet-statement-growth",
+    "SampleUrl": "https://financialmodelingprep.com/stable/balance-sheet-statement-growth?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "cashflowStatementGrowth",
+    "Slug": "cashflow-statement-growth",
+    "Title": "Cashflow Statement Growth API",
+    "Path": "/stable/cash-flow-statement-growth",
+    "SampleUrl": "https://financialmodelingprep.com/stable/cash-flow-statement-growth?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "financialStatementGrowth",
+    "Slug": "financial-statement-growth",
+    "Title": "Financial Statement Growth API",
+    "Path": "/stable/financial-growth",
+    "SampleUrl": "https://financialmodelingprep.com/stable/financial-growth?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "financialReportsDates",
+    "Slug": "financial-reports-dates",
+    "Title": "Financial Reports Dates API",
+    "Path": "/stable/financial-reports-dates",
+    "SampleUrl": "https://financialmodelingprep.com/stable/financial-reports-dates?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "financialReportsForm10KJson",
+    "Slug": "financial-reports-form-10-k-json",
+    "Title": "Financial Reports Form 10-K JSON API",
+    "Path": "/stable/financial-reports-json",
+    "SampleUrl": "https://financialmodelingprep.com/stable/financial-reports-json?symbol=AAPL&year=2022&period=FY",
+    "Parameters": [
+      "symbol",
+      "year",
+      "period"
+    ]
+  },
+  {
+    "MethodName": "financialReportsForm10KXlsx",
+    "Slug": "financial-reports-form-10-k-xlsx",
+    "Title": "Financial Reports Form 10-K XLSX API",
+    "Path": "/stable/financial-reports-xlsx",
+    "SampleUrl": "https://financialmodelingprep.com/stable/financial-reports-xlsx?symbol=AAPL&year=2022&period=FY",
+    "Parameters": [
+      "symbol",
+      "year",
+      "period"
+    ]
+  },
+  {
+    "MethodName": "revenueProductSegmentation",
+    "Slug": "revenue-product-segmentation",
+    "Title": "Revenue Product Segmentation API",
+    "Path": "/stable/revenue-product-segmentation",
+    "SampleUrl": "https://financialmodelingprep.com/stable/revenue-product-segmentation?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "revenueGeographicSegments",
+    "Slug": "revenue-geographic-segments",
+    "Title": "Revenue Geographic Segments API",
+    "Path": "/stable/revenue-geographic-segmentation",
+    "SampleUrl": "https://financialmodelingprep.com/stable/revenue-geographic-segmentation?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "asReportedIncomeStatements",
+    "Slug": "as-reported-income-statements",
+    "Title": "As Reported Income Statements API",
+    "Path": "/stable/income-statement-as-reported",
+    "SampleUrl": "https://financialmodelingprep.com/stable/income-statement-as-reported?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "asReportedBalanceStatements",
+    "Slug": "as-reported-balance-statements",
+    "Title": "As Reported Balance Statements API",
+    "Path": "/stable/balance-sheet-statement-as-reported",
+    "SampleUrl": "https://financialmodelingprep.com/stable/balance-sheet-statement-as-reported?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "asReportedCashflowStatements",
+    "Slug": "as-reported-cashflow-statements",
+    "Title": "As Reported Cashflow Statements API",
+    "Path": "/stable/cash-flow-statement-as-reported",
+    "SampleUrl": "https://financialmodelingprep.com/stable/cash-flow-statement-as-reported?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "asReportedFinancialStatements",
+    "Slug": "as-reported-financial-statements",
+    "Title": "As Reported Financial Statements API",
+    "Path": "/stable/financial-statement-full-as-reported",
+    "SampleUrl": "https://financialmodelingprep.com/stable/financial-statement-full-as-reported?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "stockChartLight",
+    "Slug": "historical-price-eod-light",
+    "Title": "Stock Chart Light API",
+    "Path": "/stable/historical-price-eod/light",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-price-eod/light?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "stockPriceAndVolumeData",
+    "Slug": "historical-price-eod-full",
+    "Title": "Stock Price and Volume Data API",
+    "Path": "/stable/historical-price-eod/full",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-price-eod/full?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "unadjustedStockPrice",
+    "Slug": "historical-price-eod-non-split-adjusted",
+    "Title": "Unadjusted Stock Price API",
+    "Path": "/stable/historical-price-eod/non-split-adjusted",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-price-eod/non-split-adjusted?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "dividendAdjustedPriceChart",
+    "Slug": "historical-price-eod-dividend-adjusted",
+    "Title": "Dividend Adjusted Price Chart API",
+    "Path": "/stable/historical-price-eod/dividend-adjusted",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-price-eod/dividend-adjusted?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "get1MinIntervalStockChart",
+    "Slug": "intraday-1-min",
+    "Title": "1 Min Interval Stock Chart API",
+    "Path": "/stable/historical-chart/1min",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/1min?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "get5MinIntervalStockChart",
+    "Slug": "intraday-5-min",
+    "Title": "5 Min Interval Stock Chart API",
+    "Path": "/stable/historical-chart/5min",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/5min?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "get15MinIntervalStockChart",
+    "Slug": "intraday-15-min",
+    "Title": "15 Min Interval Stock Chart API",
+    "Path": "/stable/historical-chart/15min",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/15min?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "get30MinIntervalStockChart",
+    "Slug": "intraday-30-min",
+    "Title": "30 Min Interval Stock Chart API",
+    "Path": "/stable/historical-chart/30min",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/30min?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "get1HourIntervalStockChart",
+    "Slug": "intraday-1-hour",
+    "Title": "1 Hour Interval Stock Chart API",
+    "Path": "/stable/historical-chart/1hour",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/1hour?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "get4HourIntervalStockChart",
+    "Slug": "intraday-4-hour",
+    "Title": "4 Hour Interval Stock Chart API",
+    "Path": "/stable/historical-chart/4hour",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/4hour?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "treasuryRates",
+    "Slug": "treasury-rates",
+    "Title": "Treasury Rates API",
+    "Path": "/stable/treasury-rates",
+    "SampleUrl": "https://financialmodelingprep.com/stable/treasury-rates",
+    "Parameters": []
+  },
+  {
+    "MethodName": "economicsIndicators",
+    "Slug": "economics-indicators",
+    "Title": "Economics Indicators API",
+    "Path": "/stable/economic-indicators",
+    "SampleUrl": "https://financialmodelingprep.com/stable/economic-indicators?name=GDP",
+    "Parameters": [
+      "name"
+    ]
+  },
+  {
+    "MethodName": "economicDataReleasesCalendar",
+    "Slug": "economics-calendar",
+    "Title": "Economic Data Releases Calendar API",
+    "Path": "/stable/economic-calendar",
+    "SampleUrl": "https://financialmodelingprep.com/stable/economic-calendar",
+    "Parameters": []
+  },
+  {
+    "MethodName": "marketRiskPremium",
+    "Slug": "market-risk-premium",
+    "Title": "Market Risk Premium API",
+    "Path": "/stable/market-risk-premium",
+    "SampleUrl": "https://financialmodelingprep.com/stable/market-risk-premium",
+    "Parameters": []
+  },
+  {
+    "MethodName": "dividendsCompany",
+    "Slug": "dividends-company",
+    "Title": "Dividends Company API",
+    "Path": "/stable/dividends",
+    "SampleUrl": "https://financialmodelingprep.com/stable/dividends?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "dividendsCalendar",
+    "Slug": "dividends-calendar",
+    "Title": "Dividends Calendar API",
+    "Path": "/stable/dividends-calendar",
+    "SampleUrl": "https://financialmodelingprep.com/stable/dividends-calendar",
+    "Parameters": []
+  },
+  {
+    "MethodName": "earningsReport",
+    "Slug": "earnings-company",
+    "Title": "Earnings Report API",
+    "Path": "/stable/earnings",
+    "SampleUrl": "https://financialmodelingprep.com/stable/earnings?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "earningsCalendar",
+    "Slug": "earnings-calendar",
+    "Title": "Earnings Calendar API",
+    "Path": "/stable/earnings-calendar",
+    "SampleUrl": "https://financialmodelingprep.com/stable/earnings-calendar",
+    "Parameters": []
+  },
+  {
+    "MethodName": "iposCalendar",
+    "Slug": "ipos-calendar",
+    "Title": "IPOs Calendar API",
+    "Path": "/stable/ipos-calendar",
+    "SampleUrl": "https://financialmodelingprep.com/stable/ipos-calendar",
+    "Parameters": []
+  },
+  {
+    "MethodName": "iposDisclosure",
+    "Slug": "ipos-disclosure",
+    "Title": "IPOs Disclosure API",
+    "Path": "/stable/ipos-disclosure",
+    "SampleUrl": "https://financialmodelingprep.com/stable/ipos-disclosure",
+    "Parameters": []
+  },
+  {
+    "MethodName": "iposProspectus",
+    "Slug": "ipos-prospectus",
+    "Title": "IPOs Prospectus API",
+    "Path": "/stable/ipos-prospectus",
+    "SampleUrl": "https://financialmodelingprep.com/stable/ipos-prospectus",
+    "Parameters": []
+  },
+  {
+    "MethodName": "stockSplitDetails",
+    "Slug": "splits-company",
+    "Title": "Stock Split Details API",
+    "Path": "/stable/splits",
+    "SampleUrl": "https://financialmodelingprep.com/stable/splits?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "stockSplitsCalendar",
+    "Slug": "splits-calendar",
+    "Title": "Stock Splits Calendar API",
+    "Path": "/stable/splits-calendar",
+    "SampleUrl": "https://financialmodelingprep.com/stable/splits-calendar",
+    "Parameters": []
+  },
+  {
+    "MethodName": "latestEarningTranscripts",
+    "Slug": "latest-transcripts",
+    "Title": "Latest Earning Transcripts API",
+    "Path": "/stable/earning-call-transcript-latest",
+    "SampleUrl": "https://financialmodelingprep.com/stable/earning-call-transcript-latest",
+    "Parameters": []
+  },
+  {
+    "MethodName": "earningsTranscript",
+    "Slug": "search-transcripts",
+    "Title": "Earnings Transcript API",
+    "Path": "/stable/earning-call-transcript",
+    "SampleUrl": "https://financialmodelingprep.com/stable/earning-call-transcript?symbol=AAPL&year=2020&quarter=3",
+    "Parameters": [
+      "symbol",
+      "year",
+      "quarter"
+    ]
+  },
+  {
+    "MethodName": "transcriptsDatesBySymbol",
+    "Slug": "transcripts-dates-by-symbol",
+    "Title": "Transcripts Dates By Symbol API",
+    "Path": "/stable/earning-call-transcript-dates",
+    "SampleUrl": "https://financialmodelingprep.com/stable/earning-call-transcript-dates?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "availableTranscriptSymbols",
+    "Slug": "available-transcript-symbols",
+    "Title": "Available Transcript Symbols API",
+    "Path": "/stable/earnings-transcript-list",
+    "SampleUrl": "https://financialmodelingprep.com/stable/earnings-transcript-list",
+    "Parameters": []
+  },
+  {
+    "MethodName": "fmpArticles",
+    "Slug": "fmp-articles",
+    "Title": "FMP Articles API",
+    "Path": "/stable/fmp-articles",
+    "SampleUrl": "https://financialmodelingprep.com/stable/fmp-articles?page=0&limit=20",
+    "Parameters": [
+      "page",
+      "limit"
+    ]
+  },
+  {
+    "MethodName": "generalNews",
+    "Slug": "general-news",
+    "Title": "General News API",
+    "Path": "/stable/news/general-latest",
+    "SampleUrl": "https://financialmodelingprep.com/stable/news/general-latest?page=0&limit=20",
+    "Parameters": [
+      "page",
+      "limit"
+    ]
+  },
+  {
+    "MethodName": "pressReleases",
+    "Slug": "press-releases",
+    "Title": "Press Releases API",
+    "Path": "/stable/news/press-releases-latest",
+    "SampleUrl": "https://financialmodelingprep.com/stable/news/press-releases-latest?page=0&limit=20",
+    "Parameters": [
+      "page",
+      "limit"
+    ]
+  },
+  {
+    "MethodName": "stockNews",
+    "Slug": "stock-news",
+    "Title": "Stock News API",
+    "Path": "/stable/news/stock-latest",
+    "SampleUrl": "https://financialmodelingprep.com/stable/news/stock-latest?page=0&limit=20",
+    "Parameters": [
+      "page",
+      "limit"
+    ]
+  },
+  {
+    "MethodName": "cryptoNews",
+    "Slug": "crypto-news",
+    "Title": "Crypto News API",
+    "Path": "/stable/news/crypto-latest",
+    "SampleUrl": "https://financialmodelingprep.com/stable/news/crypto-latest?page=0&limit=20",
+    "Parameters": [
+      "page",
+      "limit"
+    ]
+  },
+  {
+    "MethodName": "forexNews",
+    "Slug": "forex-news",
+    "Title": "Forex News API",
+    "Path": "/stable/news/forex-latest",
+    "SampleUrl": "https://financialmodelingprep.com/stable/news/forex-latest?page=0&limit=20",
+    "Parameters": [
+      "page",
+      "limit"
+    ]
+  },
+  {
+    "MethodName": "searchPressReleases",
+    "Slug": "search-press-releases",
+    "Title": "Search Press Releases API",
+    "Path": "/stable/news/press-releases",
+    "SampleUrl": "https://financialmodelingprep.com/stable/news/press-releases?symbols=AAPL",
+    "Parameters": [
+      "symbols"
+    ]
+  },
+  {
+    "MethodName": "searchStockNews",
+    "Slug": "search-stock-news",
+    "Title": "Search Stock News API",
+    "Path": "/stable/news/stock",
+    "SampleUrl": "https://financialmodelingprep.com/stable/news/stock?symbols=AAPL",
+    "Parameters": [
+      "symbols"
+    ]
+  },
+  {
+    "MethodName": "searchCryptoNews",
+    "Slug": "search-crypto-news",
+    "Title": "Search Crypto News API",
+    "Path": "/stable/news/crypto",
+    "SampleUrl": "https://financialmodelingprep.com/stable/news/crypto?symbols=BTCUSD",
+    "Parameters": [
+      "symbols"
+    ]
+  },
+  {
+    "MethodName": "searchForexNews",
+    "Slug": "search-forex-news",
+    "Title": "Search Forex News API",
+    "Path": "/stable/news/forex",
+    "SampleUrl": "https://financialmodelingprep.com/stable/news/forex?symbols=EURUSD",
+    "Parameters": [
+      "symbols"
+    ]
+  },
+  {
+    "MethodName": "institutionalOwnershipFilings",
+    "Slug": "latest-filings",
+    "Title": "Institutional Ownership Filings API",
+    "Path": "/stable/institutional-ownership/latest",
+    "SampleUrl": "https://financialmodelingprep.com/stable/institutional-ownership/latest?page=0&limit=100",
+    "Parameters": [
+      "page",
+      "limit"
+    ]
+  },
+  {
+    "MethodName": "filingsExtract",
+    "Slug": "filings-extract",
+    "Title": "Filings Extract API",
+    "Path": "/stable/institutional-ownership/extract",
+    "SampleUrl": "https://financialmodelingprep.com/stable/institutional-ownership/extract?cik=0001388838&year=2023&quarter=3",
+    "Parameters": [
+      "cik",
+      "year",
+      "quarter"
+    ]
+  },
+  {
+    "MethodName": "form13fFilingsDates",
+    "Slug": "form-13f-filings-dates",
+    "Title": "Form 13F Filings Dates API",
+    "Path": "/stable/institutional-ownership/dates",
+    "SampleUrl": "https://financialmodelingprep.com/stable/institutional-ownership/dates?cik=0001067983",
+    "Parameters": [
+      "cik"
+    ]
+  },
+  {
+    "MethodName": "filingsExtractWithAnalyticsByHolder",
+    "Slug": "filings-extract-with-analytics-by-holder",
+    "Title": "Filings Extract With Analytics By Holder API",
+    "Path": "/stable/institutional-ownership/extract-analytics/holder",
+    "SampleUrl": "https://financialmodelingprep.com/stable/institutional-ownership/extract-analytics/holder?symbol=AAPL&year=2023&quarter=3&page=0&limit=10",
+    "Parameters": [
+      "symbol",
+      "year",
+      "quarter",
+      "page",
+      "limit"
+    ]
+  },
+  {
+    "MethodName": "holderPerformanceSummary",
+    "Slug": "holder-performance-summary",
+    "Title": "Holder Performance Summary API",
+    "Path": "/stable/institutional-ownership/holder-performance-summary",
+    "SampleUrl": "https://financialmodelingprep.com/stable/institutional-ownership/holder-performance-summary?cik=0001067983&page=0",
+    "Parameters": [
+      "cik",
+      "page"
+    ]
+  },
+  {
+    "MethodName": "holdersIndustryBreakdown",
+    "Slug": "holders-industry-breakdown",
+    "Title": "Holders Industry Breakdown API",
+    "Path": "/stable/institutional-ownership/holder-industry-breakdown",
+    "SampleUrl": "https://financialmodelingprep.com/stable/institutional-ownership/holder-industry-breakdown?cik=0001067983&year=2023&quarter=3",
+    "Parameters": [
+      "cik",
+      "year",
+      "quarter"
+    ]
+  },
+  {
+    "MethodName": "positionsSummary",
+    "Slug": "positions-summary",
+    "Title": "Positions Summary API",
+    "Path": "/stable/institutional-ownership/symbol-positions-summary",
+    "SampleUrl": "https://financialmodelingprep.com/stable/institutional-ownership/symbol-positions-summary?symbol=AAPL&year=2023&quarter=3",
+    "Parameters": [
+      "symbol",
+      "year",
+      "quarter"
+    ]
+  },
+  {
+    "MethodName": "industryPerformanceSummary",
+    "Slug": "industry-summary",
+    "Title": "Industry Performance Summary API",
+    "Path": "/stable/institutional-ownership/industry-summary",
+    "SampleUrl": "https://financialmodelingprep.com/stable/institutional-ownership/industry-summary?year=2023&quarter=3",
+    "Parameters": [
+      "year",
+      "quarter"
+    ]
+  },
+  {
+    "MethodName": "financialEstimates",
+    "Slug": "financial-estimates",
+    "Title": "Financial Estimates API",
+    "Path": "/stable/analyst-estimates",
+    "SampleUrl": "https://financialmodelingprep.com/stable/analyst-estimates?symbol=AAPL&period=annual&page=0&limit=10",
+    "Parameters": [
+      "symbol",
+      "period",
+      "page",
+      "limit"
+    ]
+  },
+  {
+    "MethodName": "ratingsSnapshot",
+    "Slug": "ratings-snapshot",
+    "Title": "Ratings Snapshot API",
+    "Path": "/stable/ratings-snapshot",
+    "SampleUrl": "https://financialmodelingprep.com/stable/ratings-snapshot?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "historicalRatings",
+    "Slug": "historical-ratings",
+    "Title": "Historical Ratings API",
+    "Path": "/stable/ratings-historical",
+    "SampleUrl": "https://financialmodelingprep.com/stable/ratings-historical?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "priceTargetSummary",
+    "Slug": "price-target-summary",
+    "Title": "Price Target Summary API",
+    "Path": "/stable/price-target-summary",
+    "SampleUrl": "https://financialmodelingprep.com/stable/price-target-summary?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "priceTargetConsensus",
+    "Slug": "price-target-consensus",
+    "Title": "Price Target Consensus API",
+    "Path": "/stable/price-target-consensus",
+    "SampleUrl": "https://financialmodelingprep.com/stable/price-target-consensus?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "stockGrades",
+    "Slug": "grades",
+    "Title": "Stock Grades API",
+    "Path": "/stable/grades",
+    "SampleUrl": "https://financialmodelingprep.com/stable/grades?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "historicalStockGrades",
+    "Slug": "historical-grades",
+    "Title": "Historical Stock Grades API",
+    "Path": "/stable/grades-historical",
+    "SampleUrl": "https://financialmodelingprep.com/stable/grades-historical?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "stockGradesSummary",
+    "Slug": "grades-summary",
+    "Title": "Stock Grades Summary API",
+    "Path": "/stable/grades-consensus",
+    "SampleUrl": "https://financialmodelingprep.com/stable/grades-consensus?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "marketSectorPerformanceSnapshot",
+    "Slug": "sector-performance-snapshot",
+    "Title": "Market Sector Performance Snapshot API",
+    "Path": "/stable/sector-performance-snapshot",
+    "SampleUrl": "https://financialmodelingprep.com/stable/sector-performance-snapshot?date=2024-02-01",
+    "Parameters": [
+      "date"
+    ]
+  },
+  {
+    "MethodName": "industryPerformanceSnapshot",
+    "Slug": "industry-performance-snapshot",
+    "Title": "Industry Performance Snapshot API",
+    "Path": "/stable/industry-performance-snapshot",
+    "SampleUrl": "https://financialmodelingprep.com/stable/industry-performance-snapshot?date=2024-02-01",
+    "Parameters": [
+      "date"
+    ]
+  },
+  {
+    "MethodName": "historicalMarketSectorPerformance",
+    "Slug": "historical-sector-performance",
+    "Title": "Historical Market Sector Performance API",
+    "Path": "/stable/historical-sector-performance",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-sector-performance?sector=Energy",
+    "Parameters": [
+      "sector"
+    ]
+  },
+  {
+    "MethodName": "historicalIndustryPerformance",
+    "Slug": "historical-industry-performance",
+    "Title": "Historical Industry Performance API",
+    "Path": "/stable/historical-industry-performance",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-industry-performance?industry=Biotechnology",
+    "Parameters": [
+      "industry"
+    ]
+  },
+  {
+    "MethodName": "sectorPeSnapshot",
+    "Slug": "sector-pe-snapshot",
+    "Title": "Sector PE Snapshot API",
+    "Path": "/stable/sector-pe-snapshot",
+    "SampleUrl": "https://financialmodelingprep.com/stable/sector-pe-snapshot?date=2024-02-01",
+    "Parameters": [
+      "date"
+    ]
+  },
+  {
+    "MethodName": "industryPeSnapshot",
+    "Slug": "industry-pe-snapshot",
+    "Title": "Industry PE Snapshot API",
+    "Path": "/stable/industry-pe-snapshot",
+    "SampleUrl": "https://financialmodelingprep.com/stable/industry-pe-snapshot?date=2024-02-01",
+    "Parameters": [
+      "date"
+    ]
+  },
+  {
+    "MethodName": "historicalSectorPe",
+    "Slug": "historical-sector-pe",
+    "Title": "Historical Sector PE API",
+    "Path": "/stable/historical-sector-pe",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-sector-pe?sector=Energy",
+    "Parameters": [
+      "sector"
+    ]
+  },
+  {
+    "MethodName": "historicalIndustryPe",
+    "Slug": "historical-industry-pe",
+    "Title": "Historical Industry PE API",
+    "Path": "/stable/historical-industry-pe",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-industry-pe?industry=Biotechnology",
+    "Parameters": [
+      "industry"
+    ]
+  },
+  {
+    "MethodName": "biggestStockGainers",
+    "Slug": "biggest-gainers",
+    "Title": "Biggest Stock Gainers API",
+    "Path": "/stable/biggest-gainers",
+    "SampleUrl": "https://financialmodelingprep.com/stable/biggest-gainers",
+    "Parameters": []
+  },
+  {
+    "MethodName": "biggestStockLosers",
+    "Slug": "biggest-losers",
+    "Title": "Biggest Stock Losers API",
+    "Path": "/stable/biggest-losers",
+    "SampleUrl": "https://financialmodelingprep.com/stable/biggest-losers",
+    "Parameters": []
+  },
+  {
+    "MethodName": "topTradedStocks",
+    "Slug": "most-active",
+    "Title": "Top Traded Stocks API",
+    "Path": "/stable/most-actives",
+    "SampleUrl": "https://financialmodelingprep.com/stable/most-actives",
+    "Parameters": []
+  },
+  {
+    "MethodName": "simpleMovingAverage",
+    "Slug": "simple-moving-average",
+    "Title": "Simple Moving Average API",
+    "Path": "/stable/technical-indicators/sma",
+    "SampleUrl": "https://financialmodelingprep.com/stable/technical-indicators/sma?symbol=AAPL&periodLength=10&timeframe=1day",
+    "Parameters": [
+      "symbol",
+      "periodLength",
+      "timeframe"
+    ]
+  },
+  {
+    "MethodName": "exponentialMovingAverage",
+    "Slug": "exponential-moving-average",
+    "Title": "Exponential Moving Average API",
+    "Path": "/stable/technical-indicators/ema",
+    "SampleUrl": "https://financialmodelingprep.com/stable/technical-indicators/ema?symbol=AAPL&periodLength=10&timeframe=1day",
+    "Parameters": [
+      "symbol",
+      "periodLength",
+      "timeframe"
+    ]
+  },
+  {
+    "MethodName": "weightedMovingAverage",
+    "Slug": "weighted-moving-average",
+    "Title": "Weighted Moving Average API",
+    "Path": "/stable/technical-indicators/wma",
+    "SampleUrl": "https://financialmodelingprep.com/stable/technical-indicators/wma?symbol=AAPL&periodLength=10&timeframe=1day",
+    "Parameters": [
+      "symbol",
+      "periodLength",
+      "timeframe"
+    ]
+  },
+  {
+    "MethodName": "doubleExponentialMovingAverage",
+    "Slug": "double-exponential-moving-average",
+    "Title": "Double Exponential Moving Average API",
+    "Path": "/stable/technical-indicators/dema",
+    "SampleUrl": "https://financialmodelingprep.com/stable/technical-indicators/dema?symbol=AAPL&periodLength=10&timeframe=1day",
+    "Parameters": [
+      "symbol",
+      "periodLength",
+      "timeframe"
+    ]
+  },
+  {
+    "MethodName": "tripleExponentialMovingAverage",
+    "Slug": "triple-exponential-moving-average",
+    "Title": "Triple Exponential Moving Average API",
+    "Path": "/stable/technical-indicators/tema",
+    "SampleUrl": "https://financialmodelingprep.com/stable/technical-indicators/tema?symbol=AAPL&periodLength=10&timeframe=1day",
+    "Parameters": [
+      "symbol",
+      "periodLength",
+      "timeframe"
+    ]
+  },
+  {
+    "MethodName": "relativeStrengthIndex",
+    "Slug": "relative-strength-index",
+    "Title": "Relative Strength Index API",
+    "Path": "/stable/technical-indicators/rsi",
+    "SampleUrl": "https://financialmodelingprep.com/stable/technical-indicators/rsi?symbol=AAPL&periodLength=10&timeframe=1day",
+    "Parameters": [
+      "symbol",
+      "periodLength",
+      "timeframe"
+    ]
+  },
+  {
+    "MethodName": "standardDeviation",
+    "Slug": "standard-deviation",
+    "Title": "Standard Deviation API",
+    "Path": "/stable/technical-indicators/standarddeviation",
+    "SampleUrl": "https://financialmodelingprep.com/stable/technical-indicators/standarddeviation?symbol=AAPL&periodLength=10&timeframe=1day",
+    "Parameters": [
+      "symbol",
+      "periodLength",
+      "timeframe"
+    ]
+  },
+  {
+    "MethodName": "williams",
+    "Slug": "williams",
+    "Title": "Williams API",
+    "Path": "/stable/technical-indicators/williams",
+    "SampleUrl": "https://financialmodelingprep.com/stable/technical-indicators/williams?symbol=AAPL&periodLength=10&timeframe=1day",
+    "Parameters": [
+      "symbol",
+      "periodLength",
+      "timeframe"
+    ]
+  },
+  {
+    "MethodName": "averageDirectionalIndex",
+    "Slug": "average-directional-index",
+    "Title": "Average Directional Index API",
+    "Path": "/stable/technical-indicators/adx",
+    "SampleUrl": "https://financialmodelingprep.com/stable/technical-indicators/adx?symbol=AAPL&periodLength=10&timeframe=1day",
+    "Parameters": [
+      "symbol",
+      "periodLength",
+      "timeframe"
+    ]
+  },
+  {
+    "MethodName": "etfFundHoldings",
+    "Slug": "holdings",
+    "Title": "ETF & Fund Holdings API",
+    "Path": "/stable/etf/holdings",
+    "SampleUrl": "https://financialmodelingprep.com/stable/etf/holdings?symbol=SPY",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "etfMutualFundInformation",
+    "Slug": "information",
+    "Title": "ETF & Mutual Fund Information API",
+    "Path": "/stable/etf/info",
+    "SampleUrl": "https://financialmodelingprep.com/stable/etf/info?symbol=SPY",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "etfFundCountryAllocation",
+    "Slug": "country-weighting",
+    "Title": "ETF & Fund Country Allocation API",
+    "Path": "/stable/etf/country-weightings",
+    "SampleUrl": "https://financialmodelingprep.com/stable/etf/country-weightings?symbol=SPY",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "etfAssetExposure",
+    "Slug": "etf-asset-exposure",
+    "Title": "ETF Asset Exposure API",
+    "Path": "/stable/etf/asset-exposure",
+    "SampleUrl": "https://financialmodelingprep.com/stable/etf/asset-exposure?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "etfSectorWeighting",
+    "Slug": "sector-weighting",
+    "Title": "ETF Sector Weighting API",
+    "Path": "/stable/etf/sector-weightings",
+    "SampleUrl": "https://financialmodelingprep.com/stable/etf/sector-weightings?symbol=SPY",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "mutualFundEtfDisclosure",
+    "Slug": "latest-disclosures",
+    "Title": "Mutual Fund & ETF Disclosure API",
+    "Path": "/stable/funds/disclosure-holders-latest",
+    "SampleUrl": "https://financialmodelingprep.com/stable/funds/disclosure-holders-latest?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "mutualFundDisclosures",
+    "Slug": "mutual-fund-disclosures",
+    "Title": "Mutual Fund Disclosures API",
+    "Path": "/stable/funds/disclosure",
+    "SampleUrl": "https://financialmodelingprep.com/stable/funds/disclosure?symbol=VWO&year=2023&quarter=4",
+    "Parameters": [
+      "symbol",
+      "year",
+      "quarter"
+    ]
+  },
+  {
+    "MethodName": "mutualFundEtfDisclosureNameSearch",
+    "Slug": "disclosures-name-search",
+    "Title": "Mutual Fund & ETF Disclosure Name Search API",
+    "Path": "/stable/funds/disclosure-holders-search",
+    "SampleUrl": "https://financialmodelingprep.com/stable/funds/disclosure-holders-search?name=Federated Hermes Government Income Securities, Inc.",
+    "Parameters": [
+      "name"
+    ]
+  },
+  {
+    "MethodName": "fundEtfDisclosuresByDate",
+    "Slug": "disclosures-dates",
+    "Title": "Fund & ETF Disclosures by Date API",
+    "Path": "/stable/funds/disclosure-dates",
+    "SampleUrl": "https://financialmodelingprep.com/stable/funds/disclosure-dates?symbol=VWO",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "latest8KSecFilings",
+    "Slug": "8k-latest",
+    "Title": "Latest 8-K SEC Filings API",
+    "Path": "/stable/sec-filings-8k",
+    "SampleUrl": "https://financialmodelingprep.com/stable/sec-filings-8k?from=2024-01-01&to=2024-03-01&page=0&limit=100",
+    "Parameters": [
+      "from",
+      "to",
+      "page",
+      "limit"
+    ]
+  },
+  {
+    "MethodName": "latestSecFilings",
+    "Slug": "financials-latest",
+    "Title": "Latest SEC Filings API",
+    "Path": "/stable/sec-filings-financials",
+    "SampleUrl": "https://financialmodelingprep.com/stable/sec-filings-financials?from=2024-01-01&to=2024-03-01&page=0&limit=100",
+    "Parameters": [
+      "from",
+      "to",
+      "page",
+      "limit"
+    ]
+  },
+  {
+    "MethodName": "secFilingsByFormType",
+    "Slug": "search-by-form-type",
+    "Title": "SEC Filings By Form Type API",
+    "Path": "/stable/sec-filings-search/form-type",
+    "SampleUrl": "https://financialmodelingprep.com/stable/sec-filings-search/form-type?formType=8-K&from=2024-01-01&to=2024-03-01&page=0&limit=100",
+    "Parameters": [
+      "formType",
+      "from",
+      "to",
+      "page",
+      "limit"
+    ]
+  },
+  {
+    "MethodName": "secFilingsBySymbol",
+    "Slug": "search-by-symbol",
+    "Title": "SEC Filings By Symbol API",
+    "Path": "/stable/sec-filings-search/symbol",
+    "SampleUrl": "https://financialmodelingprep.com/stable/sec-filings-search/symbol?symbol=AAPL&from=2024-01-01&to=2024-03-01&page=0&limit=100",
+    "Parameters": [
+      "symbol",
+      "from",
+      "to",
+      "page",
+      "limit"
+    ]
+  },
+  {
+    "MethodName": "secFilingsByCik",
+    "Slug": "search-by-cik",
+    "Title": "SEC Filings By CIK API",
+    "Path": "/stable/sec-filings-search/cik",
+    "SampleUrl": "https://financialmodelingprep.com/stable/sec-filings-search/cik?cik=0000320193&from=2024-01-01&to=2024-03-01&page=0&limit=100",
+    "Parameters": [
+      "cik",
+      "from",
+      "to",
+      "page",
+      "limit"
+    ]
+  },
+  {
+    "MethodName": "secFilingsByName",
+    "Slug": "search-by-name",
+    "Title": "SEC Filings By Name API",
+    "Path": "/stable/sec-filings-company-search/name",
+    "SampleUrl": "https://financialmodelingprep.com/stable/sec-filings-company-search/name?company=Berkshire",
+    "Parameters": [
+      "company"
+    ]
+  },
+  {
+    "MethodName": "secFilingsCompanySearchBySymbol",
+    "Slug": "company-search-by-symbol",
+    "Title": "SEC Filings Company Search By Symbol API",
+    "Path": "/stable/sec-filings-company-search/symbol",
+    "SampleUrl": "https://financialmodelingprep.com/stable/sec-filings-company-search/symbol?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "secFilingsCompanySearchByCik",
+    "Slug": "company-search-by-cik",
+    "Title": "SEC Filings Company Search By CIK API",
+    "Path": "/stable/sec-filings-company-search/cik",
+    "SampleUrl": "https://financialmodelingprep.com/stable/sec-filings-company-search/cik?cik=0000320193",
+    "Parameters": [
+      "cik"
+    ]
+  },
+  {
+    "MethodName": "secCompanyFullProfile",
+    "Slug": "sec-company-full-profile",
+    "Title": "SEC Company Full Profile API",
+    "Path": "/stable/sec-profile",
+    "SampleUrl": "https://financialmodelingprep.com/stable/sec-profile?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "industryClassificationList",
+    "Slug": "industry-classification-list",
+    "Title": "Industry Classification List API",
+    "Path": "/stable/standard-industrial-classification-list",
+    "SampleUrl": "https://financialmodelingprep.com/stable/standard-industrial-classification-list",
+    "Parameters": []
+  },
+  {
+    "MethodName": "industryClassificationSearch",
+    "Slug": "industry-classification-search",
+    "Title": "Industry Classification Search API",
+    "Path": "/stable/industry-classification-search",
+    "SampleUrl": "https://financialmodelingprep.com/stable/industry-classification-search",
+    "Parameters": []
+  },
+  {
+    "MethodName": "allIndustryClassification",
+    "Slug": "all-industry-classification",
+    "Title": "All Industry Classification API",
+    "Path": "/stable/all-industry-classification",
+    "SampleUrl": "https://financialmodelingprep.com/stable/all-industry-classification",
+    "Parameters": []
+  },
+  {
+    "MethodName": "latestInsiderTrading",
+    "Slug": "latest-insider-trade",
+    "Title": "Latest Insider Trading API",
+    "Path": "/stable/insider-trading/latest",
+    "SampleUrl": "https://financialmodelingprep.com/stable/insider-trading/latest?page=0&limit=100",
+    "Parameters": [
+      "page",
+      "limit"
+    ]
+  },
+  {
+    "MethodName": "searchInsiderTrades",
+    "Slug": "search-insider-trades",
+    "Title": "Search Insider Trades API",
+    "Path": "/stable/insider-trading/search",
+    "SampleUrl": "https://financialmodelingprep.com/stable/insider-trading/search?page=0&limit=100",
+    "Parameters": [
+      "page",
+      "limit"
+    ]
+  },
+  {
+    "MethodName": "searchInsiderTradesByReportingName",
+    "Slug": "search-reporting-name",
+    "Title": "Search Insider Trades by Reporting Name API",
+    "Path": "/stable/insider-trading/reporting-name",
+    "SampleUrl": "https://financialmodelingprep.com/stable/insider-trading/reporting-name?name=Zuckerberg",
+    "Parameters": [
+      "name"
+    ]
+  },
+  {
+    "MethodName": "allInsiderTransactionTypes",
+    "Slug": "all-transaction-types",
+    "Title": "All Insider Transaction Types API",
+    "Path": "/stable/insider-trading-transaction-type",
+    "SampleUrl": "https://financialmodelingprep.com/stable/insider-trading-transaction-type",
+    "Parameters": []
+  },
+  {
+    "MethodName": "insiderTradeStatistics",
+    "Slug": "insider-trade-statistics",
+    "Title": "Insider Trade Statistics API",
+    "Path": "/stable/insider-trading/statistics",
+    "SampleUrl": "https://financialmodelingprep.com/stable/insider-trading/statistics?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "acquisitionOwnership",
+    "Slug": "acquisition-ownership",
+    "Title": "Acquisition Ownership API",
+    "Path": "/stable/acquisition-of-beneficial-ownership",
+    "SampleUrl": "https://financialmodelingprep.com/stable/acquisition-of-beneficial-ownership?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "stockMarketIndexesList",
+    "Slug": "indexes-list",
+    "Title": "Stock Market Indexes List API",
+    "Path": "/stable/index-list",
+    "SampleUrl": "https://financialmodelingprep.com/stable/index-list",
+    "Parameters": []
+  },
+  {
+    "MethodName": "indexQuote",
+    "Slug": "index-quote",
+    "Title": "Index Quote API",
+    "Path": "/stable/quote",
+    "SampleUrl": "https://financialmodelingprep.com/stable/quote?symbol=^GSPC",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "indexShortQuote",
+    "Slug": "index-quote-short",
+    "Title": "Index Short Quote API",
+    "Path": "/stable/quote-short",
+    "SampleUrl": "https://financialmodelingprep.com/stable/quote-short?symbol=^GSPC",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "allIndexQuotes",
+    "Slug": "all-index-quotes",
+    "Title": "All Index Quotes API",
+    "Path": "/stable/batch-index-quotes",
+    "SampleUrl": "https://financialmodelingprep.com/stable/batch-index-quotes",
+    "Parameters": []
+  },
+  {
+    "MethodName": "historicalIndexLightChart",
+    "Slug": "index-historical-price-eod-light",
+    "Title": "Historical Index Light Chart API",
+    "Path": "/stable/historical-price-eod/light",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-price-eod/light?symbol=^GSPC",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "historicalIndexFullChart",
+    "Slug": "index-historical-price-eod-full",
+    "Title": "Historical Index Full Chart API",
+    "Path": "/stable/historical-price-eod/full",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-price-eod/full?symbol=^GSPC",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "get1MinuteIntervalIndexPrice",
+    "Slug": "index-intraday-1-min",
+    "Title": "1-Minute Interval Index Price API",
+    "Path": "/stable/historical-chart/1min",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/1min?symbol=^GSPC",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "get5MinuteIntervalIndexPrice",
+    "Slug": "index-intraday-5-min",
+    "Title": "5-Minute Interval Index Price API",
+    "Path": "/stable/historical-chart/5min",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/5min?symbol=^GSPC",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "get1HourIntervalIndexPrice",
+    "Slug": "index-intraday-1-hour",
+    "Title": "1-Hour Interval Index Price API",
+    "Path": "/stable/historical-chart/1hour",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/1hour?symbol=^GSPC",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "sP500Index",
+    "Slug": "sp-500",
+    "Title": "S&P 500 Index API",
+    "Path": "/stable/sp500-constituent",
+    "SampleUrl": "https://financialmodelingprep.com/stable/sp500-constituent",
+    "Parameters": []
+  },
+  {
+    "MethodName": "nasdaqIndex",
+    "Slug": "nasdaq",
+    "Title": "Nasdaq Index API",
+    "Path": "/stable/nasdaq-constituent",
+    "SampleUrl": "https://financialmodelingprep.com/stable/nasdaq-constituent",
+    "Parameters": []
+  },
+  {
+    "MethodName": "dowJones",
+    "Slug": "dow-jones",
+    "Title": "Dow Jones API",
+    "Path": "/stable/dowjones-constituent",
+    "SampleUrl": "https://financialmodelingprep.com/stable/dowjones-constituent",
+    "Parameters": []
+  },
+  {
+    "MethodName": "historicalSP500",
+    "Slug": "historical-sp-500",
+    "Title": "Historical S&P 500 API",
+    "Path": "/stable/historical-sp500-constituent",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-sp500-constituent",
+    "Parameters": []
+  },
+  {
+    "MethodName": "historicalNasdaq",
+    "Slug": "historical-nasdaq",
+    "Title": "Historical Nasdaq API",
+    "Path": "/stable/historical-nasdaq-constituent",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-nasdaq-constituent",
+    "Parameters": []
+  },
+  {
+    "MethodName": "historicalDowJones",
+    "Slug": "historical-dow-jones",
+    "Title": "Historical Dow Jones API",
+    "Path": "/stable/historical-dowjones-constituent",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-dowjones-constituent",
+    "Parameters": []
+  },
+  {
+    "MethodName": "globalExchangeMarketHours",
+    "Slug": "exchange-market-hours",
+    "Title": "Global Exchange Market Hours API",
+    "Path": "/stable/exchange-market-hours",
+    "SampleUrl": "https://financialmodelingprep.com/stable/exchange-market-hours?exchange=NASDAQ",
+    "Parameters": [
+      "exchange"
+    ]
+  },
+  {
+    "MethodName": "holidaysByExchange",
+    "Slug": "holidays-by-exchange",
+    "Title": "Holidays By Exchange API",
+    "Path": "/stable/holidays-by-exchange",
+    "SampleUrl": "https://financialmodelingprep.com/stable/holidays-by-exchange?exchange=NASDAQ",
+    "Parameters": [
+      "exchange"
+    ]
+  },
+  {
+    "MethodName": "allExchangeMarketHours",
+    "Slug": "all-exchange-market-hours",
+    "Title": "All Exchange Market Hours API",
+    "Path": "/stable/all-exchange-market-hours",
+    "SampleUrl": "https://financialmodelingprep.com/stable/all-exchange-market-hours",
+    "Parameters": []
+  },
+  {
+    "MethodName": "commoditiesList",
+    "Slug": "commodities-list",
+    "Title": "Commodities List API",
+    "Path": "/stable/commodities-list",
+    "SampleUrl": "https://financialmodelingprep.com/stable/commodities-list",
+    "Parameters": []
+  },
+  {
+    "MethodName": "commoditiesQuote",
+    "Slug": "commodities-quote",
+    "Title": "Commodities Quote API",
+    "Path": "/stable/quote",
+    "SampleUrl": "https://financialmodelingprep.com/stable/quote?symbol=GCUSD",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "commoditiesQuoteShort",
+    "Slug": "commodities-quote-short",
+    "Title": "Commodities Quote Short API",
+    "Path": "/stable/quote-short",
+    "SampleUrl": "https://financialmodelingprep.com/stable/quote-short?symbol=GCUSD",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "allCommoditiesQuotes",
+    "Slug": "all-commodities-quotes",
+    "Title": "All Commodities Quotes API",
+    "Path": "/stable/batch-commodity-quotes",
+    "SampleUrl": "https://financialmodelingprep.com/stable/batch-commodity-quotes",
+    "Parameters": []
+  },
+  {
+    "MethodName": "lightChart",
+    "Slug": "commodities-historical-price-eod-light",
+    "Title": "Light Chart API",
+    "Path": "/stable/historical-price-eod/light",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-price-eod/light?symbol=GCUSD",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "fullChart",
+    "Slug": "commodities-historical-price-eod-full",
+    "Title": "Full Chart API",
+    "Path": "/stable/historical-price-eod/full",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-price-eod/full?symbol=GCUSD",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "get1MinuteIntervalCommoditiesChart",
+    "Slug": "commodities-intraday-1-min",
+    "Title": "1-Minute Interval Commodities Chart API",
+    "Path": "/stable/historical-chart/1min",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/1min?symbol=GCUSD",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "get5MinuteIntervalCommoditiesChart",
+    "Slug": "commodities-intraday-5-min",
+    "Title": "5-Minute Interval Commodities Chart API",
+    "Path": "/stable/historical-chart/5min",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/5min?symbol=GCUSD",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "get1HourIntervalCommoditiesChart",
+    "Slug": "commodities-intraday-1-hour",
+    "Title": "1-Hour Interval Commodities Chart API",
+    "Path": "/stable/historical-chart/1hour",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/1hour?symbol=GCUSD",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "dcfValuation",
+    "Slug": "dcf-advanced",
+    "Title": "DCF Valuation API",
+    "Path": "/stable/discounted-cash-flow",
+    "SampleUrl": "https://financialmodelingprep.com/stable/discounted-cash-flow?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "leveredDcf",
+    "Slug": "dcf-levered",
+    "Title": "Levered DCF API",
+    "Path": "/stable/levered-discounted-cash-flow",
+    "SampleUrl": "https://financialmodelingprep.com/stable/levered-discounted-cash-flow?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "customDcfAdvanced",
+    "Slug": "custom-dcf-advanced",
+    "Title": "Custom DCF Advanced API",
+    "Path": "/stable/custom-discounted-cash-flow",
+    "SampleUrl": "https://financialmodelingprep.com/stable/custom-discounted-cash-flow?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "customDcfLevered",
+    "Slug": "custom-dcf-levered",
+    "Title": "Custom DCF Levered API",
+    "Path": "/stable/custom-levered-discounted-cash-flow",
+    "SampleUrl": "https://financialmodelingprep.com/stable/custom-levered-discounted-cash-flow?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "forexCurrencyPairs",
+    "Slug": "forex-list",
+    "Title": "Forex Currency Pairs API",
+    "Path": "/stable/forex-list",
+    "SampleUrl": "https://financialmodelingprep.com/stable/forex-list",
+    "Parameters": []
+  },
+  {
+    "MethodName": "forexQuote",
+    "Slug": "forex-quote",
+    "Title": "Forex Quote API",
+    "Path": "/stable/quote",
+    "SampleUrl": "https://financialmodelingprep.com/stable/quote?symbol=EURUSD",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "forexShortQuote",
+    "Slug": "forex-quote-short",
+    "Title": "Forex Short Quote API",
+    "Path": "/stable/quote-short",
+    "SampleUrl": "https://financialmodelingprep.com/stable/quote-short?symbol=EURUSD",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "batchForexQuotes",
+    "Slug": "all-forex-quotes",
+    "Title": "Batch Forex Quotes API",
+    "Path": "/stable/batch-forex-quotes",
+    "SampleUrl": "https://financialmodelingprep.com/stable/batch-forex-quotes",
+    "Parameters": []
+  },
+  {
+    "MethodName": "historicalForexLightChart",
+    "Slug": "forex-historical-price-eod-light",
+    "Title": "Historical Forex Light Chart API",
+    "Path": "/stable/historical-price-eod/light",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-price-eod/light?symbol=EURUSD",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "historicalForexFullChart",
+    "Slug": "forex-historical-price-eod-full",
+    "Title": "Historical Forex Full Chart API",
+    "Path": "/stable/historical-price-eod/full",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-price-eod/full?symbol=EURUSD",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "get1MinuteIntervalForexChart",
+    "Slug": "forex-intraday-1-min",
+    "Title": "1-Minute Interval Forex Chart API",
+    "Path": "/stable/historical-chart/1min",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/1min?symbol=EURUSD",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "get5MinuteIntervalForexChart",
+    "Slug": "forex-intraday-5-min",
+    "Title": "5-Minute Interval Forex Chart API",
+    "Path": "/stable/historical-chart/5min",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/5min?symbol=EURUSD",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "get1HourIntervalForexChart",
+    "Slug": "forex-intraday-1-hour",
+    "Title": "1-Hour Interval Forex Chart API",
+    "Path": "/stable/historical-chart/1hour",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/1hour?symbol=EURUSD",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "cryptocurrencyList",
+    "Slug": "cryptocurrency-list",
+    "Title": "Cryptocurrency List API",
+    "Path": "/stable/cryptocurrency-list",
+    "SampleUrl": "https://financialmodelingprep.com/stable/cryptocurrency-list",
+    "Parameters": []
+  },
+  {
+    "MethodName": "fullCryptocurrencyQuote",
+    "Slug": "cryptocurrency-quote",
+    "Title": "Full Cryptocurrency Quote API",
+    "Path": "/stable/quote",
+    "SampleUrl": "https://financialmodelingprep.com/stable/quote?symbol=BTCUSD",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "cryptocurrencyQuoteShort",
+    "Slug": "cryptocurrency-quote-short",
+    "Title": "Cryptocurrency Quote Short API",
+    "Path": "/stable/quote-short",
+    "SampleUrl": "https://financialmodelingprep.com/stable/quote-short?symbol=BTCUSD",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "allCryptocurrenciesQuotes",
+    "Slug": "all-cryptocurrency-quotes",
+    "Title": "All Cryptocurrencies Quotes API",
+    "Path": "/stable/batch-crypto-quotes",
+    "SampleUrl": "https://financialmodelingprep.com/stable/batch-crypto-quotes",
+    "Parameters": []
+  },
+  {
+    "MethodName": "historicalCryptocurrencyLightChart",
+    "Slug": "cryptocurrency-historical-price-eod-light",
+    "Title": "Historical Cryptocurrency Light Chart API",
+    "Path": "/stable/historical-price-eod/light",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-price-eod/light?symbol=BTCUSD",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "historicalCryptocurrencyFullChart",
+    "Slug": "cryptocurrency-historical-price-eod-full",
+    "Title": "Historical Cryptocurrency Full Chart API",
+    "Path": "/stable/historical-price-eod/full",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-price-eod/full?symbol=BTCUSD",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "get1MinuteIntervalCryptocurrencyData",
+    "Slug": "cryptocurrency-intraday-1-min",
+    "Title": "1-Minute Interval Cryptocurrency Data API",
+    "Path": "/stable/historical-chart/1min",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/1min?symbol=BTCUSD",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "get5MinuteIntervalCryptocurrencyData",
+    "Slug": "cryptocurrency-intraday-5-min",
+    "Title": "5-Minute Interval Cryptocurrency Data API",
+    "Path": "/stable/historical-chart/5min",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/5min?symbol=BTCUSD",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "get1HourIntervalCryptocurrencyData",
+    "Slug": "cryptocurrency-intraday-1-hour",
+    "Title": "1-Hour Interval Cryptocurrency Data API",
+    "Path": "/stable/historical-chart/1hour",
+    "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/1hour?symbol=BTCUSD",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "latestSenateFinancialDisclosures",
+    "Slug": "senate-latest",
+    "Title": "Latest Senate Financial Disclosures API",
+    "Path": "/stable/senate-latest",
+    "SampleUrl": "https://financialmodelingprep.com/stable/senate-latest?page=0&limit=100",
+    "Parameters": [
+      "page",
+      "limit"
+    ]
+  },
+  {
+    "MethodName": "latestHouseFinancialDisclosures",
+    "Slug": "house-latest",
+    "Title": "Latest House Financial Disclosures API",
+    "Path": "/stable/house-latest",
+    "SampleUrl": "https://financialmodelingprep.com/stable/house-latest?page=0&limit=100",
+    "Parameters": [
+      "page",
+      "limit"
+    ]
+  },
+  {
+    "MethodName": "senateTradingActivity",
+    "Slug": "senate-trading",
+    "Title": "Senate Trading Activity API",
+    "Path": "/stable/senate-trades",
+    "SampleUrl": "https://financialmodelingprep.com/stable/senate-trades?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "senateTradesByName",
+    "Slug": "senate-trading-by-name",
+    "Title": "Senate Trades By Name API",
+    "Path": "/stable/senate-trades-by-name",
+    "SampleUrl": "https://financialmodelingprep.com/stable/senate-trades-by-name?name=Jerry",
+    "Parameters": [
+      "name"
+    ]
+  },
+  {
+    "MethodName": "uSHouseTrades",
+    "Slug": "house-trading",
+    "Title": "U.S. House Trades API",
+    "Path": "/stable/house-trades",
+    "SampleUrl": "https://financialmodelingprep.com/stable/house-trades?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "houseTradesByName",
+    "Slug": "house-trading-by-name",
+    "Title": "House Trades By Name API",
+    "Path": "/stable/house-trades-by-name",
+    "SampleUrl": "https://financialmodelingprep.com/stable/house-trades-by-name?name=James",
+    "Parameters": [
+      "name"
+    ]
+  },
+  {
+    "MethodName": "esgInvestmentSearch",
+    "Slug": "esg-search",
+    "Title": "ESG Investment Search API",
+    "Path": "/stable/esg-disclosures",
+    "SampleUrl": "https://financialmodelingprep.com/stable/esg-disclosures?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "esgRatings",
+    "Slug": "esg-ratings",
+    "Title": "ESG Ratings API",
+    "Path": "/stable/esg-ratings",
+    "SampleUrl": "https://financialmodelingprep.com/stable/esg-ratings?symbol=AAPL",
+    "Parameters": [
+      "symbol"
+    ]
+  },
+  {
+    "MethodName": "esgBenchmarkComparison",
+    "Slug": "esg-benchmark",
+    "Title": "ESG Benchmark Comparison API",
+    "Path": "/stable/esg-benchmark",
+    "SampleUrl": "https://financialmodelingprep.com/stable/esg-benchmark",
+    "Parameters": []
+  },
+  {
+    "MethodName": "cotReport",
+    "Slug": "cot-report",
+    "Title": "COT Report API",
+    "Path": "/stable/commitment-of-traders-report",
+    "SampleUrl": "https://financialmodelingprep.com/stable/commitment-of-traders-report",
+    "Parameters": []
+  },
+  {
+    "MethodName": "cotAnalysisByDates",
+    "Slug": "cot-report-analysis",
+    "Title": "COT Analysis By Dates API",
+    "Path": "/stable/commitment-of-traders-analysis",
+    "SampleUrl": "https://financialmodelingprep.com/stable/commitment-of-traders-analysis",
+    "Parameters": []
+  },
+  {
+    "MethodName": "cotReportList",
+    "Slug": "cot-report-list",
+    "Title": "COT Report List API",
+    "Path": "/stable/commitment-of-traders-list",
+    "SampleUrl": "https://financialmodelingprep.com/stable/commitment-of-traders-list",
+    "Parameters": []
+  },
+  {
+    "MethodName": "latestCrowdfundingCampaigns",
+    "Slug": "latest-crowdfunding",
+    "Title": "Latest Crowdfunding Campaigns API",
+    "Path": "/stable/crowdfunding-offerings-latest",
+    "SampleUrl": "https://financialmodelingprep.com/stable/crowdfunding-offerings-latest?page=0&limit=100",
+    "Parameters": [
+      "page",
+      "limit"
+    ]
+  },
+  {
+    "MethodName": "crowdfundingCampaignSearch",
+    "Slug": "crowdfunding-search",
+    "Title": "Crowdfunding Campaign Search API",
+    "Path": "/stable/crowdfunding-offerings-search",
+    "SampleUrl": "https://financialmodelingprep.com/stable/crowdfunding-offerings-search?name=enotap",
+    "Parameters": [
+      "name"
+    ]
+  },
+  {
+    "MethodName": "crowdfundingByCik",
+    "Slug": "crowdfunding-by-cik",
+    "Title": "Crowdfunding By CIK API",
+    "Path": "/stable/crowdfunding-offerings",
+    "SampleUrl": "https://financialmodelingprep.com/stable/crowdfunding-offerings?cik=0001916078",
+    "Parameters": [
+      "cik"
+    ]
+  },
+  {
+    "MethodName": "equityOfferingUpdates",
+    "Slug": "latest-equity-offering",
+    "Title": "Equity Offering Updates API",
+    "Path": "/stable/fundraising-latest",
+    "SampleUrl": "https://financialmodelingprep.com/stable/fundraising-latest?page=0&limit=10",
+    "Parameters": [
+      "page",
+      "limit"
+    ]
+  },
+  {
+    "MethodName": "equityOfferingSearch",
+    "Slug": "equity-offering-search",
+    "Title": "Equity Offering Search API",
+    "Path": "/stable/fundraising-search",
+    "SampleUrl": "https://financialmodelingprep.com/stable/fundraising-search?name=NJOY",
+    "Parameters": [
+      "name"
+    ]
+  },
+  {
+    "MethodName": "equityOfferingByCik",
+    "Slug": "equity-offering-by-cik",
+    "Title": "Equity Offering By CIK API",
+    "Path": "/stable/fundraising",
+    "SampleUrl": "https://financialmodelingprep.com/stable/fundraising?cik=0001547416",
+    "Parameters": [
+      "cik"
+    ]
+  },
+  {
+    "MethodName": "companyProfileBulk",
+    "Slug": "profile-bulk",
+    "Title": "Company Profile Bulk API",
+    "Path": "/stable/profile-bulk",
+    "SampleUrl": "https://financialmodelingprep.com/stable/profile-bulk?part=0",
+    "Parameters": [
+      "part"
+    ]
+  },
+  {
+    "MethodName": "stockRatingBulk",
+    "Slug": "rating-bulk",
+    "Title": "Stock Rating Bulk API",
+    "Path": "/stable/rating-bulk",
+    "SampleUrl": "https://financialmodelingprep.com/stable/rating-bulk",
+    "Parameters": []
+  },
+  {
+    "MethodName": "dcfValuationsBulk",
+    "Slug": "dcf-bulk",
+    "Title": "DCF Valuations Bulk API",
+    "Path": "/stable/dcf-bulk",
+    "SampleUrl": "https://financialmodelingprep.com/stable/dcf-bulk",
+    "Parameters": []
+  },
+  {
+    "MethodName": "financialScoresBulk",
+    "Slug": "scores-bulk",
+    "Title": "Financial Scores Bulk API",
+    "Path": "/stable/scores-bulk",
+    "SampleUrl": "https://financialmodelingprep.com/stable/scores-bulk",
+    "Parameters": []
+  },
+  {
+    "MethodName": "priceTargetSummaryBulk",
+    "Slug": "price-target-summary-bulk",
+    "Title": "Price Target Summary Bulk API",
+    "Path": "/stable/price-target-summary-bulk",
+    "SampleUrl": "https://financialmodelingprep.com/stable/price-target-summary-bulk",
+    "Parameters": []
+  },
+  {
+    "MethodName": "etfHolderBulk",
+    "Slug": "etf-holder-bulk",
+    "Title": "ETF Holder Bulk API",
+    "Path": "/stable/etf-holder-bulk",
+    "SampleUrl": "https://financialmodelingprep.com/stable/etf-holder-bulk?part=1",
+    "Parameters": [
+      "part"
+    ]
+  },
+  {
+    "MethodName": "upgradesDowngradesConsensusBulk",
+    "Slug": "upgrades-downgrades-consensus-bulk",
+    "Title": "Upgrades Downgrades Consensus Bulk API",
+    "Path": "/stable/upgrades-downgrades-consensus-bulk",
+    "SampleUrl": "https://financialmodelingprep.com/stable/upgrades-downgrades-consensus-bulk",
+    "Parameters": []
+  },
+  {
+    "MethodName": "keyMetricsTtmBulk",
+    "Slug": "key-metrics-ttm-bulk",
+    "Title": "Key Metrics TTM Bulk API",
+    "Path": "/stable/key-metrics-ttm-bulk",
+    "SampleUrl": "https://financialmodelingprep.com/stable/key-metrics-ttm-bulk",
+    "Parameters": []
+  },
+  {
+    "MethodName": "ratiosTtmBulk",
+    "Slug": "ratios-ttm-bulk",
+    "Title": "Ratios TTM Bulk API",
+    "Path": "/stable/ratios-ttm-bulk",
+    "SampleUrl": "https://financialmodelingprep.com/stable/ratios-ttm-bulk",
+    "Parameters": []
+  },
+  {
+    "MethodName": "stockPeersBulk",
+    "Slug": "peers-bulk",
+    "Title": "Stock Peers Bulk API",
+    "Path": "/stable/peers-bulk",
+    "SampleUrl": "https://financialmodelingprep.com/stable/peers-bulk",
+    "Parameters": []
+  },
+  {
+    "MethodName": "earningsSurprisesBulk",
+    "Slug": "earnings-surprises-bulk",
+    "Title": "Earnings Surprises Bulk API",
+    "Path": "/stable/earnings-surprises-bulk",
+    "SampleUrl": "https://financialmodelingprep.com/stable/earnings-surprises-bulk?year=2025",
+    "Parameters": [
+      "year"
+    ]
+  },
+  {
+    "MethodName": "incomeStatementBulk",
+    "Slug": "income-statement-bulk",
+    "Title": "Income Statement Bulk API",
+    "Path": "/stable/income-statement-bulk",
+    "SampleUrl": "https://financialmodelingprep.com/stable/income-statement-bulk?year=2025&period=Q1",
+    "Parameters": [
+      "year",
+      "period"
+    ]
+  },
+  {
+    "MethodName": "incomeStatementGrowthBulk",
+    "Slug": "income-statement-growth-bulk",
+    "Title": "Income Statement Growth Bulk API",
+    "Path": "/stable/income-statement-growth-bulk",
+    "SampleUrl": "https://financialmodelingprep.com/stable/income-statement-growth-bulk?year=2025&period=Q1",
+    "Parameters": [
+      "year",
+      "period"
+    ]
+  },
+  {
+    "MethodName": "balanceSheetStatementBulk",
+    "Slug": "balance-sheet-statement-bulk",
+    "Title": "Balance Sheet Statement Bulk API",
+    "Path": "/stable/balance-sheet-statement-bulk",
+    "SampleUrl": "https://financialmodelingprep.com/stable/balance-sheet-statement-bulk?year=2025&period=Q1",
+    "Parameters": [
+      "year",
+      "period"
+    ]
+  },
+  {
+    "MethodName": "balanceSheetStatementGrowthBulk",
+    "Slug": "balance-sheet-statement-growth-bulk",
+    "Title": "Balance Sheet Statement Growth Bulk API",
+    "Path": "/stable/balance-sheet-statement-growth-bulk",
+    "SampleUrl": "https://financialmodelingprep.com/stable/balance-sheet-statement-growth-bulk?year=2025&period=Q1",
+    "Parameters": [
+      "year",
+      "period"
+    ]
+  },
+  {
+    "MethodName": "cashFlowStatementBulk",
+    "Slug": "cash-flow-statement-bulk",
+    "Title": "Cash Flow Statement Bulk API",
+    "Path": "/stable/cash-flow-statement-bulk",
+    "SampleUrl": "https://financialmodelingprep.com/stable/cash-flow-statement-bulk?year=2025&period=Q1",
+    "Parameters": [
+      "year",
+      "period"
+    ]
+  },
+  {
+    "MethodName": "cashFlowStatementGrowthBulk",
+    "Slug": "cash-flow-statement-growth-bulk",
+    "Title": "Cash Flow Statement Growth Bulk API",
+    "Path": "/stable/cash-flow-statement-growth-bulk",
+    "SampleUrl": "https://financialmodelingprep.com/stable/cash-flow-statement-growth-bulk?year=2025&period=Q1",
+    "Parameters": [
+      "year",
+      "period"
+    ]
+  },
+  {
+    "MethodName": "eodBulk",
+    "Slug": "eod-bulk",
+    "Title": "Eod Bulk API",
+    "Path": "/stable/eod-bulk",
+    "SampleUrl": "https://financialmodelingprep.com/stable/eod-bulk?date=2024-10-22",
+    "Parameters": [
+      "date"
+    ]
+  }
+]
