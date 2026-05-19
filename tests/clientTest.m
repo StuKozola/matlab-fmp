@@ -36,6 +36,7 @@ classdef clientTest < matlab.unittest.TestCase
 
             testCase.verifyTrue(istimetable(result));
             testCase.verifyEqual(result.close(1), 185.64, AbsTol=1e-12);
+            testCase.verifyEqual(result.Properties.VariableDescriptions, {'close'});
         end
 
         function rawOutputReturnsPayload(testCase)
@@ -57,6 +58,9 @@ classdef clientTest < matlab.unittest.TestCase
 
             testCase.verifyGreaterThanOrEqual(height(catalog), 250);
             testCase.verifyTrue(any(catalog.Slug == "quote"));
+            testCase.verifyTrue(any(catalog.Category == "Company Search"));
+            testCase.verifyTrue(any(catalog.HasPagination));
+            testCase.verifyTrue(any(catalog.DateFieldHint == "date"));
             testCase.verifyTrue(istable(result));
         end
     end

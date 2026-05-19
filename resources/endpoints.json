@@ -3,1148 +3,1937 @@
     "MethodName": "stockSymbolSearch",
     "Slug": "search-symbol",
     "Title": "Stock Symbol Search API",
+    "Category": "Company Search",
     "Path": "/stable/search-symbol",
     "SampleUrl": "https://financialmodelingprep.com/stable/search-symbol?query=AAPL",
     "Parameters": [
       "query"
-    ]
+    ],
+    "RequiredParameters": [
+      "query"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "companyNameSearch",
     "Slug": "search-name",
     "Title": "Company Name Search API",
+    "Category": "Company Search",
     "Path": "/stable/search-name",
     "SampleUrl": "https://financialmodelingprep.com/stable/search-name?query=AA",
     "Parameters": [
       "query"
-    ]
+    ],
+    "RequiredParameters": [
+      "query"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "cik",
     "Slug": "search-cik",
     "Title": "CIK API",
+    "Category": "Company Search",
     "Path": "/stable/search-cik",
     "SampleUrl": "https://financialmodelingprep.com/stable/search-cik?cik=320193",
     "Parameters": [
       "cik"
-    ]
+    ],
+    "RequiredParameters": [
+      "cik"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "cusip",
     "Slug": "search-cusip",
     "Title": "CUSIP API",
+    "Category": "Company Search",
     "Path": "/stable/search-cusip",
     "SampleUrl": "https://financialmodelingprep.com/stable/search-cusip?cusip=037833100",
     "Parameters": [
       "cusip"
-    ]
+    ],
+    "RequiredParameters": [
+      "cusip"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "isin",
     "Slug": "search-isin",
     "Title": "ISIN API",
+    "Category": "Company Search",
     "Path": "/stable/search-isin",
     "SampleUrl": "https://financialmodelingprep.com/stable/search-isin?isin=US0378331005",
     "Parameters": [
       "isin"
-    ]
+    ],
+    "RequiredParameters": [
+      "isin"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "stockScreener",
     "Slug": "search-company-screener",
     "Title": "Stock Screener API",
+    "Category": "Company Search",
     "Path": "/stable/company-screener",
     "SampleUrl": "https://financialmodelingprep.com/stable/company-screener",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "exchangeVariants",
     "Slug": "search-exchange-variants",
     "Title": "Exchange Variants API",
+    "Category": "Company Search",
     "Path": "/stable/search-exchange-variants",
     "SampleUrl": "https://financialmodelingprep.com/stable/search-exchange-variants?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "companySymbolsList",
     "Slug": "company-symbols-list",
     "Title": "Company Symbols List API",
+    "Category": "Stock Directory",
     "Path": "/stable/stock-list",
     "SampleUrl": "https://financialmodelingprep.com/stable/stock-list",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "financialStatementSymbolsList",
     "Slug": "financial-symbols-list",
     "Title": "Financial Statement Symbols List API",
+    "Category": "Stock Directory",
     "Path": "/stable/financial-statement-symbol-list",
     "SampleUrl": "https://financialmodelingprep.com/stable/financial-statement-symbol-list",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "cikList",
     "Slug": "cik-list",
     "Title": "CIK List API",
+    "Category": "Stock Directory",
     "Path": "/stable/cik-list",
     "SampleUrl": "https://financialmodelingprep.com/stable/cik-list?page=0&limit=1000",
     "Parameters": [
       "page",
       "limit"
-    ]
+    ],
+    "RequiredParameters": [
+      "page",
+      "limit"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": true,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "symbolChangesList",
     "Slug": "symbol-changes-list",
     "Title": "Symbol Changes List API",
+    "Category": "Stock Directory",
     "Path": "/stable/symbol-change",
     "SampleUrl": "https://financialmodelingprep.com/stable/symbol-change",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "etfSymbolSearch",
     "Slug": "etfs-list",
     "Title": "ETF Symbol Search API",
+    "Category": "Stock Directory",
     "Path": "/stable/etf-list",
     "SampleUrl": "https://financialmodelingprep.com/stable/etf-list",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "activelyTradingList",
     "Slug": "actively-trading-list",
     "Title": "Actively Trading List API",
+    "Category": "Stock Directory",
     "Path": "/stable/actively-trading-list",
     "SampleUrl": "https://financialmodelingprep.com/stable/actively-trading-list",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "earningsTranscriptList",
     "Slug": "earnings-transcript-list",
     "Title": "Earnings Transcript List API",
+    "Category": "Stock Directory",
     "Path": "/stable/earnings-transcript-list",
     "SampleUrl": "https://financialmodelingprep.com/stable/earnings-transcript-list",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "availableExchanges",
     "Slug": "available-exchanges",
     "Title": "Available Exchanges API",
+    "Category": "Stock Directory",
     "Path": "/stable/available-exchanges",
     "SampleUrl": "https://financialmodelingprep.com/stable/available-exchanges",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "availableSectors",
     "Slug": "available-sectors",
     "Title": "Available Sectors API",
+    "Category": "Stock Directory",
     "Path": "/stable/available-sectors",
     "SampleUrl": "https://financialmodelingprep.com/stable/available-sectors",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "availableIndustries",
     "Slug": "available-industries",
     "Title": "Available Industries API",
+    "Category": "Stock Directory",
     "Path": "/stable/available-industries",
     "SampleUrl": "https://financialmodelingprep.com/stable/available-industries",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "availableCountries",
     "Slug": "available-countries",
     "Title": "Available Countries API",
+    "Category": "Stock Directory",
     "Path": "/stable/available-countries",
     "SampleUrl": "https://financialmodelingprep.com/stable/available-countries",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "companyProfileData",
     "Slug": "profile-symbol",
     "Title": "Company Profile Data API",
+    "Category": "Company Information",
     "Path": "/stable/profile",
     "SampleUrl": "https://financialmodelingprep.com/stable/profile?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "companyProfileByCik",
     "Slug": "profile-cik",
     "Title": "Company Profile by CIK API",
+    "Category": "Company Information",
     "Path": "/stable/profile-cik",
     "SampleUrl": "https://financialmodelingprep.com/stable/profile-cik?cik=320193",
     "Parameters": [
       "cik"
-    ]
+    ],
+    "RequiredParameters": [
+      "cik"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "companyNotes",
     "Slug": "company-notes",
     "Title": "Company Notes API",
+    "Category": "Company Information",
     "Path": "/stable/company-notes",
     "SampleUrl": "https://financialmodelingprep.com/stable/company-notes?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "stockPeerComparison",
     "Slug": "peers",
     "Title": "Stock Peer Comparison API",
+    "Category": "Company Information",
     "Path": "/stable/stock-peers",
     "SampleUrl": "https://financialmodelingprep.com/stable/stock-peers?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "delistedCompanies",
     "Slug": "delisted-companies",
     "Title": "Delisted Companies API",
+    "Category": "Company Information",
     "Path": "/stable/delisted-companies",
     "SampleUrl": "https://financialmodelingprep.com/stable/delisted-companies?page=0&limit=100",
     "Parameters": [
       "page",
       "limit"
-    ]
+    ],
+    "RequiredParameters": [
+      "page",
+      "limit"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": true,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "companyEmployeeCount",
     "Slug": "employee-count",
     "Title": "Company Employee Count API",
+    "Category": "Company Information",
     "Path": "/stable/employee-count",
     "SampleUrl": "https://financialmodelingprep.com/stable/employee-count?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "companyHistoricalEmployeeCount",
     "Slug": "historical-employee-count",
     "Title": "Company Historical Employee Count API",
+    "Category": "Company Information",
     "Path": "/stable/historical-employee-count",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-employee-count?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "companyMarketCap",
     "Slug": "market-cap",
     "Title": "Company Market Cap API",
+    "Category": "Company Information",
     "Path": "/stable/market-capitalization",
     "SampleUrl": "https://financialmodelingprep.com/stable/market-capitalization?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "batchMarketCap",
     "Slug": "batch-market-cap",
     "Title": "Batch Market Cap API",
+    "Category": "Company Information",
     "Path": "/stable/market-capitalization-batch",
     "SampleUrl": "https://financialmodelingprep.com/stable/market-capitalization-batch?symbols=AAPL,MSFT,GOOG",
     "Parameters": [
       "symbols"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbols"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "historicalMarketCap",
     "Slug": "historical-market-cap",
     "Title": "Historical Market Cap API",
+    "Category": "Company Information",
     "Path": "/stable/historical-market-capitalization",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-market-capitalization?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "companyShareFloatLiquidity",
     "Slug": "shares-float",
     "Title": "Company Share Float & Liquidity API",
+    "Category": "Company Information",
     "Path": "/stable/shares-float",
     "SampleUrl": "https://financialmodelingprep.com/stable/shares-float?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "allSharesFloat",
     "Slug": "all-shares-float",
     "Title": "All Shares Float API",
+    "Category": "Company Information",
     "Path": "/stable/shares-float-all",
     "SampleUrl": "https://financialmodelingprep.com/stable/shares-float-all?page=0&limit=1000",
     "Parameters": [
       "page",
       "limit"
-    ]
+    ],
+    "RequiredParameters": [
+      "page",
+      "limit"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": true,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "latestMergersAcquisitions",
     "Slug": "latest-mergers-acquisitions",
     "Title": "Latest Mergers & Acquisitions API",
+    "Category": "Company Information",
     "Path": "/stable/mergers-acquisitions-latest",
     "SampleUrl": "https://financialmodelingprep.com/stable/mergers-acquisitions-latest?page=0&limit=100",
     "Parameters": [
       "page",
       "limit"
-    ]
+    ],
+    "RequiredParameters": [
+      "page",
+      "limit"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": true,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "searchMergersAcquisitions",
     "Slug": "search-mergers-acquisitions",
     "Title": "Search Mergers & Acquisitions API",
+    "Category": "Company Information",
     "Path": "/stable/mergers-acquisitions-search",
     "SampleUrl": "https://financialmodelingprep.com/stable/mergers-acquisitions-search?name=Apple",
     "Parameters": [
       "name"
-    ]
+    ],
+    "RequiredParameters": [
+      "name"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "companyExecutives",
     "Slug": "company-executives",
     "Title": "Company Executives API",
+    "Category": "Company Information",
     "Path": "/stable/key-executives",
     "SampleUrl": "https://financialmodelingprep.com/stable/key-executives?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "executiveCompensation",
     "Slug": "executive-compensation",
     "Title": "Executive Compensation API",
+    "Category": "Company Information",
     "Path": "/stable/governance-executive-compensation",
     "SampleUrl": "https://financialmodelingprep.com/stable/governance-executive-compensation?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "executiveCompensationBenchmark",
     "Slug": "executive-compensation-benchmark",
     "Title": "Executive Compensation Benchmark API",
+    "Category": "Company Information",
     "Path": "/stable/executive-compensation-benchmark",
     "SampleUrl": "https://financialmodelingprep.com/stable/executive-compensation-benchmark",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "stockQuote",
     "Slug": "quote",
     "Title": "Stock Quote API",
+    "Category": "Quote",
     "Path": "/stable/quote",
     "SampleUrl": "https://financialmodelingprep.com/stable/quote?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "stockQuoteShort",
     "Slug": "quote-short",
     "Title": "Stock Quote Short API",
+    "Category": "Quote",
     "Path": "/stable/quote-short",
     "SampleUrl": "https://financialmodelingprep.com/stable/quote-short?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "aftermarketTrade",
     "Slug": "aftermarket-trade",
     "Title": "Aftermarket Trade API",
+    "Category": "Quote",
     "Path": "/stable/aftermarket-trade",
     "SampleUrl": "https://financialmodelingprep.com/stable/aftermarket-trade?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "aftermarketQuote",
     "Slug": "aftermarket-quote",
     "Title": "Aftermarket Quote API",
+    "Category": "Quote",
     "Path": "/stable/aftermarket-quote",
     "SampleUrl": "https://financialmodelingprep.com/stable/aftermarket-quote?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "stockPriceChange",
     "Slug": "quote-change",
     "Title": "Stock Price Change API",
+    "Category": "Quote",
     "Path": "/stable/stock-price-change",
     "SampleUrl": "https://financialmodelingprep.com/stable/stock-price-change?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "stockBatchQuote",
     "Slug": "batch-quote",
     "Title": "Stock Batch Quote API",
+    "Category": "Quote",
     "Path": "/stable/batch-quote",
     "SampleUrl": "https://financialmodelingprep.com/stable/batch-quote?symbols=AAPL",
     "Parameters": [
       "symbols"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbols"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "stockBatchQuoteShort",
     "Slug": "batch-quote-short",
     "Title": "Stock Batch Quote Short API",
+    "Category": "Quote",
     "Path": "/stable/batch-quote-short",
     "SampleUrl": "https://financialmodelingprep.com/stable/batch-quote-short?symbols=AAPL",
     "Parameters": [
       "symbols"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbols"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "batchAftermarketTrade",
     "Slug": "batch-aftermarket-trade",
     "Title": "Batch Aftermarket Trade API",
+    "Category": "Quote",
     "Path": "/stable/batch-aftermarket-trade",
     "SampleUrl": "https://financialmodelingprep.com/stable/batch-aftermarket-trade?symbols=AAPL",
     "Parameters": [
       "symbols"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbols"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "batchAftermarketQuote",
     "Slug": "batch-aftermarket-quote",
     "Title": "Batch Aftermarket Quote API",
+    "Category": "Quote",
     "Path": "/stable/batch-aftermarket-quote",
     "SampleUrl": "https://financialmodelingprep.com/stable/batch-aftermarket-quote?symbols=AAPL",
     "Parameters": [
       "symbols"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbols"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "exchangeStockQuotes",
     "Slug": "full-exchange-quotes",
     "Title": "Exchange Stock Quotes API",
+    "Category": "Quote",
     "Path": "/stable/batch-exchange-quote",
     "SampleUrl": "https://financialmodelingprep.com/stable/batch-exchange-quote?exchange=NASDAQ",
     "Parameters": [
       "exchange"
-    ]
+    ],
+    "RequiredParameters": [
+      "exchange"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "mutualFundPriceQuotes",
     "Slug": "full-mutualfund-quotes",
     "Title": "Mutual Fund Price Quotes API",
+    "Category": "Quote",
     "Path": "/stable/batch-mutualfund-quotes",
     "SampleUrl": "https://financialmodelingprep.com/stable/batch-mutualfund-quotes",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "etfPriceQuotes",
     "Slug": "full-etf-quotes",
     "Title": "ETF Price Quotes API",
+    "Category": "Quote",
     "Path": "/stable/batch-etf-quotes",
     "SampleUrl": "https://financialmodelingprep.com/stable/batch-etf-quotes",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "fullCommoditiesQuotes",
     "Slug": "full-commodities-quotes",
     "Title": "Full Commodities Quotes API",
+    "Category": "Quote",
     "Path": "/stable/batch-commodity-quotes",
     "SampleUrl": "https://financialmodelingprep.com/stable/batch-commodity-quotes",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "fullCryptocurrencyQuotes",
     "Slug": "full-cryptocurrency-quotes",
     "Title": "Full Cryptocurrency Quotes API",
+    "Category": "Quote",
     "Path": "/stable/batch-crypto-quotes",
     "SampleUrl": "https://financialmodelingprep.com/stable/batch-crypto-quotes",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "fullForexQuote",
     "Slug": "full-forex-quotes",
     "Title": "Full Forex Quote API",
+    "Category": "Quote",
     "Path": "/stable/batch-forex-quotes",
     "SampleUrl": "https://financialmodelingprep.com/stable/batch-forex-quotes",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "fullIndexQuotes",
     "Slug": "full-index-quotes",
     "Title": "Full Index Quotes API",
+    "Category": "Quote",
     "Path": "/stable/batch-index-quotes",
     "SampleUrl": "https://financialmodelingprep.com/stable/batch-index-quotes",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "incomeStatement",
     "Slug": "income-statement",
     "Title": "Income Statement API",
+    "Category": "Statements",
     "Path": "/stable/income-statement",
     "SampleUrl": "https://financialmodelingprep.com/stable/income-statement?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "balanceSheetStatement",
     "Slug": "balance-sheet-statement",
     "Title": "Balance Sheet Statement API",
+    "Category": "Statements",
     "Path": "/stable/balance-sheet-statement",
     "SampleUrl": "https://financialmodelingprep.com/stable/balance-sheet-statement?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "cashFlowStatement",
     "Slug": "cashflow-statement",
     "Title": "Cash Flow Statement API",
+    "Category": "Statements",
     "Path": "/stable/cash-flow-statement",
     "SampleUrl": "https://financialmodelingprep.com/stable/cash-flow-statement?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "latestFinancialStatements",
     "Slug": "latest-financial-statements",
     "Title": "Latest Financial Statements API",
+    "Category": "Statements",
     "Path": "/stable/latest-financial-statements",
     "SampleUrl": "https://financialmodelingprep.com/stable/latest-financial-statements?page=0&limit=250",
     "Parameters": [
       "page",
       "limit"
-    ]
+    ],
+    "RequiredParameters": [
+      "page",
+      "limit"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": true,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "incomeStatementsTtm",
     "Slug": "income-statements-ttm",
     "Title": "Income Statements TTM API",
+    "Category": "Statements",
     "Path": "/stable/income-statement-ttm",
     "SampleUrl": "https://financialmodelingprep.com/stable/income-statement-ttm?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "balanceSheetStatementsTtm",
     "Slug": "balance-sheet-statements-ttm",
     "Title": "Balance Sheet Statements TTM API",
+    "Category": "Statements",
     "Path": "/stable/balance-sheet-statement-ttm",
     "SampleUrl": "https://financialmodelingprep.com/stable/balance-sheet-statement-ttm?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "cashflowStatementsTtm",
     "Slug": "cashflow-statements-ttm",
     "Title": "Cashflow Statements TTM API",
+    "Category": "Statements",
     "Path": "/stable/cash-flow-statement-ttm",
     "SampleUrl": "https://financialmodelingprep.com/stable/cash-flow-statement-ttm?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "keyMetrics",
     "Slug": "key-metrics",
     "Title": "Key Metrics API",
+    "Category": "Statements",
     "Path": "/stable/key-metrics",
     "SampleUrl": "https://financialmodelingprep.com/stable/key-metrics?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "financialRatios",
     "Slug": "metrics-ratios",
     "Title": "Financial Ratios API",
+    "Category": "Statements",
     "Path": "/stable/ratios",
     "SampleUrl": "https://financialmodelingprep.com/stable/ratios?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "keyMetricsTtm",
     "Slug": "key-metrics-ttm",
     "Title": "Key Metrics TTM API",
+    "Category": "Statements",
     "Path": "/stable/key-metrics-ttm",
     "SampleUrl": "https://financialmodelingprep.com/stable/key-metrics-ttm?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "financialRatiosTtm",
     "Slug": "metrics-ratios-ttm",
     "Title": "Financial Ratios TTM API",
+    "Category": "Statements",
     "Path": "/stable/ratios-ttm",
     "SampleUrl": "https://financialmodelingprep.com/stable/ratios-ttm?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "financialScores",
     "Slug": "financial-scores",
     "Title": "Financial Scores API",
+    "Category": "Statements",
     "Path": "/stable/financial-scores",
     "SampleUrl": "https://financialmodelingprep.com/stable/financial-scores?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "ownerEarnings",
     "Slug": "owner-earnings",
     "Title": "Owner Earnings API",
+    "Category": "Statements",
     "Path": "/stable/owner-earnings",
     "SampleUrl": "https://financialmodelingprep.com/stable/owner-earnings?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "enterpriseValues",
     "Slug": "enterprise-values",
     "Title": "Enterprise Values API",
+    "Category": "Statements",
     "Path": "/stable/enterprise-values",
     "SampleUrl": "https://financialmodelingprep.com/stable/enterprise-values?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "incomeStatementGrowth",
     "Slug": "income-statement-growth",
     "Title": "Income Statement Growth API",
+    "Category": "Statements",
     "Path": "/stable/income-statement-growth",
     "SampleUrl": "https://financialmodelingprep.com/stable/income-statement-growth?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "balanceSheetStatementGrowth",
     "Slug": "balance-sheet-statement-growth",
     "Title": "Balance Sheet Statement Growth API",
+    "Category": "Statements",
     "Path": "/stable/balance-sheet-statement-growth",
     "SampleUrl": "https://financialmodelingprep.com/stable/balance-sheet-statement-growth?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "cashflowStatementGrowth",
     "Slug": "cashflow-statement-growth",
     "Title": "Cashflow Statement Growth API",
+    "Category": "Statements",
     "Path": "/stable/cash-flow-statement-growth",
     "SampleUrl": "https://financialmodelingprep.com/stable/cash-flow-statement-growth?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "financialStatementGrowth",
     "Slug": "financial-statement-growth",
     "Title": "Financial Statement Growth API",
+    "Category": "Statements",
     "Path": "/stable/financial-growth",
     "SampleUrl": "https://financialmodelingprep.com/stable/financial-growth?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "financialReportsDates",
     "Slug": "financial-reports-dates",
     "Title": "Financial Reports Dates API",
+    "Category": "Statements",
     "Path": "/stable/financial-reports-dates",
     "SampleUrl": "https://financialmodelingprep.com/stable/financial-reports-dates?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "financialReportsForm10KJson",
     "Slug": "financial-reports-form-10-k-json",
     "Title": "Financial Reports Form 10-K JSON API",
+    "Category": "Statements",
     "Path": "/stable/financial-reports-json",
     "SampleUrl": "https://financialmodelingprep.com/stable/financial-reports-json?symbol=AAPL&year=2022&period=FY",
     "Parameters": [
       "symbol",
       "year",
       "period"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol",
+      "year",
+      "period"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "financialReportsForm10KXlsx",
     "Slug": "financial-reports-form-10-k-xlsx",
     "Title": "Financial Reports Form 10-K XLSX API",
+    "Category": "Statements",
     "Path": "/stable/financial-reports-xlsx",
     "SampleUrl": "https://financialmodelingprep.com/stable/financial-reports-xlsx?symbol=AAPL&year=2022&period=FY",
     "Parameters": [
       "symbol",
       "year",
       "period"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol",
+      "year",
+      "period"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "revenueProductSegmentation",
     "Slug": "revenue-product-segmentation",
     "Title": "Revenue Product Segmentation API",
+    "Category": "Statements",
     "Path": "/stable/revenue-product-segmentation",
     "SampleUrl": "https://financialmodelingprep.com/stable/revenue-product-segmentation?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "revenueGeographicSegments",
     "Slug": "revenue-geographic-segments",
     "Title": "Revenue Geographic Segments API",
+    "Category": "Statements",
     "Path": "/stable/revenue-geographic-segmentation",
     "SampleUrl": "https://financialmodelingprep.com/stable/revenue-geographic-segmentation?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "asReportedIncomeStatements",
     "Slug": "as-reported-income-statements",
     "Title": "As Reported Income Statements API",
+    "Category": "Statements",
     "Path": "/stable/income-statement-as-reported",
     "SampleUrl": "https://financialmodelingprep.com/stable/income-statement-as-reported?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "asReportedBalanceStatements",
     "Slug": "as-reported-balance-statements",
     "Title": "As Reported Balance Statements API",
+    "Category": "Statements",
     "Path": "/stable/balance-sheet-statement-as-reported",
     "SampleUrl": "https://financialmodelingprep.com/stable/balance-sheet-statement-as-reported?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "asReportedCashflowStatements",
     "Slug": "as-reported-cashflow-statements",
     "Title": "As Reported Cashflow Statements API",
+    "Category": "Statements",
     "Path": "/stable/cash-flow-statement-as-reported",
     "SampleUrl": "https://financialmodelingprep.com/stable/cash-flow-statement-as-reported?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "asReportedFinancialStatements",
     "Slug": "as-reported-financial-statements",
     "Title": "As Reported Financial Statements API",
+    "Category": "Statements",
     "Path": "/stable/financial-statement-full-as-reported",
     "SampleUrl": "https://financialmodelingprep.com/stable/financial-statement-full-as-reported?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "stockChartLight",
     "Slug": "historical-price-eod-light",
     "Title": "Stock Chart Light API",
+    "Category": "Charts",
     "Path": "/stable/historical-price-eod/light",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-price-eod/light?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "stockPriceAndVolumeData",
     "Slug": "historical-price-eod-full",
     "Title": "Stock Price and Volume Data API",
+    "Category": "Charts",
     "Path": "/stable/historical-price-eod/full",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-price-eod/full?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "unadjustedStockPrice",
     "Slug": "historical-price-eod-non-split-adjusted",
     "Title": "Unadjusted Stock Price API",
+    "Category": "Charts",
     "Path": "/stable/historical-price-eod/non-split-adjusted",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-price-eod/non-split-adjusted?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "dividendAdjustedPriceChart",
     "Slug": "historical-price-eod-dividend-adjusted",
     "Title": "Dividend Adjusted Price Chart API",
+    "Category": "Charts",
     "Path": "/stable/historical-price-eod/dividend-adjusted",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-price-eod/dividend-adjusted?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "get1MinIntervalStockChart",
     "Slug": "intraday-1-min",
     "Title": "1 Min Interval Stock Chart API",
+    "Category": "Charts",
     "Path": "/stable/historical-chart/1min",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/1min?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "get5MinIntervalStockChart",
     "Slug": "intraday-5-min",
     "Title": "5 Min Interval Stock Chart API",
+    "Category": "Charts",
     "Path": "/stable/historical-chart/5min",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/5min?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "get15MinIntervalStockChart",
     "Slug": "intraday-15-min",
     "Title": "15 Min Interval Stock Chart API",
+    "Category": "Charts",
     "Path": "/stable/historical-chart/15min",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/15min?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "get30MinIntervalStockChart",
     "Slug": "intraday-30-min",
     "Title": "30 Min Interval Stock Chart API",
+    "Category": "Charts",
     "Path": "/stable/historical-chart/30min",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/30min?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "get1HourIntervalStockChart",
     "Slug": "intraday-1-hour",
     "Title": "1 Hour Interval Stock Chart API",
+    "Category": "Charts",
     "Path": "/stable/historical-chart/1hour",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/1hour?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "get4HourIntervalStockChart",
     "Slug": "intraday-4-hour",
     "Title": "4 Hour Interval Stock Chart API",
+    "Category": "Charts",
     "Path": "/stable/historical-chart/4hour",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/4hour?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "treasuryRates",
     "Slug": "treasury-rates",
     "Title": "Treasury Rates API",
+    "Category": "Economics",
     "Path": "/stable/treasury-rates",
     "SampleUrl": "https://financialmodelingprep.com/stable/treasury-rates",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "economicsIndicators",
     "Slug": "economics-indicators",
     "Title": "Economics Indicators API",
+    "Category": "Economics",
     "Path": "/stable/economic-indicators",
     "SampleUrl": "https://financialmodelingprep.com/stable/economic-indicators?name=GDP",
     "Parameters": [
       "name"
-    ]
+    ],
+    "RequiredParameters": [
+      "name"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "economicDataReleasesCalendar",
     "Slug": "economics-calendar",
     "Title": "Economic Data Releases Calendar API",
+    "Category": "Economics",
     "Path": "/stable/economic-calendar",
     "SampleUrl": "https://financialmodelingprep.com/stable/economic-calendar",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "marketRiskPremium",
     "Slug": "market-risk-premium",
     "Title": "Market Risk Premium API",
+    "Category": "Economics",
     "Path": "/stable/market-risk-premium",
     "SampleUrl": "https://financialmodelingprep.com/stable/market-risk-premium",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "dividendsCompany",
     "Slug": "dividends-company",
     "Title": "Dividends Company API",
+    "Category": "Earnings, Dividends, Splits",
     "Path": "/stable/dividends",
     "SampleUrl": "https://financialmodelingprep.com/stable/dividends?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "dividendsCalendar",
     "Slug": "dividends-calendar",
     "Title": "Dividends Calendar API",
+    "Category": "Earnings, Dividends, Splits",
     "Path": "/stable/dividends-calendar",
     "SampleUrl": "https://financialmodelingprep.com/stable/dividends-calendar",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "earningsReport",
     "Slug": "earnings-company",
     "Title": "Earnings Report API",
+    "Category": "Earnings, Dividends, Splits",
     "Path": "/stable/earnings",
     "SampleUrl": "https://financialmodelingprep.com/stable/earnings?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "earningsCalendar",
     "Slug": "earnings-calendar",
     "Title": "Earnings Calendar API",
+    "Category": "Earnings, Dividends, Splits",
     "Path": "/stable/earnings-calendar",
     "SampleUrl": "https://financialmodelingprep.com/stable/earnings-calendar",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "iposCalendar",
     "Slug": "ipos-calendar",
     "Title": "IPOs Calendar API",
+    "Category": "Earnings, Dividends, Splits",
     "Path": "/stable/ipos-calendar",
     "SampleUrl": "https://financialmodelingprep.com/stable/ipos-calendar",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "iposDisclosure",
     "Slug": "ipos-disclosure",
     "Title": "IPOs Disclosure API",
+    "Category": "Earnings, Dividends, Splits",
     "Path": "/stable/ipos-disclosure",
     "SampleUrl": "https://financialmodelingprep.com/stable/ipos-disclosure",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "iposProspectus",
     "Slug": "ipos-prospectus",
     "Title": "IPOs Prospectus API",
+    "Category": "Earnings, Dividends, Splits",
     "Path": "/stable/ipos-prospectus",
     "SampleUrl": "https://financialmodelingprep.com/stable/ipos-prospectus",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "stockSplitDetails",
     "Slug": "splits-company",
     "Title": "Stock Split Details API",
+    "Category": "Earnings, Dividends, Splits",
     "Path": "/stable/splits",
     "SampleUrl": "https://financialmodelingprep.com/stable/splits?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "stockSplitsCalendar",
     "Slug": "splits-calendar",
     "Title": "Stock Splits Calendar API",
+    "Category": "Earnings, Dividends, Splits",
     "Path": "/stable/splits-calendar",
     "SampleUrl": "https://financialmodelingprep.com/stable/splits-calendar",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "latestEarningTranscripts",
     "Slug": "latest-transcripts",
     "Title": "Latest Earning Transcripts API",
+    "Category": "Earnings Transcript",
     "Path": "/stable/earning-call-transcript-latest",
     "SampleUrl": "https://financialmodelingprep.com/stable/earning-call-transcript-latest",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "earningsTranscript",
     "Slug": "search-transcripts",
     "Title": "Earnings Transcript API",
+    "Category": "Earnings Transcript",
     "Path": "/stable/earning-call-transcript",
     "SampleUrl": "https://financialmodelingprep.com/stable/earning-call-transcript?symbol=AAPL&year=2020&quarter=3",
     "Parameters": [
       "symbol",
       "year",
       "quarter"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol",
+      "year",
+      "quarter"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "transcriptsDatesBySymbol",
     "Slug": "transcripts-dates-by-symbol",
     "Title": "Transcripts Dates By Symbol API",
+    "Category": "Earnings Transcript",
     "Path": "/stable/earning-call-transcript-dates",
     "SampleUrl": "https://financialmodelingprep.com/stable/earning-call-transcript-dates?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "availableTranscriptSymbols",
     "Slug": "available-transcript-symbols",
     "Title": "Available Transcript Symbols API",
+    "Category": "Earnings Transcript",
     "Path": "/stable/earnings-transcript-list",
     "SampleUrl": "https://financialmodelingprep.com/stable/earnings-transcript-list",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "fmpArticles",
     "Slug": "fmp-articles",
     "Title": "FMP Articles API",
+    "Category": "News",
     "Path": "/stable/fmp-articles",
     "SampleUrl": "https://financialmodelingprep.com/stable/fmp-articles?page=0&limit=20",
     "Parameters": [
       "page",
       "limit"
-    ]
+    ],
+    "RequiredParameters": [
+      "page",
+      "limit"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": true,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "generalNews",
     "Slug": "general-news",
     "Title": "General News API",
+    "Category": "News",
     "Path": "/stable/news/general-latest",
     "SampleUrl": "https://financialmodelingprep.com/stable/news/general-latest?page=0&limit=20",
     "Parameters": [
       "page",
       "limit"
-    ]
+    ],
+    "RequiredParameters": [
+      "page",
+      "limit"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": true,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "pressReleases",
     "Slug": "press-releases",
     "Title": "Press Releases API",
+    "Category": "News",
     "Path": "/stable/news/press-releases-latest",
     "SampleUrl": "https://financialmodelingprep.com/stable/news/press-releases-latest?page=0&limit=20",
     "Parameters": [
       "page",
       "limit"
-    ]
+    ],
+    "RequiredParameters": [
+      "page",
+      "limit"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": true,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "stockNews",
     "Slug": "stock-news",
     "Title": "Stock News API",
+    "Category": "News",
     "Path": "/stable/news/stock-latest",
     "SampleUrl": "https://financialmodelingprep.com/stable/news/stock-latest?page=0&limit=20",
     "Parameters": [
       "page",
       "limit"
-    ]
+    ],
+    "RequiredParameters": [
+      "page",
+      "limit"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": true,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "cryptoNews",
     "Slug": "crypto-news",
     "Title": "Crypto News API",
+    "Category": "News",
     "Path": "/stable/news/crypto-latest",
     "SampleUrl": "https://financialmodelingprep.com/stable/news/crypto-latest?page=0&limit=20",
     "Parameters": [
       "page",
       "limit"
-    ]
+    ],
+    "RequiredParameters": [
+      "page",
+      "limit"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": true,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "forexNews",
     "Slug": "forex-news",
     "Title": "Forex News API",
+    "Category": "News",
     "Path": "/stable/news/forex-latest",
     "SampleUrl": "https://financialmodelingprep.com/stable/news/forex-latest?page=0&limit=20",
     "Parameters": [
       "page",
       "limit"
-    ]
+    ],
+    "RequiredParameters": [
+      "page",
+      "limit"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": true,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "searchPressReleases",
     "Slug": "search-press-releases",
     "Title": "Search Press Releases API",
+    "Category": "News",
     "Path": "/stable/news/press-releases",
     "SampleUrl": "https://financialmodelingprep.com/stable/news/press-releases?symbols=AAPL",
     "Parameters": [
       "symbols"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbols"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "searchStockNews",
     "Slug": "search-stock-news",
     "Title": "Search Stock News API",
+    "Category": "News",
     "Path": "/stable/news/stock",
     "SampleUrl": "https://financialmodelingprep.com/stable/news/stock?symbols=AAPL",
     "Parameters": [
       "symbols"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbols"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "searchCryptoNews",
     "Slug": "search-crypto-news",
     "Title": "Search Crypto News API",
+    "Category": "News",
     "Path": "/stable/news/crypto",
     "SampleUrl": "https://financialmodelingprep.com/stable/news/crypto?symbols=BTCUSD",
     "Parameters": [
       "symbols"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbols"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "searchForexNews",
     "Slug": "search-forex-news",
     "Title": "Search Forex News API",
+    "Category": "News",
     "Path": "/stable/news/forex",
     "SampleUrl": "https://financialmodelingprep.com/stable/news/forex?symbols=EURUSD",
     "Parameters": [
       "symbols"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbols"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "institutionalOwnershipFilings",
     "Slug": "latest-filings",
     "Title": "Institutional Ownership Filings API",
+    "Category": "Form 13F",
     "Path": "/stable/institutional-ownership/latest",
     "SampleUrl": "https://financialmodelingprep.com/stable/institutional-ownership/latest?page=0&limit=100",
     "Parameters": [
       "page",
       "limit"
-    ]
+    ],
+    "RequiredParameters": [
+      "page",
+      "limit"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": true,
+    "DateFieldHint": "filingDate"
   },
   {
     "MethodName": "filingsExtract",
     "Slug": "filings-extract",
     "Title": "Filings Extract API",
+    "Category": "Form 13F",
     "Path": "/stable/institutional-ownership/extract",
     "SampleUrl": "https://financialmodelingprep.com/stable/institutional-ownership/extract?cik=0001388838&year=2023&quarter=3",
     "Parameters": [
       "cik",
       "year",
       "quarter"
-    ]
+    ],
+    "RequiredParameters": [
+      "cik",
+      "year",
+      "quarter"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "filingDate"
   },
   {
     "MethodName": "form13fFilingsDates",
     "Slug": "form-13f-filings-dates",
     "Title": "Form 13F Filings Dates API",
+    "Category": "Form 13F",
     "Path": "/stable/institutional-ownership/dates",
     "SampleUrl": "https://financialmodelingprep.com/stable/institutional-ownership/dates?cik=0001067983",
     "Parameters": [
       "cik"
-    ]
+    ],
+    "RequiredParameters": [
+      "cik"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "filingDate"
   },
   {
     "MethodName": "filingsExtractWithAnalyticsByHolder",
     "Slug": "filings-extract-with-analytics-by-holder",
     "Title": "Filings Extract With Analytics By Holder API",
+    "Category": "Form 13F",
     "Path": "/stable/institutional-ownership/extract-analytics/holder",
     "SampleUrl": "https://financialmodelingprep.com/stable/institutional-ownership/extract-analytics/holder?symbol=AAPL&year=2023&quarter=3&page=0&limit=10",
     "Parameters": [
@@ -1153,58 +1942,103 @@
       "quarter",
       "page",
       "limit"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol",
+      "year",
+      "quarter",
+      "page",
+      "limit"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": true,
+    "DateFieldHint": "filingDate"
   },
   {
     "MethodName": "holderPerformanceSummary",
     "Slug": "holder-performance-summary",
     "Title": "Holder Performance Summary API",
+    "Category": "Form 13F",
     "Path": "/stable/institutional-ownership/holder-performance-summary",
     "SampleUrl": "https://financialmodelingprep.com/stable/institutional-ownership/holder-performance-summary?cik=0001067983&page=0",
     "Parameters": [
       "cik",
       "page"
-    ]
+    ],
+    "RequiredParameters": [
+      "cik",
+      "page"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": true,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "holdersIndustryBreakdown",
     "Slug": "holders-industry-breakdown",
     "Title": "Holders Industry Breakdown API",
+    "Category": "Form 13F",
     "Path": "/stable/institutional-ownership/holder-industry-breakdown",
     "SampleUrl": "https://financialmodelingprep.com/stable/institutional-ownership/holder-industry-breakdown?cik=0001067983&year=2023&quarter=3",
     "Parameters": [
       "cik",
       "year",
       "quarter"
-    ]
+    ],
+    "RequiredParameters": [
+      "cik",
+      "year",
+      "quarter"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "positionsSummary",
     "Slug": "positions-summary",
     "Title": "Positions Summary API",
+    "Category": "Form 13F",
     "Path": "/stable/institutional-ownership/symbol-positions-summary",
     "SampleUrl": "https://financialmodelingprep.com/stable/institutional-ownership/symbol-positions-summary?symbol=AAPL&year=2023&quarter=3",
     "Parameters": [
       "symbol",
       "year",
       "quarter"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol",
+      "year",
+      "quarter"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "industryPerformanceSummary",
     "Slug": "industry-summary",
     "Title": "Industry Performance Summary API",
+    "Category": "Form 13F",
     "Path": "/stable/institutional-ownership/industry-summary",
     "SampleUrl": "https://financialmodelingprep.com/stable/institutional-ownership/industry-summary?year=2023&quarter=3",
     "Parameters": [
       "year",
       "quarter"
-    ]
+    ],
+    "RequiredParameters": [
+      "year",
+      "quarter"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "financialEstimates",
     "Slug": "financial-estimates",
     "Title": "Financial Estimates API",
+    "Category": "Analyst",
     "Path": "/stable/analyst-estimates",
     "SampleUrl": "https://financialmodelingprep.com/stable/analyst-estimates?symbol=AAPL&period=annual&page=0&limit=10",
     "Parameters": [
@@ -1212,386 +2046,662 @@
       "period",
       "page",
       "limit"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol",
+      "period",
+      "page",
+      "limit"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": true,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "ratingsSnapshot",
     "Slug": "ratings-snapshot",
     "Title": "Ratings Snapshot API",
+    "Category": "Analyst",
     "Path": "/stable/ratings-snapshot",
     "SampleUrl": "https://financialmodelingprep.com/stable/ratings-snapshot?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "historicalRatings",
     "Slug": "historical-ratings",
     "Title": "Historical Ratings API",
+    "Category": "Analyst",
     "Path": "/stable/ratings-historical",
     "SampleUrl": "https://financialmodelingprep.com/stable/ratings-historical?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "priceTargetSummary",
     "Slug": "price-target-summary",
     "Title": "Price Target Summary API",
+    "Category": "Analyst",
     "Path": "/stable/price-target-summary",
     "SampleUrl": "https://financialmodelingprep.com/stable/price-target-summary?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "priceTargetConsensus",
     "Slug": "price-target-consensus",
     "Title": "Price Target Consensus API",
+    "Category": "Analyst",
     "Path": "/stable/price-target-consensus",
     "SampleUrl": "https://financialmodelingprep.com/stable/price-target-consensus?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "stockGrades",
     "Slug": "grades",
     "Title": "Stock Grades API",
+    "Category": "Analyst",
     "Path": "/stable/grades",
     "SampleUrl": "https://financialmodelingprep.com/stable/grades?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "historicalStockGrades",
     "Slug": "historical-grades",
     "Title": "Historical Stock Grades API",
+    "Category": "Analyst",
     "Path": "/stable/grades-historical",
     "SampleUrl": "https://financialmodelingprep.com/stable/grades-historical?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "stockGradesSummary",
     "Slug": "grades-summary",
     "Title": "Stock Grades Summary API",
+    "Category": "Analyst",
     "Path": "/stable/grades-consensus",
     "SampleUrl": "https://financialmodelingprep.com/stable/grades-consensus?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "marketSectorPerformanceSnapshot",
     "Slug": "sector-performance-snapshot",
     "Title": "Market Sector Performance Snapshot API",
+    "Category": "Market Performance",
     "Path": "/stable/sector-performance-snapshot",
     "SampleUrl": "https://financialmodelingprep.com/stable/sector-performance-snapshot?date=2024-02-01",
     "Parameters": [
       "date"
-    ]
+    ],
+    "RequiredParameters": [
+      "date"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "industryPerformanceSnapshot",
     "Slug": "industry-performance-snapshot",
     "Title": "Industry Performance Snapshot API",
+    "Category": "Market Performance",
     "Path": "/stable/industry-performance-snapshot",
     "SampleUrl": "https://financialmodelingprep.com/stable/industry-performance-snapshot?date=2024-02-01",
     "Parameters": [
       "date"
-    ]
+    ],
+    "RequiredParameters": [
+      "date"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "historicalMarketSectorPerformance",
     "Slug": "historical-sector-performance",
     "Title": "Historical Market Sector Performance API",
+    "Category": "Market Performance",
     "Path": "/stable/historical-sector-performance",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-sector-performance?sector=Energy",
     "Parameters": [
       "sector"
-    ]
+    ],
+    "RequiredParameters": [
+      "sector"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "historicalIndustryPerformance",
     "Slug": "historical-industry-performance",
     "Title": "Historical Industry Performance API",
+    "Category": "Market Performance",
     "Path": "/stable/historical-industry-performance",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-industry-performance?industry=Biotechnology",
     "Parameters": [
       "industry"
-    ]
+    ],
+    "RequiredParameters": [
+      "industry"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "sectorPeSnapshot",
     "Slug": "sector-pe-snapshot",
     "Title": "Sector PE Snapshot API",
+    "Category": "Market Performance",
     "Path": "/stable/sector-pe-snapshot",
     "SampleUrl": "https://financialmodelingprep.com/stable/sector-pe-snapshot?date=2024-02-01",
     "Parameters": [
       "date"
-    ]
+    ],
+    "RequiredParameters": [
+      "date"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "industryPeSnapshot",
     "Slug": "industry-pe-snapshot",
     "Title": "Industry PE Snapshot API",
+    "Category": "Market Performance",
     "Path": "/stable/industry-pe-snapshot",
     "SampleUrl": "https://financialmodelingprep.com/stable/industry-pe-snapshot?date=2024-02-01",
     "Parameters": [
       "date"
-    ]
+    ],
+    "RequiredParameters": [
+      "date"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "historicalSectorPe",
     "Slug": "historical-sector-pe",
     "Title": "Historical Sector PE API",
+    "Category": "Market Performance",
     "Path": "/stable/historical-sector-pe",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-sector-pe?sector=Energy",
     "Parameters": [
       "sector"
-    ]
+    ],
+    "RequiredParameters": [
+      "sector"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "historicalIndustryPe",
     "Slug": "historical-industry-pe",
     "Title": "Historical Industry PE API",
+    "Category": "Market Performance",
     "Path": "/stable/historical-industry-pe",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-industry-pe?industry=Biotechnology",
     "Parameters": [
       "industry"
-    ]
+    ],
+    "RequiredParameters": [
+      "industry"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "biggestStockGainers",
     "Slug": "biggest-gainers",
     "Title": "Biggest Stock Gainers API",
+    "Category": "Market Performance",
     "Path": "/stable/biggest-gainers",
     "SampleUrl": "https://financialmodelingprep.com/stable/biggest-gainers",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "biggestStockLosers",
     "Slug": "biggest-losers",
     "Title": "Biggest Stock Losers API",
+    "Category": "Market Performance",
     "Path": "/stable/biggest-losers",
     "SampleUrl": "https://financialmodelingprep.com/stable/biggest-losers",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "topTradedStocks",
     "Slug": "most-active",
     "Title": "Top Traded Stocks API",
+    "Category": "Market Performance",
     "Path": "/stable/most-actives",
     "SampleUrl": "https://financialmodelingprep.com/stable/most-actives",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "simpleMovingAverage",
     "Slug": "simple-moving-average",
     "Title": "Simple Moving Average API",
+    "Category": "Technical Indicators",
     "Path": "/stable/technical-indicators/sma",
     "SampleUrl": "https://financialmodelingprep.com/stable/technical-indicators/sma?symbol=AAPL&periodLength=10&timeframe=1day",
     "Parameters": [
       "symbol",
       "periodLength",
       "timeframe"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol",
+      "periodLength",
+      "timeframe"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "exponentialMovingAverage",
     "Slug": "exponential-moving-average",
     "Title": "Exponential Moving Average API",
+    "Category": "Technical Indicators",
     "Path": "/stable/technical-indicators/ema",
     "SampleUrl": "https://financialmodelingprep.com/stable/technical-indicators/ema?symbol=AAPL&periodLength=10&timeframe=1day",
     "Parameters": [
       "symbol",
       "periodLength",
       "timeframe"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol",
+      "periodLength",
+      "timeframe"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "weightedMovingAverage",
     "Slug": "weighted-moving-average",
     "Title": "Weighted Moving Average API",
+    "Category": "Technical Indicators",
     "Path": "/stable/technical-indicators/wma",
     "SampleUrl": "https://financialmodelingprep.com/stable/technical-indicators/wma?symbol=AAPL&periodLength=10&timeframe=1day",
     "Parameters": [
       "symbol",
       "periodLength",
       "timeframe"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol",
+      "periodLength",
+      "timeframe"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "doubleExponentialMovingAverage",
     "Slug": "double-exponential-moving-average",
     "Title": "Double Exponential Moving Average API",
+    "Category": "Technical Indicators",
     "Path": "/stable/technical-indicators/dema",
     "SampleUrl": "https://financialmodelingprep.com/stable/technical-indicators/dema?symbol=AAPL&periodLength=10&timeframe=1day",
     "Parameters": [
       "symbol",
       "periodLength",
       "timeframe"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol",
+      "periodLength",
+      "timeframe"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "tripleExponentialMovingAverage",
     "Slug": "triple-exponential-moving-average",
     "Title": "Triple Exponential Moving Average API",
+    "Category": "Technical Indicators",
     "Path": "/stable/technical-indicators/tema",
     "SampleUrl": "https://financialmodelingprep.com/stable/technical-indicators/tema?symbol=AAPL&periodLength=10&timeframe=1day",
     "Parameters": [
       "symbol",
       "periodLength",
       "timeframe"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol",
+      "periodLength",
+      "timeframe"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "relativeStrengthIndex",
     "Slug": "relative-strength-index",
     "Title": "Relative Strength Index API",
+    "Category": "Technical Indicators",
     "Path": "/stable/technical-indicators/rsi",
     "SampleUrl": "https://financialmodelingprep.com/stable/technical-indicators/rsi?symbol=AAPL&periodLength=10&timeframe=1day",
     "Parameters": [
       "symbol",
       "periodLength",
       "timeframe"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol",
+      "periodLength",
+      "timeframe"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "standardDeviation",
     "Slug": "standard-deviation",
     "Title": "Standard Deviation API",
+    "Category": "Technical Indicators",
     "Path": "/stable/technical-indicators/standarddeviation",
     "SampleUrl": "https://financialmodelingprep.com/stable/technical-indicators/standarddeviation?symbol=AAPL&periodLength=10&timeframe=1day",
     "Parameters": [
       "symbol",
       "periodLength",
       "timeframe"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol",
+      "periodLength",
+      "timeframe"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "williams",
     "Slug": "williams",
     "Title": "Williams API",
+    "Category": "Technical Indicators",
     "Path": "/stable/technical-indicators/williams",
     "SampleUrl": "https://financialmodelingprep.com/stable/technical-indicators/williams?symbol=AAPL&periodLength=10&timeframe=1day",
     "Parameters": [
       "symbol",
       "periodLength",
       "timeframe"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol",
+      "periodLength",
+      "timeframe"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "averageDirectionalIndex",
     "Slug": "average-directional-index",
     "Title": "Average Directional Index API",
+    "Category": "Technical Indicators",
     "Path": "/stable/technical-indicators/adx",
     "SampleUrl": "https://financialmodelingprep.com/stable/technical-indicators/adx?symbol=AAPL&periodLength=10&timeframe=1day",
     "Parameters": [
       "symbol",
       "periodLength",
       "timeframe"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol",
+      "periodLength",
+      "timeframe"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "etfFundHoldings",
     "Slug": "holdings",
     "Title": "ETF & Fund Holdings API",
+    "Category": "Etf And Mutual Funds",
     "Path": "/stable/etf/holdings",
     "SampleUrl": "https://financialmodelingprep.com/stable/etf/holdings?symbol=SPY",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "etfMutualFundInformation",
     "Slug": "information",
     "Title": "ETF & Mutual Fund Information API",
+    "Category": "Etf And Mutual Funds",
     "Path": "/stable/etf/info",
     "SampleUrl": "https://financialmodelingprep.com/stable/etf/info?symbol=SPY",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "etfFundCountryAllocation",
     "Slug": "country-weighting",
     "Title": "ETF & Fund Country Allocation API",
+    "Category": "Etf And Mutual Funds",
     "Path": "/stable/etf/country-weightings",
     "SampleUrl": "https://financialmodelingprep.com/stable/etf/country-weightings?symbol=SPY",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "etfAssetExposure",
     "Slug": "etf-asset-exposure",
     "Title": "ETF Asset Exposure API",
+    "Category": "Etf And Mutual Funds",
     "Path": "/stable/etf/asset-exposure",
     "SampleUrl": "https://financialmodelingprep.com/stable/etf/asset-exposure?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "etfSectorWeighting",
     "Slug": "sector-weighting",
     "Title": "ETF Sector Weighting API",
+    "Category": "Etf And Mutual Funds",
     "Path": "/stable/etf/sector-weightings",
     "SampleUrl": "https://financialmodelingprep.com/stable/etf/sector-weightings?symbol=SPY",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "mutualFundEtfDisclosure",
     "Slug": "latest-disclosures",
     "Title": "Mutual Fund & ETF Disclosure API",
+    "Category": "Etf And Mutual Funds",
     "Path": "/stable/funds/disclosure-holders-latest",
     "SampleUrl": "https://financialmodelingprep.com/stable/funds/disclosure-holders-latest?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "mutualFundDisclosures",
     "Slug": "mutual-fund-disclosures",
     "Title": "Mutual Fund Disclosures API",
+    "Category": "Etf And Mutual Funds",
     "Path": "/stable/funds/disclosure",
     "SampleUrl": "https://financialmodelingprep.com/stable/funds/disclosure?symbol=VWO&year=2023&quarter=4",
     "Parameters": [
       "symbol",
       "year",
       "quarter"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol",
+      "year",
+      "quarter"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "mutualFundEtfDisclosureNameSearch",
     "Slug": "disclosures-name-search",
     "Title": "Mutual Fund & ETF Disclosure Name Search API",
+    "Category": "Etf And Mutual Funds",
     "Path": "/stable/funds/disclosure-holders-search",
     "SampleUrl": "https://financialmodelingprep.com/stable/funds/disclosure-holders-search?name=Federated Hermes Government Income Securities, Inc.",
     "Parameters": [
       "name"
-    ]
+    ],
+    "RequiredParameters": [
+      "name"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "fundEtfDisclosuresByDate",
     "Slug": "disclosures-dates",
     "Title": "Fund & ETF Disclosures by Date API",
+    "Category": "Etf And Mutual Funds",
     "Path": "/stable/funds/disclosure-dates",
     "SampleUrl": "https://financialmodelingprep.com/stable/funds/disclosure-dates?symbol=VWO",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "latest8KSecFilings",
     "Slug": "8k-latest",
     "Title": "Latest 8-K SEC Filings API",
+    "Category": "Sec Filings",
     "Path": "/stable/sec-filings-8k",
     "SampleUrl": "https://financialmodelingprep.com/stable/sec-filings-8k?from=2024-01-01&to=2024-03-01&page=0&limit=100",
     "Parameters": [
@@ -1599,12 +2709,22 @@
       "to",
       "page",
       "limit"
-    ]
+    ],
+    "RequiredParameters": [
+      "from",
+      "to",
+      "page",
+      "limit"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": true,
+    "DateFieldHint": "filingDate"
   },
   {
     "MethodName": "latestSecFilings",
     "Slug": "financials-latest",
     "Title": "Latest SEC Filings API",
+    "Category": "Sec Filings",
     "Path": "/stable/sec-filings-financials",
     "SampleUrl": "https://financialmodelingprep.com/stable/sec-filings-financials?from=2024-01-01&to=2024-03-01&page=0&limit=100",
     "Parameters": [
@@ -1612,12 +2732,22 @@
       "to",
       "page",
       "limit"
-    ]
+    ],
+    "RequiredParameters": [
+      "from",
+      "to",
+      "page",
+      "limit"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": true,
+    "DateFieldHint": "filingDate"
   },
   {
     "MethodName": "secFilingsByFormType",
     "Slug": "search-by-form-type",
     "Title": "SEC Filings By Form Type API",
+    "Category": "Sec Filings",
     "Path": "/stable/sec-filings-search/form-type",
     "SampleUrl": "https://financialmodelingprep.com/stable/sec-filings-search/form-type?formType=8-K&from=2024-01-01&to=2024-03-01&page=0&limit=100",
     "Parameters": [
@@ -1626,12 +2756,23 @@
       "to",
       "page",
       "limit"
-    ]
+    ],
+    "RequiredParameters": [
+      "formType",
+      "from",
+      "to",
+      "page",
+      "limit"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": true,
+    "DateFieldHint": "filingDate"
   },
   {
     "MethodName": "secFilingsBySymbol",
     "Slug": "search-by-symbol",
     "Title": "SEC Filings By Symbol API",
+    "Category": "Sec Filings",
     "Path": "/stable/sec-filings-search/symbol",
     "SampleUrl": "https://financialmodelingprep.com/stable/sec-filings-search/symbol?symbol=AAPL&from=2024-01-01&to=2024-03-01&page=0&limit=100",
     "Parameters": [
@@ -1640,12 +2781,23 @@
       "to",
       "page",
       "limit"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol",
+      "from",
+      "to",
+      "page",
+      "limit"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": true,
+    "DateFieldHint": "filingDate"
   },
   {
     "MethodName": "secFilingsByCik",
     "Slug": "search-by-cik",
     "Title": "SEC Filings By CIK API",
+    "Category": "Sec Filings",
     "Path": "/stable/sec-filings-search/cik",
     "SampleUrl": "https://financialmodelingprep.com/stable/sec-filings-search/cik?cik=0000320193&from=2024-01-01&to=2024-03-01&page=0&limit=100",
     "Parameters": [
@@ -1654,936 +2806,1582 @@
       "to",
       "page",
       "limit"
-    ]
+    ],
+    "RequiredParameters": [
+      "cik",
+      "from",
+      "to",
+      "page",
+      "limit"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": true,
+    "DateFieldHint": "filingDate"
   },
   {
     "MethodName": "secFilingsByName",
     "Slug": "search-by-name",
     "Title": "SEC Filings By Name API",
+    "Category": "Sec Filings",
     "Path": "/stable/sec-filings-company-search/name",
     "SampleUrl": "https://financialmodelingprep.com/stable/sec-filings-company-search/name?company=Berkshire",
     "Parameters": [
       "company"
-    ]
+    ],
+    "RequiredParameters": [
+      "company"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "filingDate"
   },
   {
     "MethodName": "secFilingsCompanySearchBySymbol",
     "Slug": "company-search-by-symbol",
     "Title": "SEC Filings Company Search By Symbol API",
+    "Category": "Sec Filings",
     "Path": "/stable/sec-filings-company-search/symbol",
     "SampleUrl": "https://financialmodelingprep.com/stable/sec-filings-company-search/symbol?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "filingDate"
   },
   {
     "MethodName": "secFilingsCompanySearchByCik",
     "Slug": "company-search-by-cik",
     "Title": "SEC Filings Company Search By CIK API",
+    "Category": "Sec Filings",
     "Path": "/stable/sec-filings-company-search/cik",
     "SampleUrl": "https://financialmodelingprep.com/stable/sec-filings-company-search/cik?cik=0000320193",
     "Parameters": [
       "cik"
-    ]
+    ],
+    "RequiredParameters": [
+      "cik"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "filingDate"
   },
   {
     "MethodName": "secCompanyFullProfile",
     "Slug": "sec-company-full-profile",
     "Title": "SEC Company Full Profile API",
+    "Category": "Sec Filings",
     "Path": "/stable/sec-profile",
     "SampleUrl": "https://financialmodelingprep.com/stable/sec-profile?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "industryClassificationList",
     "Slug": "industry-classification-list",
     "Title": "Industry Classification List API",
+    "Category": "Sec Filings",
     "Path": "/stable/standard-industrial-classification-list",
     "SampleUrl": "https://financialmodelingprep.com/stable/standard-industrial-classification-list",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "industryClassificationSearch",
     "Slug": "industry-classification-search",
     "Title": "Industry Classification Search API",
+    "Category": "Sec Filings",
     "Path": "/stable/industry-classification-search",
     "SampleUrl": "https://financialmodelingprep.com/stable/industry-classification-search",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "allIndustryClassification",
     "Slug": "all-industry-classification",
     "Title": "All Industry Classification API",
+    "Category": "Sec Filings",
     "Path": "/stable/all-industry-classification",
     "SampleUrl": "https://financialmodelingprep.com/stable/all-industry-classification",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "latestInsiderTrading",
     "Slug": "latest-insider-trade",
     "Title": "Latest Insider Trading API",
+    "Category": "Insider Trades",
     "Path": "/stable/insider-trading/latest",
     "SampleUrl": "https://financialmodelingprep.com/stable/insider-trading/latest?page=0&limit=100",
     "Parameters": [
       "page",
       "limit"
-    ]
+    ],
+    "RequiredParameters": [
+      "page",
+      "limit"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": true,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "searchInsiderTrades",
     "Slug": "search-insider-trades",
     "Title": "Search Insider Trades API",
+    "Category": "Insider Trades",
     "Path": "/stable/insider-trading/search",
     "SampleUrl": "https://financialmodelingprep.com/stable/insider-trading/search?page=0&limit=100",
     "Parameters": [
       "page",
       "limit"
-    ]
+    ],
+    "RequiredParameters": [
+      "page",
+      "limit"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": true,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "searchInsiderTradesByReportingName",
     "Slug": "search-reporting-name",
     "Title": "Search Insider Trades by Reporting Name API",
+    "Category": "Insider Trades",
     "Path": "/stable/insider-trading/reporting-name",
     "SampleUrl": "https://financialmodelingprep.com/stable/insider-trading/reporting-name?name=Zuckerberg",
     "Parameters": [
       "name"
-    ]
+    ],
+    "RequiredParameters": [
+      "name"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "allInsiderTransactionTypes",
     "Slug": "all-transaction-types",
     "Title": "All Insider Transaction Types API",
+    "Category": "Insider Trades",
     "Path": "/stable/insider-trading-transaction-type",
     "SampleUrl": "https://financialmodelingprep.com/stable/insider-trading-transaction-type",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "insiderTradeStatistics",
     "Slug": "insider-trade-statistics",
     "Title": "Insider Trade Statistics API",
+    "Category": "Insider Trades",
     "Path": "/stable/insider-trading/statistics",
     "SampleUrl": "https://financialmodelingprep.com/stable/insider-trading/statistics?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "acquisitionOwnership",
     "Slug": "acquisition-ownership",
     "Title": "Acquisition Ownership API",
+    "Category": "Insider Trades",
     "Path": "/stable/acquisition-of-beneficial-ownership",
     "SampleUrl": "https://financialmodelingprep.com/stable/acquisition-of-beneficial-ownership?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "stockMarketIndexesList",
     "Slug": "indexes-list",
     "Title": "Stock Market Indexes List API",
+    "Category": "Indexes",
     "Path": "/stable/index-list",
     "SampleUrl": "https://financialmodelingprep.com/stable/index-list",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "indexQuote",
     "Slug": "index-quote",
     "Title": "Index Quote API",
+    "Category": "Indexes",
     "Path": "/stable/quote",
     "SampleUrl": "https://financialmodelingprep.com/stable/quote?symbol=^GSPC",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "indexShortQuote",
     "Slug": "index-quote-short",
     "Title": "Index Short Quote API",
+    "Category": "Indexes",
     "Path": "/stable/quote-short",
     "SampleUrl": "https://financialmodelingprep.com/stable/quote-short?symbol=^GSPC",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "allIndexQuotes",
     "Slug": "all-index-quotes",
     "Title": "All Index Quotes API",
+    "Category": "Indexes",
     "Path": "/stable/batch-index-quotes",
     "SampleUrl": "https://financialmodelingprep.com/stable/batch-index-quotes",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "historicalIndexLightChart",
     "Slug": "index-historical-price-eod-light",
     "Title": "Historical Index Light Chart API",
+    "Category": "Indexes",
     "Path": "/stable/historical-price-eod/light",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-price-eod/light?symbol=^GSPC",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "historicalIndexFullChart",
     "Slug": "index-historical-price-eod-full",
     "Title": "Historical Index Full Chart API",
+    "Category": "Indexes",
     "Path": "/stable/historical-price-eod/full",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-price-eod/full?symbol=^GSPC",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "get1MinuteIntervalIndexPrice",
     "Slug": "index-intraday-1-min",
     "Title": "1-Minute Interval Index Price API",
+    "Category": "Indexes",
     "Path": "/stable/historical-chart/1min",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/1min?symbol=^GSPC",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "get5MinuteIntervalIndexPrice",
     "Slug": "index-intraday-5-min",
     "Title": "5-Minute Interval Index Price API",
+    "Category": "Indexes",
     "Path": "/stable/historical-chart/5min",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/5min?symbol=^GSPC",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "get1HourIntervalIndexPrice",
     "Slug": "index-intraday-1-hour",
     "Title": "1-Hour Interval Index Price API",
+    "Category": "Indexes",
     "Path": "/stable/historical-chart/1hour",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/1hour?symbol=^GSPC",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "sP500Index",
     "Slug": "sp-500",
     "Title": "S&P 500 Index API",
+    "Category": "Indexes",
     "Path": "/stable/sp500-constituent",
     "SampleUrl": "https://financialmodelingprep.com/stable/sp500-constituent",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "nasdaqIndex",
     "Slug": "nasdaq",
     "Title": "Nasdaq Index API",
+    "Category": "Indexes",
     "Path": "/stable/nasdaq-constituent",
     "SampleUrl": "https://financialmodelingprep.com/stable/nasdaq-constituent",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "dowJones",
     "Slug": "dow-jones",
     "Title": "Dow Jones API",
+    "Category": "Indexes",
     "Path": "/stable/dowjones-constituent",
     "SampleUrl": "https://financialmodelingprep.com/stable/dowjones-constituent",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "historicalSP500",
     "Slug": "historical-sp-500",
     "Title": "Historical S&P 500 API",
+    "Category": "Indexes",
     "Path": "/stable/historical-sp500-constituent",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-sp500-constituent",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "historicalNasdaq",
     "Slug": "historical-nasdaq",
     "Title": "Historical Nasdaq API",
+    "Category": "Indexes",
     "Path": "/stable/historical-nasdaq-constituent",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-nasdaq-constituent",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "historicalDowJones",
     "Slug": "historical-dow-jones",
     "Title": "Historical Dow Jones API",
+    "Category": "Indexes",
     "Path": "/stable/historical-dowjones-constituent",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-dowjones-constituent",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "globalExchangeMarketHours",
     "Slug": "exchange-market-hours",
     "Title": "Global Exchange Market Hours API",
+    "Category": "Market Hours",
     "Path": "/stable/exchange-market-hours",
     "SampleUrl": "https://financialmodelingprep.com/stable/exchange-market-hours?exchange=NASDAQ",
     "Parameters": [
       "exchange"
-    ]
+    ],
+    "RequiredParameters": [
+      "exchange"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "holidaysByExchange",
     "Slug": "holidays-by-exchange",
     "Title": "Holidays By Exchange API",
+    "Category": "Market Hours",
     "Path": "/stable/holidays-by-exchange",
     "SampleUrl": "https://financialmodelingprep.com/stable/holidays-by-exchange?exchange=NASDAQ",
     "Parameters": [
       "exchange"
-    ]
+    ],
+    "RequiredParameters": [
+      "exchange"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "allExchangeMarketHours",
     "Slug": "all-exchange-market-hours",
     "Title": "All Exchange Market Hours API",
+    "Category": "Market Hours",
     "Path": "/stable/all-exchange-market-hours",
     "SampleUrl": "https://financialmodelingprep.com/stable/all-exchange-market-hours",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "commoditiesList",
     "Slug": "commodities-list",
     "Title": "Commodities List API",
+    "Category": "Commodity",
     "Path": "/stable/commodities-list",
     "SampleUrl": "https://financialmodelingprep.com/stable/commodities-list",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "commoditiesQuote",
     "Slug": "commodities-quote",
     "Title": "Commodities Quote API",
+    "Category": "Commodity",
     "Path": "/stable/quote",
     "SampleUrl": "https://financialmodelingprep.com/stable/quote?symbol=GCUSD",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "commoditiesQuoteShort",
     "Slug": "commodities-quote-short",
     "Title": "Commodities Quote Short API",
+    "Category": "Commodity",
     "Path": "/stable/quote-short",
     "SampleUrl": "https://financialmodelingprep.com/stable/quote-short?symbol=GCUSD",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "allCommoditiesQuotes",
     "Slug": "all-commodities-quotes",
     "Title": "All Commodities Quotes API",
+    "Category": "Commodity",
     "Path": "/stable/batch-commodity-quotes",
     "SampleUrl": "https://financialmodelingprep.com/stable/batch-commodity-quotes",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "lightChart",
     "Slug": "commodities-historical-price-eod-light",
     "Title": "Light Chart API",
+    "Category": "Commodity",
     "Path": "/stable/historical-price-eod/light",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-price-eod/light?symbol=GCUSD",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "fullChart",
     "Slug": "commodities-historical-price-eod-full",
     "Title": "Full Chart API",
+    "Category": "Commodity",
     "Path": "/stable/historical-price-eod/full",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-price-eod/full?symbol=GCUSD",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "get1MinuteIntervalCommoditiesChart",
     "Slug": "commodities-intraday-1-min",
     "Title": "1-Minute Interval Commodities Chart API",
+    "Category": "Commodity",
     "Path": "/stable/historical-chart/1min",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/1min?symbol=GCUSD",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "get5MinuteIntervalCommoditiesChart",
     "Slug": "commodities-intraday-5-min",
     "Title": "5-Minute Interval Commodities Chart API",
+    "Category": "Commodity",
     "Path": "/stable/historical-chart/5min",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/5min?symbol=GCUSD",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "get1HourIntervalCommoditiesChart",
     "Slug": "commodities-intraday-1-hour",
     "Title": "1-Hour Interval Commodities Chart API",
+    "Category": "Commodity",
     "Path": "/stable/historical-chart/1hour",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/1hour?symbol=GCUSD",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "dcfValuation",
     "Slug": "dcf-advanced",
     "Title": "DCF Valuation API",
+    "Category": "Discounted Cash Flow",
     "Path": "/stable/discounted-cash-flow",
     "SampleUrl": "https://financialmodelingprep.com/stable/discounted-cash-flow?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "leveredDcf",
     "Slug": "dcf-levered",
     "Title": "Levered DCF API",
+    "Category": "Discounted Cash Flow",
     "Path": "/stable/levered-discounted-cash-flow",
     "SampleUrl": "https://financialmodelingprep.com/stable/levered-discounted-cash-flow?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "customDcfAdvanced",
     "Slug": "custom-dcf-advanced",
     "Title": "Custom DCF Advanced API",
+    "Category": "Discounted Cash Flow",
     "Path": "/stable/custom-discounted-cash-flow",
     "SampleUrl": "https://financialmodelingprep.com/stable/custom-discounted-cash-flow?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "customDcfLevered",
     "Slug": "custom-dcf-levered",
     "Title": "Custom DCF Levered API",
+    "Category": "Discounted Cash Flow",
     "Path": "/stable/custom-levered-discounted-cash-flow",
     "SampleUrl": "https://financialmodelingprep.com/stable/custom-levered-discounted-cash-flow?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "forexCurrencyPairs",
     "Slug": "forex-list",
     "Title": "Forex Currency Pairs API",
+    "Category": "Forex",
     "Path": "/stable/forex-list",
     "SampleUrl": "https://financialmodelingprep.com/stable/forex-list",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "forexQuote",
     "Slug": "forex-quote",
     "Title": "Forex Quote API",
+    "Category": "Forex",
     "Path": "/stable/quote",
     "SampleUrl": "https://financialmodelingprep.com/stable/quote?symbol=EURUSD",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "forexShortQuote",
     "Slug": "forex-quote-short",
     "Title": "Forex Short Quote API",
+    "Category": "Forex",
     "Path": "/stable/quote-short",
     "SampleUrl": "https://financialmodelingprep.com/stable/quote-short?symbol=EURUSD",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "batchForexQuotes",
     "Slug": "all-forex-quotes",
     "Title": "Batch Forex Quotes API",
+    "Category": "Forex",
     "Path": "/stable/batch-forex-quotes",
     "SampleUrl": "https://financialmodelingprep.com/stable/batch-forex-quotes",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "historicalForexLightChart",
     "Slug": "forex-historical-price-eod-light",
     "Title": "Historical Forex Light Chart API",
+    "Category": "Forex",
     "Path": "/stable/historical-price-eod/light",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-price-eod/light?symbol=EURUSD",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "historicalForexFullChart",
     "Slug": "forex-historical-price-eod-full",
     "Title": "Historical Forex Full Chart API",
+    "Category": "Forex",
     "Path": "/stable/historical-price-eod/full",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-price-eod/full?symbol=EURUSD",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "get1MinuteIntervalForexChart",
     "Slug": "forex-intraday-1-min",
     "Title": "1-Minute Interval Forex Chart API",
+    "Category": "Forex",
     "Path": "/stable/historical-chart/1min",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/1min?symbol=EURUSD",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "get5MinuteIntervalForexChart",
     "Slug": "forex-intraday-5-min",
     "Title": "5-Minute Interval Forex Chart API",
+    "Category": "Forex",
     "Path": "/stable/historical-chart/5min",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/5min?symbol=EURUSD",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "get1HourIntervalForexChart",
     "Slug": "forex-intraday-1-hour",
     "Title": "1-Hour Interval Forex Chart API",
+    "Category": "Forex",
     "Path": "/stable/historical-chart/1hour",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/1hour?symbol=EURUSD",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "cryptocurrencyList",
     "Slug": "cryptocurrency-list",
     "Title": "Cryptocurrency List API",
+    "Category": "Crypto",
     "Path": "/stable/cryptocurrency-list",
     "SampleUrl": "https://financialmodelingprep.com/stable/cryptocurrency-list",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "fullCryptocurrencyQuote",
     "Slug": "cryptocurrency-quote",
     "Title": "Full Cryptocurrency Quote API",
+    "Category": "Crypto",
     "Path": "/stable/quote",
     "SampleUrl": "https://financialmodelingprep.com/stable/quote?symbol=BTCUSD",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "cryptocurrencyQuoteShort",
     "Slug": "cryptocurrency-quote-short",
     "Title": "Cryptocurrency Quote Short API",
+    "Category": "Crypto",
     "Path": "/stable/quote-short",
     "SampleUrl": "https://financialmodelingprep.com/stable/quote-short?symbol=BTCUSD",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "allCryptocurrenciesQuotes",
     "Slug": "all-cryptocurrency-quotes",
     "Title": "All Cryptocurrencies Quotes API",
+    "Category": "Crypto",
     "Path": "/stable/batch-crypto-quotes",
     "SampleUrl": "https://financialmodelingprep.com/stable/batch-crypto-quotes",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "historicalCryptocurrencyLightChart",
     "Slug": "cryptocurrency-historical-price-eod-light",
     "Title": "Historical Cryptocurrency Light Chart API",
+    "Category": "Crypto",
     "Path": "/stable/historical-price-eod/light",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-price-eod/light?symbol=BTCUSD",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "historicalCryptocurrencyFullChart",
     "Slug": "cryptocurrency-historical-price-eod-full",
     "Title": "Historical Cryptocurrency Full Chart API",
+    "Category": "Crypto",
     "Path": "/stable/historical-price-eod/full",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-price-eod/full?symbol=BTCUSD",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "get1MinuteIntervalCryptocurrencyData",
     "Slug": "cryptocurrency-intraday-1-min",
     "Title": "1-Minute Interval Cryptocurrency Data API",
+    "Category": "Crypto",
     "Path": "/stable/historical-chart/1min",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/1min?symbol=BTCUSD",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "get5MinuteIntervalCryptocurrencyData",
     "Slug": "cryptocurrency-intraday-5-min",
     "Title": "5-Minute Interval Cryptocurrency Data API",
+    "Category": "Crypto",
     "Path": "/stable/historical-chart/5min",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/5min?symbol=BTCUSD",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "get1HourIntervalCryptocurrencyData",
     "Slug": "cryptocurrency-intraday-1-hour",
     "Title": "1-Hour Interval Cryptocurrency Data API",
+    "Category": "Crypto",
     "Path": "/stable/historical-chart/1hour",
     "SampleUrl": "https://financialmodelingprep.com/stable/historical-chart/1hour?symbol=BTCUSD",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "latestSenateFinancialDisclosures",
     "Slug": "senate-latest",
     "Title": "Latest Senate Financial Disclosures API",
+    "Category": "Senate",
     "Path": "/stable/senate-latest",
     "SampleUrl": "https://financialmodelingprep.com/stable/senate-latest?page=0&limit=100",
     "Parameters": [
       "page",
       "limit"
-    ]
+    ],
+    "RequiredParameters": [
+      "page",
+      "limit"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": true,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "latestHouseFinancialDisclosures",
     "Slug": "house-latest",
     "Title": "Latest House Financial Disclosures API",
+    "Category": "Senate",
     "Path": "/stable/house-latest",
     "SampleUrl": "https://financialmodelingprep.com/stable/house-latest?page=0&limit=100",
     "Parameters": [
       "page",
       "limit"
-    ]
+    ],
+    "RequiredParameters": [
+      "page",
+      "limit"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": true,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "senateTradingActivity",
     "Slug": "senate-trading",
     "Title": "Senate Trading Activity API",
+    "Category": "Senate",
     "Path": "/stable/senate-trades",
     "SampleUrl": "https://financialmodelingprep.com/stable/senate-trades?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "senateTradesByName",
     "Slug": "senate-trading-by-name",
     "Title": "Senate Trades By Name API",
+    "Category": "Senate",
     "Path": "/stable/senate-trades-by-name",
     "SampleUrl": "https://financialmodelingprep.com/stable/senate-trades-by-name?name=Jerry",
     "Parameters": [
       "name"
-    ]
+    ],
+    "RequiredParameters": [
+      "name"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "uSHouseTrades",
     "Slug": "house-trading",
     "Title": "U.S. House Trades API",
+    "Category": "Senate",
     "Path": "/stable/house-trades",
     "SampleUrl": "https://financialmodelingprep.com/stable/house-trades?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "houseTradesByName",
     "Slug": "house-trading-by-name",
     "Title": "House Trades By Name API",
+    "Category": "Senate",
     "Path": "/stable/house-trades-by-name",
     "SampleUrl": "https://financialmodelingprep.com/stable/house-trades-by-name?name=James",
     "Parameters": [
       "name"
-    ]
+    ],
+    "RequiredParameters": [
+      "name"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "esgInvestmentSearch",
     "Slug": "esg-search",
     "Title": "ESG Investment Search API",
+    "Category": "ESG",
     "Path": "/stable/esg-disclosures",
     "SampleUrl": "https://financialmodelingprep.com/stable/esg-disclosures?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "esgRatings",
     "Slug": "esg-ratings",
     "Title": "ESG Ratings API",
+    "Category": "ESG",
     "Path": "/stable/esg-ratings",
     "SampleUrl": "https://financialmodelingprep.com/stable/esg-ratings?symbol=AAPL",
     "Parameters": [
       "symbol"
-    ]
+    ],
+    "RequiredParameters": [
+      "symbol"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "esgBenchmarkComparison",
     "Slug": "esg-benchmark",
     "Title": "ESG Benchmark Comparison API",
+    "Category": "ESG",
     "Path": "/stable/esg-benchmark",
     "SampleUrl": "https://financialmodelingprep.com/stable/esg-benchmark",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "cotReport",
     "Slug": "cot-report",
     "Title": "COT Report API",
+    "Category": "Commitment Of Traders",
     "Path": "/stable/commitment-of-traders-report",
     "SampleUrl": "https://financialmodelingprep.com/stable/commitment-of-traders-report",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "cotAnalysisByDates",
     "Slug": "cot-report-analysis",
     "Title": "COT Analysis By Dates API",
+    "Category": "Commitment Of Traders",
     "Path": "/stable/commitment-of-traders-analysis",
     "SampleUrl": "https://financialmodelingprep.com/stable/commitment-of-traders-analysis",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "cotReportList",
     "Slug": "cot-report-list",
     "Title": "COT Report List API",
+    "Category": "Commitment Of Traders",
     "Path": "/stable/commitment-of-traders-list",
     "SampleUrl": "https://financialmodelingprep.com/stable/commitment-of-traders-list",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "latestCrowdfundingCampaigns",
     "Slug": "latest-crowdfunding",
     "Title": "Latest Crowdfunding Campaigns API",
+    "Category": "Fundraisers",
     "Path": "/stable/crowdfunding-offerings-latest",
     "SampleUrl": "https://financialmodelingprep.com/stable/crowdfunding-offerings-latest?page=0&limit=100",
     "Parameters": [
       "page",
       "limit"
-    ]
+    ],
+    "RequiredParameters": [
+      "page",
+      "limit"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": true,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "crowdfundingCampaignSearch",
     "Slug": "crowdfunding-search",
     "Title": "Crowdfunding Campaign Search API",
+    "Category": "Fundraisers",
     "Path": "/stable/crowdfunding-offerings-search",
     "SampleUrl": "https://financialmodelingprep.com/stable/crowdfunding-offerings-search?name=enotap",
     "Parameters": [
       "name"
-    ]
+    ],
+    "RequiredParameters": [
+      "name"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "crowdfundingByCik",
     "Slug": "crowdfunding-by-cik",
     "Title": "Crowdfunding By CIK API",
+    "Category": "Fundraisers",
     "Path": "/stable/crowdfunding-offerings",
     "SampleUrl": "https://financialmodelingprep.com/stable/crowdfunding-offerings?cik=0001916078",
     "Parameters": [
       "cik"
-    ]
+    ],
+    "RequiredParameters": [
+      "cik"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "equityOfferingUpdates",
     "Slug": "latest-equity-offering",
     "Title": "Equity Offering Updates API",
+    "Category": "Fundraisers",
     "Path": "/stable/fundraising-latest",
     "SampleUrl": "https://financialmodelingprep.com/stable/fundraising-latest?page=0&limit=10",
     "Parameters": [
       "page",
       "limit"
-    ]
+    ],
+    "RequiredParameters": [
+      "page",
+      "limit"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": true,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "equityOfferingSearch",
     "Slug": "equity-offering-search",
     "Title": "Equity Offering Search API",
+    "Category": "Fundraisers",
     "Path": "/stable/fundraising-search",
     "SampleUrl": "https://financialmodelingprep.com/stable/fundraising-search?name=NJOY",
     "Parameters": [
       "name"
-    ]
+    ],
+    "RequiredParameters": [
+      "name"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "equityOfferingByCik",
     "Slug": "equity-offering-by-cik",
     "Title": "Equity Offering By CIK API",
+    "Category": "Fundraisers",
     "Path": "/stable/fundraising",
     "SampleUrl": "https://financialmodelingprep.com/stable/fundraising?cik=0001547416",
     "Parameters": [
       "cik"
-    ]
+    ],
+    "RequiredParameters": [
+      "cik"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "companyProfileBulk",
     "Slug": "profile-bulk",
     "Title": "Company Profile Bulk API",
+    "Category": "Bulk",
     "Path": "/stable/profile-bulk",
     "SampleUrl": "https://financialmodelingprep.com/stable/profile-bulk?part=0",
     "Parameters": [
       "part"
-    ]
+    ],
+    "RequiredParameters": [
+      "part"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "stockRatingBulk",
     "Slug": "rating-bulk",
     "Title": "Stock Rating Bulk API",
+    "Category": "Bulk",
     "Path": "/stable/rating-bulk",
     "SampleUrl": "https://financialmodelingprep.com/stable/rating-bulk",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "dcfValuationsBulk",
     "Slug": "dcf-bulk",
     "Title": "DCF Valuations Bulk API",
+    "Category": "Bulk",
     "Path": "/stable/dcf-bulk",
     "SampleUrl": "https://financialmodelingprep.com/stable/dcf-bulk",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "financialScoresBulk",
     "Slug": "scores-bulk",
     "Title": "Financial Scores Bulk API",
+    "Category": "Bulk",
     "Path": "/stable/scores-bulk",
     "SampleUrl": "https://financialmodelingprep.com/stable/scores-bulk",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "priceTargetSummaryBulk",
     "Slug": "price-target-summary-bulk",
     "Title": "Price Target Summary Bulk API",
+    "Category": "Bulk",
     "Path": "/stable/price-target-summary-bulk",
     "SampleUrl": "https://financialmodelingprep.com/stable/price-target-summary-bulk",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "etfHolderBulk",
     "Slug": "etf-holder-bulk",
     "Title": "ETF Holder Bulk API",
+    "Category": "Bulk",
     "Path": "/stable/etf-holder-bulk",
     "SampleUrl": "https://financialmodelingprep.com/stable/etf-holder-bulk?part=1",
     "Parameters": [
       "part"
-    ]
+    ],
+    "RequiredParameters": [
+      "part"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "upgradesDowngradesConsensusBulk",
     "Slug": "upgrades-downgrades-consensus-bulk",
     "Title": "Upgrades Downgrades Consensus Bulk API",
+    "Category": "Bulk",
     "Path": "/stable/upgrades-downgrades-consensus-bulk",
     "SampleUrl": "https://financialmodelingprep.com/stable/upgrades-downgrades-consensus-bulk",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "keyMetricsTtmBulk",
     "Slug": "key-metrics-ttm-bulk",
     "Title": "Key Metrics TTM Bulk API",
+    "Category": "Bulk",
     "Path": "/stable/key-metrics-ttm-bulk",
     "SampleUrl": "https://financialmodelingprep.com/stable/key-metrics-ttm-bulk",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "ratiosTtmBulk",
     "Slug": "ratios-ttm-bulk",
     "Title": "Ratios TTM Bulk API",
+    "Category": "Bulk",
     "Path": "/stable/ratios-ttm-bulk",
     "SampleUrl": "https://financialmodelingprep.com/stable/ratios-ttm-bulk",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "stockPeersBulk",
     "Slug": "peers-bulk",
     "Title": "Stock Peers Bulk API",
+    "Category": "Bulk",
     "Path": "/stable/peers-bulk",
     "SampleUrl": "https://financialmodelingprep.com/stable/peers-bulk",
-    "Parameters": []
+    "Parameters": [],
+    "RequiredParameters": [],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "earningsSurprisesBulk",
     "Slug": "earnings-surprises-bulk",
     "Title": "Earnings Surprises Bulk API",
+    "Category": "Bulk",
     "Path": "/stable/earnings-surprises-bulk",
     "SampleUrl": "https://financialmodelingprep.com/stable/earnings-surprises-bulk?year=2025",
     "Parameters": [
       "year"
-    ]
+    ],
+    "RequiredParameters": [
+      "year"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   },
   {
     "MethodName": "incomeStatementBulk",
     "Slug": "income-statement-bulk",
     "Title": "Income Statement Bulk API",
+    "Category": "Bulk",
     "Path": "/stable/income-statement-bulk",
     "SampleUrl": "https://financialmodelingprep.com/stable/income-statement-bulk?year=2025&period=Q1",
     "Parameters": [
       "year",
       "period"
-    ]
+    ],
+    "RequiredParameters": [
+      "year",
+      "period"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "incomeStatementGrowthBulk",
     "Slug": "income-statement-growth-bulk",
     "Title": "Income Statement Growth Bulk API",
+    "Category": "Bulk",
     "Path": "/stable/income-statement-growth-bulk",
     "SampleUrl": "https://financialmodelingprep.com/stable/income-statement-growth-bulk?year=2025&period=Q1",
     "Parameters": [
       "year",
       "period"
-    ]
+    ],
+    "RequiredParameters": [
+      "year",
+      "period"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "balanceSheetStatementBulk",
     "Slug": "balance-sheet-statement-bulk",
     "Title": "Balance Sheet Statement Bulk API",
+    "Category": "Bulk",
     "Path": "/stable/balance-sheet-statement-bulk",
     "SampleUrl": "https://financialmodelingprep.com/stable/balance-sheet-statement-bulk?year=2025&period=Q1",
     "Parameters": [
       "year",
       "period"
-    ]
+    ],
+    "RequiredParameters": [
+      "year",
+      "period"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "balanceSheetStatementGrowthBulk",
     "Slug": "balance-sheet-statement-growth-bulk",
     "Title": "Balance Sheet Statement Growth Bulk API",
+    "Category": "Bulk",
     "Path": "/stable/balance-sheet-statement-growth-bulk",
     "SampleUrl": "https://financialmodelingprep.com/stable/balance-sheet-statement-growth-bulk?year=2025&period=Q1",
     "Parameters": [
       "year",
       "period"
-    ]
+    ],
+    "RequiredParameters": [
+      "year",
+      "period"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "cashFlowStatementBulk",
     "Slug": "cash-flow-statement-bulk",
     "Title": "Cash Flow Statement Bulk API",
+    "Category": "Bulk",
     "Path": "/stable/cash-flow-statement-bulk",
     "SampleUrl": "https://financialmodelingprep.com/stable/cash-flow-statement-bulk?year=2025&period=Q1",
     "Parameters": [
       "year",
       "period"
-    ]
+    ],
+    "RequiredParameters": [
+      "year",
+      "period"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "cashFlowStatementGrowthBulk",
     "Slug": "cash-flow-statement-growth-bulk",
     "Title": "Cash Flow Statement Growth Bulk API",
+    "Category": "Bulk",
     "Path": "/stable/cash-flow-statement-growth-bulk",
     "SampleUrl": "https://financialmodelingprep.com/stable/cash-flow-statement-growth-bulk?year=2025&period=Q1",
     "Parameters": [
       "year",
       "period"
-    ]
+    ],
+    "RequiredParameters": [
+      "year",
+      "period"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": ""
   },
   {
     "MethodName": "eodBulk",
     "Slug": "eod-bulk",
     "Title": "Eod Bulk API",
+    "Category": "Bulk",
     "Path": "/stable/eod-bulk",
     "SampleUrl": "https://financialmodelingprep.com/stable/eod-bulk?date=2024-10-22",
     "Parameters": [
       "date"
-    ]
+    ],
+    "RequiredParameters": [
+      "date"
+    ],
+    "OptionalParameters": [],
+    "HasPagination": false,
+    "DateFieldHint": "date"
   }
 ]

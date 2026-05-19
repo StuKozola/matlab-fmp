@@ -53,6 +53,17 @@ elseif iscell(payload) && all(cellfun(@isstruct, payload))
 else
     tbl = table(payload, VariableNames="Value");
 end
+
+tbl = annotateTable(tbl);
+end
+
+function tbl = annotateTable(tbl)
+names = string(tbl.Properties.VariableNames);
+if isempty(names)
+    return
+end
+
+tbl.Properties.VariableDescriptions = cellstr(names);
 end
 
 function [tf, tt] = tryTimetable(tbl)

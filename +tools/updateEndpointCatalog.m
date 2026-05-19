@@ -26,7 +26,9 @@ anchorPattern = '<a[^>]+href="/developer/docs/stable/([^"]+)"[^>]*>\s*<!-- -->\s
 [tokens, starts, ends] = regexp(html, anchorPattern, "tokens", "start", "end");
 
 entries = struct("MethodName", {}, "Slug", {}, "Title", {}, ...
-    "Path", {}, "SampleUrl", {}, "Parameters", {});
+    "Category", {}, "Path", {}, "SampleUrl", {}, "Parameters", {}, ...
+    "RequiredParameters", {}, "OptionalParameters", {}, ...
+    "HasPagination", {}, "DateFieldHint", {});
 usedNames = containers.Map;
 
 for k = 1:numel(tokens)
@@ -47,16 +49,34 @@ for k = 1:numel(tokens)
     path = extractStablePath(sampleUrl, slug);
     methodName = uniqueMethodName(methodNameFromTitle(title, slug), slug, usedNames);
     parameters = queryParameters(sampleUrl);
+    category = nearestCategory(html, starts(k));
+    dateFieldHint = inferDateFieldHint(title, slug, path);
 
     entries(end + 1).MethodName = char(methodName); %#ok<AGROW>
     entries(end).Slug = char(slug);
     entries(end).Title = char(title);
+    entries(end).Category = char(category);
     entries(end).Path = char(path);
     entries(end).SampleUrl = char(sampleUrl);
     entries(end).Parameters = cellstr(parameters);
+    entries(end).RequiredParameters = cellstr(parameters);
+    entries(end).OptionalParameters = {};
+    entries(end).HasPagination = any(ismember(lower(parameters), ["page", "limit"]));
+    entries(end).DateFieldHint = char(dateFieldHint);
 end
 
 catalog = entries;
+end
+
+function category = nearestCategory(html, anchorStart)
+prefix = extractBefore(html, anchorStart);
+tokens = regexp(prefix, '<h2[^>]*>\s*(.*?)\s*<span', "tokens");
+if isempty(tokens)
+    category = "Uncategorized";
+    return
+end
+
+category = htmlDecode(regexprep(string(tokens{end}{1}), "<[^>]+>", ""));
 end
 
 function text = htmlDecode(text)
@@ -94,6 +114,31 @@ for k = 1:numel(pairs)
     end
 end
 parameters = unique(parameters, "stable");
+end
+
+function dateFieldHint = inferDateFieldHint(title, slug, path)
+text = lower(title + " " + slug + " " + path);
+
+if contains(text, "timestamp")
+    dateFieldHint = "timestamp";
+elseif contains(text, "filing")
+    dateFieldHint = "filingDate";
+elseif contains(text, "accepted")
+    dateFieldHint = "acceptedDate";
+elseif contains(text, "payment")
+    dateFieldHint = "paymentDate";
+elseif contains(text, "record")
+    dateFieldHint = "recordDate";
+elseif contains(text, "declaration")
+    dateFieldHint = "declarationDate";
+elseif contains(text, "calendar") || contains(text, "historical") || ...
+        contains(text, "date") || contains(text, "eod") || ...
+        contains(text, "news") || contains(text, "transcript") || ...
+        contains(text, "trade") || contains(text, "earning")
+    dateFieldHint = "date";
+else
+    dateFieldHint = "";
+end
 end
 
 function methodName = methodNameFromTitle(title, slug)
@@ -209,8 +254,8 @@ lines(end + 1) = "# Generated FMP Endpoint Catalog";
 lines(end + 1) = "";
 lines(end + 1) = "Generated from https://site.financialmodelingprep.com/developer/docs.";
 lines(end + 1) = "";
-lines(end + 1) = "| Method | Title | Path | Example parameters |";
-lines(end + 1) = "| --- | --- | --- | --- |";
+lines(end + 1) = "| Method | Category | Title | Path | Example parameters | Date hint |";
+lines(end + 1) = "| --- | --- | --- | --- | --- | --- |";
 for k = 1:numel(catalog)
     params = string(catalog(k).Parameters);
     if isempty(params)
@@ -219,8 +264,9 @@ for k = 1:numel(catalog)
         params = strjoin(params, ", ");
     end
     lines(end + 1) = "| `" + string(catalog(k).MethodName) + "` | " + ...
-        string(catalog(k).Title) + " | `" + string(catalog(k).Path) + ...
-        "` | " + params + " |"; %#ok<AGROW>
+        string(catalog(k).Category) + " | " + string(catalog(k).Title) + ...
+        " | `" + string(catalog(k).Path) + "` | " + params + ...
+        " | " + string(catalog(k).DateFieldHint) + " |"; %#ok<AGROW>
 end
 
 writeText(fullfile(docsFolder, "endpoints.md"), strjoin(lines, newline) + newline);

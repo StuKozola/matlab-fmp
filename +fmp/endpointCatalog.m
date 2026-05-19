@@ -19,8 +19,10 @@ if isempty(cachedCatalog)
         cachedCatalog.MethodName = string(cachedCatalog.MethodName);
         cachedCatalog.Slug = string(cachedCatalog.Slug);
         cachedCatalog.Title = string(cachedCatalog.Title);
+        cachedCatalog.Category = string(cachedCatalog.Category);
         cachedCatalog.Path = string(cachedCatalog.Path);
         cachedCatalog.SampleUrl = string(cachedCatalog.SampleUrl);
+        cachedCatalog.DateFieldHint = string(cachedCatalog.DateFieldHint);
     end
 end
 
