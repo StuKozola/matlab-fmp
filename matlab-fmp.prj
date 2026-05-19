@@ -1,0 +1,44 @@
+<deployment-project plugin="plugin.toolbox" plugin-version="1.0" target="target.toolbox" target-name="Package Toolbox">
+  <configuration target="target.toolbox">
+    <fileset.rootdir>
+      <file>${PROJECT_ROOT}</file>
+    </fileset.rootdir>
+    <fileset.depfun.included></fileset.depfun.included>
+    <param.matlabpath.excludes>
+      <item>/.github</item>
+      <item>/docs</item>
+      <item>/examples</item>
+      <item>/resources</item>
+      <item>/tests</item>
+      <item>/tools</item>
+      <item>/+fmp</item>
+      <item>/+tools</item>
+    </param.matlabpath.excludes>
+    <param.appname>matlab-fmp</param.appname>
+    <param.version>0.1.0</param.version>
+    <param.guid>stukozola-matlab-fmp</param.guid>
+    <param.authnamewatermark>Stu Kozola</param.authnamewatermark>
+    <param.email>stuart.kozola@gmail.com</param.email>
+    <param.company></param.company>
+    <param.summary>MATLAB client for Financial Modeling Prep data.</param.summary>
+    <param.description>Object-oriented MATLAB toolbox for the Financial Modeling Prep stable REST API.</param.description>
+    <param.screenshot></param.screenshot>
+    <param.output>${PROJECT_ROOT}/dist/matlab-fmp.mltbx</param.output>
+    <param.getting_started_guide>${PROJECT_ROOT}/examples/getStarted.m</param.getting_started_guide>
+    <param.release_start>R2024b</param.release_start>
+    <param.release_end>latest</param.release_end>
+    <param.release_current_only>false</param.release_current_only>
+    <param.compatiblity_windows>true</param.compatiblity_windows>
+    <param.compatiblity_linux>true</param.compatiblity_linux>
+    <param.compatiblity_macos>true</param.compatiblity_macos>
+    <param.compatiblity_matlabonline>true</param.compatiblity_matlabonline>
+    <param.exclude_filters>**/.git/**/*
+**/.github/**/*
+**/.buildtool/**/*
+**/dist/**/*
+**/.env
+**/.env.*
+**/*.asv
+**/*.m~</param.exclude_filters>
+  </configuration>
+</deployment-project>

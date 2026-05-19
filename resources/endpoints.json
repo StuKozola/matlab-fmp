@@ -151,11 +151,11 @@
       "page",
       "limit"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "page",
       "limit"
     ],
-    "OptionalParameters": [],
     "HasPagination": true,
     "DateFieldHint": ""
   },
@@ -342,11 +342,11 @@
       "page",
       "limit"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "page",
       "limit"
     ],
-    "OptionalParameters": [],
     "HasPagination": true,
     "DateFieldHint": ""
   },
@@ -463,11 +463,11 @@
       "page",
       "limit"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "page",
       "limit"
     ],
-    "OptionalParameters": [],
     "HasPagination": true,
     "DateFieldHint": ""
   },
@@ -482,11 +482,11 @@
       "page",
       "limit"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "page",
       "limit"
     ],
-    "OptionalParameters": [],
     "HasPagination": true,
     "DateFieldHint": ""
   },
@@ -864,11 +864,11 @@
       "page",
       "limit"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "page",
       "limit"
     ],
-    "OptionalParameters": [],
     "HasPagination": true,
     "DateFieldHint": ""
   },
@@ -1140,11 +1140,12 @@
       "period"
     ],
     "RequiredParameters": [
-      "symbol",
+      "symbol"
+    ],
+    "OptionalParameters": [
       "year",
       "period"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -1161,11 +1162,12 @@
       "period"
     ],
     "RequiredParameters": [
-      "symbol",
+      "symbol"
+    ],
+    "OptionalParameters": [
       "year",
       "period"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -1652,11 +1654,12 @@
       "quarter"
     ],
     "RequiredParameters": [
-      "symbol",
+      "symbol"
+    ],
+    "OptionalParameters": [
       "year",
       "quarter"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": "date"
   },
@@ -1701,11 +1704,11 @@
       "page",
       "limit"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "page",
       "limit"
     ],
-    "OptionalParameters": [],
     "HasPagination": true,
     "DateFieldHint": ""
   },
@@ -1720,11 +1723,11 @@
       "page",
       "limit"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "page",
       "limit"
     ],
-    "OptionalParameters": [],
     "HasPagination": true,
     "DateFieldHint": "date"
   },
@@ -1739,11 +1742,11 @@
       "page",
       "limit"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "page",
       "limit"
     ],
-    "OptionalParameters": [],
     "HasPagination": true,
     "DateFieldHint": "date"
   },
@@ -1758,11 +1761,11 @@
       "page",
       "limit"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "page",
       "limit"
     ],
-    "OptionalParameters": [],
     "HasPagination": true,
     "DateFieldHint": "date"
   },
@@ -1777,11 +1780,11 @@
       "page",
       "limit"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "page",
       "limit"
     ],
-    "OptionalParameters": [],
     "HasPagination": true,
     "DateFieldHint": "date"
   },
@@ -1796,11 +1799,11 @@
       "page",
       "limit"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "page",
       "limit"
     ],
-    "OptionalParameters": [],
     "HasPagination": true,
     "DateFieldHint": "date"
   },
@@ -1883,11 +1886,11 @@
       "page",
       "limit"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "page",
       "limit"
     ],
-    "OptionalParameters": [],
     "HasPagination": true,
     "DateFieldHint": "filingDate"
   },
@@ -1904,11 +1907,12 @@
       "quarter"
     ],
     "RequiredParameters": [
-      "cik",
+      "cik"
+    ],
+    "OptionalParameters": [
       "year",
       "quarter"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": "filingDate"
   },
@@ -1944,13 +1948,14 @@
       "limit"
     ],
     "RequiredParameters": [
-      "symbol",
+      "symbol"
+    ],
+    "OptionalParameters": [
       "year",
       "quarter",
       "page",
       "limit"
     ],
-    "OptionalParameters": [],
     "HasPagination": true,
     "DateFieldHint": "filingDate"
   },
@@ -1966,10 +1971,11 @@
       "page"
     ],
     "RequiredParameters": [
-      "cik",
+      "cik"
+    ],
+    "OptionalParameters": [
       "page"
     ],
-    "OptionalParameters": [],
     "HasPagination": true,
     "DateFieldHint": ""
   },
@@ -1986,11 +1992,12 @@
       "quarter"
     ],
     "RequiredParameters": [
-      "cik",
+      "cik"
+    ],
+    "OptionalParameters": [
       "year",
       "quarter"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -2007,11 +2014,12 @@
       "quarter"
     ],
     "RequiredParameters": [
-      "symbol",
+      "symbol"
+    ],
+    "OptionalParameters": [
       "year",
       "quarter"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -2026,11 +2034,11 @@
       "year",
       "quarter"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "year",
       "quarter"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -2048,12 +2056,13 @@
       "limit"
     ],
     "RequiredParameters": [
-      "symbol",
+      "symbol"
+    ],
+    "OptionalParameters": [
       "period",
       "page",
       "limit"
     ],
-    "OptionalParameters": [],
     "HasPagination": true,
     "DateFieldHint": ""
   },
@@ -2186,10 +2195,10 @@
     "Parameters": [
       "date"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "date"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -2203,10 +2212,10 @@
     "Parameters": [
       "date"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "date"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -2220,10 +2229,10 @@
     "Parameters": [
       "sector"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "sector"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": "date"
   },
@@ -2237,10 +2246,10 @@
     "Parameters": [
       "industry"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "industry"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": "date"
   },
@@ -2254,10 +2263,10 @@
     "Parameters": [
       "date"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "date"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -2271,10 +2280,10 @@
     "Parameters": [
       "date"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "date"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -2288,10 +2297,10 @@
     "Parameters": [
       "sector"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "sector"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": "date"
   },
@@ -2305,10 +2314,10 @@
     "Parameters": [
       "industry"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "industry"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": "date"
   },
@@ -2364,11 +2373,12 @@
       "timeframe"
     ],
     "RequiredParameters": [
-      "symbol",
+      "symbol"
+    ],
+    "OptionalParameters": [
       "periodLength",
       "timeframe"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -2385,11 +2395,12 @@
       "timeframe"
     ],
     "RequiredParameters": [
-      "symbol",
+      "symbol"
+    ],
+    "OptionalParameters": [
       "periodLength",
       "timeframe"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -2406,11 +2417,12 @@
       "timeframe"
     ],
     "RequiredParameters": [
-      "symbol",
+      "symbol"
+    ],
+    "OptionalParameters": [
       "periodLength",
       "timeframe"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -2427,11 +2439,12 @@
       "timeframe"
     ],
     "RequiredParameters": [
-      "symbol",
+      "symbol"
+    ],
+    "OptionalParameters": [
       "periodLength",
       "timeframe"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -2448,11 +2461,12 @@
       "timeframe"
     ],
     "RequiredParameters": [
-      "symbol",
+      "symbol"
+    ],
+    "OptionalParameters": [
       "periodLength",
       "timeframe"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -2469,11 +2483,12 @@
       "timeframe"
     ],
     "RequiredParameters": [
-      "symbol",
+      "symbol"
+    ],
+    "OptionalParameters": [
       "periodLength",
       "timeframe"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -2490,11 +2505,12 @@
       "timeframe"
     ],
     "RequiredParameters": [
-      "symbol",
+      "symbol"
+    ],
+    "OptionalParameters": [
       "periodLength",
       "timeframe"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -2511,11 +2527,12 @@
       "timeframe"
     ],
     "RequiredParameters": [
-      "symbol",
+      "symbol"
+    ],
+    "OptionalParameters": [
       "periodLength",
       "timeframe"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -2532,11 +2549,12 @@
       "timeframe"
     ],
     "RequiredParameters": [
-      "symbol",
+      "symbol"
+    ],
+    "OptionalParameters": [
       "periodLength",
       "timeframe"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -2655,11 +2673,12 @@
       "quarter"
     ],
     "RequiredParameters": [
-      "symbol",
+      "symbol"
+    ],
+    "OptionalParameters": [
       "year",
       "quarter"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -2710,13 +2729,13 @@
       "page",
       "limit"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "from",
       "to",
       "page",
       "limit"
     ],
-    "OptionalParameters": [],
     "HasPagination": true,
     "DateFieldHint": "filingDate"
   },
@@ -2733,13 +2752,13 @@
       "page",
       "limit"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "from",
       "to",
       "page",
       "limit"
     ],
-    "OptionalParameters": [],
     "HasPagination": true,
     "DateFieldHint": "filingDate"
   },
@@ -2758,13 +2777,14 @@
       "limit"
     ],
     "RequiredParameters": [
-      "formType",
+      "formType"
+    ],
+    "OptionalParameters": [
       "from",
       "to",
       "page",
       "limit"
     ],
-    "OptionalParameters": [],
     "HasPagination": true,
     "DateFieldHint": "filingDate"
   },
@@ -2783,13 +2803,14 @@
       "limit"
     ],
     "RequiredParameters": [
-      "symbol",
+      "symbol"
+    ],
+    "OptionalParameters": [
       "from",
       "to",
       "page",
       "limit"
     ],
-    "OptionalParameters": [],
     "HasPagination": true,
     "DateFieldHint": "filingDate"
   },
@@ -2808,13 +2829,14 @@
       "limit"
     ],
     "RequiredParameters": [
-      "cik",
+      "cik"
+    ],
+    "OptionalParameters": [
       "from",
       "to",
       "page",
       "limit"
     ],
-    "OptionalParameters": [],
     "HasPagination": true,
     "DateFieldHint": "filingDate"
   },
@@ -2828,10 +2850,10 @@
     "Parameters": [
       "company"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "company"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": "filingDate"
   },
@@ -2936,11 +2958,11 @@
       "page",
       "limit"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "page",
       "limit"
     ],
-    "OptionalParameters": [],
     "HasPagination": true,
     "DateFieldHint": "date"
   },
@@ -2955,11 +2977,11 @@
       "page",
       "limit"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "page",
       "limit"
     ],
-    "OptionalParameters": [],
     "HasPagination": true,
     "DateFieldHint": "date"
   },
@@ -3811,11 +3833,11 @@
       "page",
       "limit"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "page",
       "limit"
     ],
-    "OptionalParameters": [],
     "HasPagination": true,
     "DateFieldHint": ""
   },
@@ -3830,11 +3852,11 @@
       "page",
       "limit"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "page",
       "limit"
     ],
-    "OptionalParameters": [],
     "HasPagination": true,
     "DateFieldHint": ""
   },
@@ -4003,11 +4025,11 @@
       "page",
       "limit"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "page",
       "limit"
     ],
-    "OptionalParameters": [],
     "HasPagination": true,
     "DateFieldHint": ""
   },
@@ -4056,11 +4078,11 @@
       "page",
       "limit"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "page",
       "limit"
     ],
-    "OptionalParameters": [],
     "HasPagination": true,
     "DateFieldHint": "date"
   },
@@ -4108,10 +4130,10 @@
     "Parameters": [
       "part"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "part"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -4177,10 +4199,10 @@
     "Parameters": [
       "part"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "part"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -4246,10 +4268,10 @@
     "Parameters": [
       "year"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "year"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": "date"
   },
@@ -4264,11 +4286,11 @@
       "year",
       "period"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "year",
       "period"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -4283,11 +4305,11 @@
       "year",
       "period"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "year",
       "period"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -4302,11 +4324,11 @@
       "year",
       "period"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "year",
       "period"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -4321,11 +4343,11 @@
       "year",
       "period"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "year",
       "period"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -4340,11 +4362,11 @@
       "year",
       "period"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "year",
       "period"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -4359,11 +4381,11 @@
       "year",
       "period"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "year",
       "period"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": ""
   },
@@ -4377,10 +4399,10 @@
     "Parameters": [
       "date"
     ],
-    "RequiredParameters": [
+    "RequiredParameters": [],
+    "OptionalParameters": [
       "date"
     ],
-    "OptionalParameters": [],
     "HasPagination": false,
     "DateFieldHint": "date"
   }

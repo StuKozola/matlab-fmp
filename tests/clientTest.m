@@ -61,6 +61,8 @@ classdef clientTest < matlab.unittest.TestCase
             testCase.verifyTrue(any(catalog.Category == "Company Search"));
             testCase.verifyTrue(any(catalog.HasPagination));
             testCase.verifyTrue(any(catalog.DateFieldHint == "date"));
+            quoteRow = catalog(catalog.Slug == "quote", :);
+            testCase.verifyEqual(string(quoteRow.RequiredParameters{1}), "symbol");
             testCase.verifyTrue(istable(result));
         end
     end

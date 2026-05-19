@@ -49,6 +49,7 @@ for k = 1:numel(tokens)
     path = extractStablePath(sampleUrl, slug);
     methodName = uniqueMethodName(methodNameFromTitle(title, slug), slug, usedNames);
     parameters = queryParameters(sampleUrl);
+    [requiredParameters, optionalParameters] = classifyParameters(parameters, title, slug, path);
     category = nearestCategory(html, starts(k));
     dateFieldHint = inferDateFieldHint(title, slug, path);
 
@@ -59,8 +60,8 @@ for k = 1:numel(tokens)
     entries(end).Path = char(path);
     entries(end).SampleUrl = char(sampleUrl);
     entries(end).Parameters = cellstr(parameters);
-    entries(end).RequiredParameters = cellstr(parameters);
-    entries(end).OptionalParameters = {};
+    entries(end).RequiredParameters = cellstr(requiredParameters);
+    entries(end).OptionalParameters = cellstr(optionalParameters);
     entries(end).HasPagination = any(ismember(lower(parameters), ["page", "limit"]));
     entries(end).DateFieldHint = char(dateFieldHint);
 end
@@ -114,6 +115,26 @@ for k = 1:numel(pairs)
     end
 end
 parameters = unique(parameters, "stable");
+end
+
+function [requiredParameters, optionalParameters] = classifyParameters(parameters, title, slug, path)
+parameters = string(parameters);
+requiredNames = ["symbol", "symbols", "query", "cik", "cusip", "isin", ...
+    "exchange", "name", "formType"];
+optionalNames = ["page", "limit", "from", "to", "period", "year", ...
+    "quarter", "date", "part", "datatype"];
+
+lowerParameters = lower(parameters);
+requiredMask = ismember(lowerParameters, lower(requiredNames));
+optionalMask = ismember(lowerParameters, lower(optionalNames));
+
+text = lower(title + " " + slug + " " + path);
+if contains(text, "bulk")
+    optionalMask = optionalMask | ismember(lowerParameters, ["year", "period", "date", "part"]);
+end
+
+requiredParameters = parameters(requiredMask & ~optionalMask);
+optionalParameters = parameters(optionalMask | ~requiredMask);
 end
 
 function dateFieldHint = inferDateFieldHint(title, slug, path)
@@ -254,19 +275,25 @@ lines(end + 1) = "# Generated FMP Endpoint Catalog";
 lines(end + 1) = "";
 lines(end + 1) = "Generated from https://site.financialmodelingprep.com/developer/docs.";
 lines(end + 1) = "";
-lines(end + 1) = "| Method | Category | Title | Path | Example parameters | Date hint |";
-lines(end + 1) = "| --- | --- | --- | --- | --- | --- |";
+lines(end + 1) = "| Method | Category | Title | Path | Required | Optional/example | Date hint |";
+lines(end + 1) = "| --- | --- | --- | --- | --- | --- | --- |";
 for k = 1:numel(catalog)
-    params = string(catalog(k).Parameters);
-    if isempty(params)
-        params = "";
+    required = string(catalog(k).RequiredParameters);
+    optional = string(catalog(k).OptionalParameters);
+    if isempty(required)
+        required = "";
     else
-        params = strjoin(params, ", ");
+        required = strjoin(required, ", ");
+    end
+    if isempty(optional)
+        optional = "";
+    else
+        optional = strjoin(optional, ", ");
     end
     lines(end + 1) = "| `" + string(catalog(k).MethodName) + "` | " + ...
         string(catalog(k).Category) + " | " + string(catalog(k).Title) + ...
-        " | `" + string(catalog(k).Path) + "` | " + params + ...
-        " | " + string(catalog(k).DateFieldHint) + " |"; %#ok<AGROW>
+        " | `" + string(catalog(k).Path) + "` | " + required + ...
+        " | " + optional + " | " + string(catalog(k).DateFieldHint) + " |"; %#ok<AGROW>
 end
 
 writeText(fullfile(docsFolder, "endpoints.md"), strjoin(lines, newline) + newline);

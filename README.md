@@ -75,6 +75,19 @@ Optional live tests run only when `FMP_API_KEY` is available:
 results = runtests("tests/liveClientTest.m");
 ```
 
+GitHub Actions runs `buildtool package` on pushes and pull requests. The CI path uses mocked tests only and does not require an FMP API key.
+
+## Examples
+
+Focused examples live in `examples/`:
+
+- `financialStatementsWorkflow.m`
+- `historicalPricesWorkflow.m`
+- `screenerWorkflow.m`
+- `bulkDataWorkflow.m`
+- `analystEstimatesWorkflow.m`
+- `secFilingsWorkflow.m`
+
 ## Package
 
 Build a MATLAB toolbox artifact with:
@@ -84,3 +97,5 @@ buildtool package
 ```
 
 The package target writes `dist/matlab-fmp.mltbx`.
+
+The toolbox project file is `matlab-fmp.prj`. Pushing a tag like `v0.1.0` runs the release workflow, builds the toolbox in GitHub Actions, and attaches the `.mltbx` artifact to the GitHub release.
