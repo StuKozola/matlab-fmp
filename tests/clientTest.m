@@ -65,5 +65,68 @@ classdef clientTest < matlab.unittest.TestCase
             testCase.verifyEqual(string(quoteRow.RequiredParameters{1}), "symbol");
             testCase.verifyTrue(istable(result));
         end
+
+        function missingRequiredParameterErrors(testCase)
+            recorder = RequestRecorder(struct(symbol="AAPL", price=123.45));
+            client = fmp.Client(ApiKey="test-key", RequestFunction=@recorder.request);
+
+            testCase.verifyError(@() client.quote(), "fmp:MissingRequiredParameter");
+        end
+
+        function strictValidationRejectsUnknownParameter(testCase)
+            recorder = RequestRecorder(struct(symbol="AAPL", price=123.45));
+            client = fmp.Client( ...
+                ApiKey="test-key", ...
+                ParameterValidation="strict", ...
+                RequestFunction=@recorder.request);
+
+            testCase.verifyError( ...
+                @() client.quote(symbol="AAPL", extraParameter=1), ...
+                "fmp:UnknownParameter");
+        end
+
+        function allPagesCombinesPaginatedResponses(testCase)
+            firstPage = struct( ...
+                "symbol", {"AAPL"; "MSFT"}, ...
+                "marketCap", {1; 2});
+            secondPage = struct( ...
+                "symbol", {"NVDA"}, ...
+                "marketCap", {3});
+            emptyPage = struct("symbol", {}, "marketCap", {});
+            recorder = SequenceRequestRecorder({firstPage, secondPage, emptyPage});
+            client = fmp.Client(ApiKey="test-key", RequestFunction=@recorder.request);
+
+            result = client.allPages( ...
+                "stockScreener", ...
+                marketCapMoreThan=1000, ...
+                PageSize=2, ...
+                MaxPages=3);
+
+            testCase.verifyTrue(istable(result));
+            testCase.verifyEqual(height(result), 3);
+            testCase.verifyEqual(string(result.symbol), ["AAPL"; "MSFT"; "NVDA"]);
+            testCase.verifyEqual(recorder.CallCount, 3);
+            testCase.verifyEqual(string({recorder.ParamsHistory{1}.Name}), ...
+                ["marketCapMoreThan", "page", "limit"]);
+            testCase.verifyEqual(recorder.ParamsHistory{1}(2).Value, 0);
+            testCase.verifyEqual(recorder.ParamsHistory{2}(2).Value, 1);
+        end
+
+        function retriableErrorsAreRetried(testCase)
+            transientError = MException("fmp:RateLimit", "Too many requests.");
+            recorder = SequenceRequestRecorder({ ...
+                transientError, ...
+                struct(symbol="AAPL", price=123.45)});
+            client = fmp.Client( ...
+                ApiKey="test-key", ...
+                MaxRetries=1, ...
+                RetryDelay=seconds(0), ...
+                RequestFunction=@recorder.request);
+
+            result = client.quote(symbol="AAPL");
+
+            testCase.verifyTrue(istable(result));
+            testCase.verifyEqual(recorder.CallCount, 2);
+        end
     end
 end

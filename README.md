@@ -2,7 +2,7 @@
 
 MATLAB toolbox for working with [Financial Modeling Prep](https://site.financialmodelingprep.com/developer/docs) data.
 
-`matlab-fmp` targets MATLAB R2024b and newer. It provides a `fmp.Client` object, secure API key lookup, generated wrappers for the FMP stable REST API, and table/timetable-first outputs.
+`matlab-fmp` targets MATLAB R2024b and newer. It provides a `fmp.Client` object, secure API key lookup, generated wrappers for the FMP stable REST API, pagination helpers, retry handling, endpoint parameter validation, and table/timetable-first outputs.
 
 ## Install
 
@@ -48,12 +48,15 @@ client = fmp.Client;
 quote = client.quote(symbol="AAPL");
 prices = client.historicalPrices(symbol="AAPL", from=datetime(2024,1,1));
 income = client.incomeStatement(symbol="AAPL", period="annual");
+largeCaps = client.allPages("stockScreener", marketCapMoreThan=10e9, MaxPages=3);
 
 raw = client.endpoint("/stable/profile", symbol="MSFT", OutputFormat="raw");
 catalog = client.endpoints;
 ```
 
 By default, tabular responses are returned as `table`. Responses with a recognizable date or timestamp field are returned as `timetable`. Use `OutputFormat="raw"` to receive decoded JSON-compatible MATLAB structs.
+
+Advanced client options, including retries, pagination, and strict endpoint parameter validation, are documented in `docs/client-options.md`.
 
 ## Endpoint wrappers
 
@@ -81,6 +84,8 @@ results = runtests("tests/liveClientTest.m");
 
 GitHub Actions runs `buildtool package` on pushes and pull requests. The CI path uses mocked tests only and does not require an FMP API key.
 
+The live smoke workflow runs on a weekly schedule and can be run manually after the repository secret `FMP_API_KEY` is configured.
+
 ## Examples
 
 Focused examples live in `examples/`:
@@ -91,6 +96,9 @@ Focused examples live in `examples/`:
 - `bulkDataWorkflow.m`
 - `analystEstimatesWorkflow.m`
 - `secFilingsWorkflow.m`
+- `valuationWorkflow.m`
+
+Tutorial-style plain-text Live Scripts live in `docs/tutorials/`.
 
 ## Package
 
@@ -102,4 +110,6 @@ buildtool package
 
 The package target writes `dist/matlab-fmp.mltbx`.
 
-The toolbox project file is `matlab-fmp.prj`. Pushing a tag like `v0.1.1` runs the release workflow, builds the toolbox in GitHub Actions, and attaches the `.mltbx` artifact to the GitHub release.
+The toolbox project file is `matlab-fmp.prj`. Pushing a tag like `v0.2.0` runs the release workflow, builds the toolbox in GitHub Actions, and attaches the `.mltbx` artifact to the GitHub release.
+
+File Exchange submission notes are in `docs/file-exchange.md`.

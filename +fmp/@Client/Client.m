@@ -6,6 +6,9 @@ classdef Client
         OutputFormat (1,1) string = "auto"
         UseQueryApiKey (1,1) logical = false
         Timeout (1,1) duration = seconds(30)
+        MaxRetries (1,1) double {mustBeInteger, mustBeNonnegative} = 2
+        RetryDelay (1,1) duration = seconds(1)
+        ParameterValidation (1,1) string = "required"
     end
 
     properties (Access = private)
@@ -22,6 +25,9 @@ classdef Client
                 options.OutputFormat (1,1) string = "auto"
                 options.UseQueryApiKey (1,1) logical = false
                 options.Timeout (1,1) duration = seconds(30)
+                options.MaxRetries (1,1) double {mustBeInteger, mustBeNonnegative} = 2
+                options.RetryDelay (1,1) duration = seconds(1)
+                options.ParameterValidation (1,1) string = "required"
                 options.RequestFunction (1,1) function_handle = @fmp.internal.webRequest
             end
 
@@ -33,6 +39,10 @@ classdef Client
             obj.OutputFormat = fmp.internal.mustBeOutputFormat(options.OutputFormat);
             obj.UseQueryApiKey = options.UseQueryApiKey;
             obj.Timeout = options.Timeout;
+            obj.MaxRetries = options.MaxRetries;
+            obj.RetryDelay = options.RetryDelay;
+            obj.ParameterValidation = fmp.internal.mustBeParameterValidation( ...
+                options.ParameterValidation);
             obj.RequestFunction = options.RequestFunction;
         end
 

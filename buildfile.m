@@ -7,7 +7,7 @@ plan = buildplan(localfunctions);
 plan.DefaultTasks = "test";
 
 projectRoot = getProjectRoot();
-codeIssuePaths = fullfile(projectRoot, ["+fmp", "+tools", "examples", "tests"]);
+codeIssuePaths = fullfile(projectRoot, ["+fmp", "+tools", "docs", "examples", "tests"]);
 
 plan("check") = CodeIssuesTask(codeIssuePaths);
 plan("package").Dependencies = ["test", "check"];
@@ -20,6 +20,21 @@ projectRoot = getProjectRoot();
 restorePath = addProjectPaths(projectRoot); %#ok<NASGU>
 
 results = runtests(fullfile(projectRoot, "tests", "clientTest.m"));
+assertSuccess(results);
+end
+
+function liveTestTask(~)
+% Run live FMP API smoke tests.
+
+projectRoot = getProjectRoot();
+restorePath = addProjectPaths(projectRoot); %#ok<NASGU>
+
+if strlength(fmp.internal.resolveApiKey("")) == 0
+    error("fmp:MissingLiveApiKey", ...
+        "FMP_API_KEY is required for the liveTest build task.");
+end
+
+results = runtests(fullfile(projectRoot, "tests", "liveClientTest.m"));
 assertSuccess(results);
 end
 

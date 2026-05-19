@@ -8,13 +8,23 @@ if startsWith(pathOrName, "http")
         "Use a stable API path such as /stable/quote, not a full URL.");
 end
 
+catalog = fmp.endpointCatalog;
 if startsWith(pathOrName, "/")
+    matches = strcmpi(catalog.Path, pathOrName);
+    if any(matches)
+        row = catalog(find(matches, 1), :);
+        info = table2struct(row);
+        return
+    end
+
     info = struct("MethodName", "", "Slug", "", "Title", "", ...
-        "Path", pathOrName, "SampleUrl", "");
+        "Category", "", "Path", pathOrName, "SampleUrl", "", ...
+        "Parameters", {{}}, "RequiredParameters", {{}}, ...
+        "OptionalParameters", {{}}, "HasPagination", false, ...
+        "DateFieldHint", "");
     return
 end
 
-catalog = fmp.endpointCatalog;
 matches = strcmpi(catalog.MethodName, pathOrName) | strcmpi(catalog.Slug, pathOrName);
 if ~any(matches)
     error("fmp:UnknownEndpoint", ...
