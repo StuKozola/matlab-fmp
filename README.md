@@ -4,9 +4,13 @@ MATLAB toolbox for working with [Financial Modeling Prep](https://site.financial
 
 `matlab-fmp` targets MATLAB R2024b and newer. It provides a `fmp.Client` object, secure API key lookup, generated wrappers for the FMP stable REST API, and table/timetable-first outputs.
 
-## Install for development
+## Install
 
-Clone the repository, open MATLAB, and add the repo root to the path:
+Download `matlab-fmp.mltbx` from the latest GitHub release and open it in MATLAB:
+
+https://github.com/StuKozola/matlab-fmp/releases/latest
+
+For development, clone the repository, open MATLAB, and add the repo root to the path:
 
 ```matlab
 addpath("D:\matlab\fmp")
@@ -98,4 +102,4 @@ buildtool package
 
 The package target writes `dist/matlab-fmp.mltbx`.
 
-The toolbox project file is `matlab-fmp.prj`. Pushing a tag like `v0.1.0` runs the release workflow, builds the toolbox in GitHub Actions, and attaches the `.mltbx` artifact to the GitHub release.
+The toolbox project file is `matlab-fmp.prj`. Pushing a tag like `v0.1.1` runs the release workflow, builds the toolbox in GitHub Actions, and attaches the `.mltbx` artifact to the GitHub release.
