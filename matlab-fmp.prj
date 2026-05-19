@@ -15,7 +15,7 @@
       <item>/+tools</item>
     </param.matlabpath.excludes>
     <param.appname>matlab-fmp</param.appname>
-    <param.version>0.2.0</param.version>
+    <param.version>0.3.0</param.version>
     <param.guid>stukozola-matlab-fmp</param.guid>
     <param.authnamewatermark>Stu Kozola</param.authnamewatermark>
     <param.email>stuart.kozola@gmail.com</param.email>

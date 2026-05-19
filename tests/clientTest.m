@@ -128,5 +128,74 @@ classdef clientTest < matlab.unittest.TestCase
             testCase.verifyTrue(istable(result));
             testCase.verifyEqual(recorder.CallCount, 2);
         end
+
+        function endpointInfoReturnsParameterMetadata(testCase)
+            client = fmp.Client(ApiKey="test-key");
+
+            info = client.endpointInfo("quote");
+
+            testCase.verifyEqual(info.Slug, "quote");
+            testCase.verifyTrue(istable(info.ParameterTable));
+            testCase.verifyEqual(info.ParameterTable.Name, "symbol");
+            testCase.verifyTrue(info.ParameterTable.Required);
+        end
+
+        function peerComparisonRanksPeers(testCase)
+            payload = struct( ...
+                "symbol", {"MSFT"; "NVDA"; "GOOGL"}, ...
+                "companyName", {"Microsoft"; "NVIDIA"; "Alphabet"}, ...
+                "price", {400; 900; 150}, ...
+                "mktCap", {3; 5; 2});
+            recorder = RequestRecorder(payload);
+            client = fmp.Client(ApiKey="test-key", RequestFunction=@recorder.request);
+
+            result = client.peerComparison("AAPL", Top=2);
+
+            testCase.verifyEqual(result.PeerRank, [1; 2]);
+            testCase.verifyEqual(string(result.symbol), ["NVDA"; "MSFT"]);
+            testCase.verifyEqual(recorder.LastUrl, "https://financialmodelingprep.com/stable/stock-peers");
+        end
+
+        function statementSummaryComputesDerivedMetrics(testCase)
+            income = struct( ...
+                date={"2023-12-31"; "2024-12-31"}, ...
+                revenue={100; 125}, ...
+                netIncome={10; 15});
+            balance = struct( ...
+                date={"2023-12-31"; "2024-12-31"}, ...
+                totalAssets={200; 250}, ...
+                totalLiabilities={80; 100});
+            cashFlow = struct( ...
+                date={"2023-12-31"; "2024-12-31"}, ...
+                operatingCashFlow={20; 30}, ...
+                freeCashFlow={12; 20});
+            recorder = SequenceRequestRecorder({income, balance, cashFlow});
+            client = fmp.Client(ApiKey="test-key", RequestFunction=@recorder.request);
+
+            result = client.statementSummary("AAPL", Limit=2);
+
+            testCase.verifyTrue(istimetable(result));
+            testCase.verifyEqual(result.RevenueGrowth(2), 0.25, AbsTol=1e-12);
+            testCase.verifyEqual(result.NetMargin(2), 0.12, AbsTol=1e-12);
+            testCase.verifyEqual(result.FreeCashFlowMargin(2), 0.16, AbsTol=1e-12);
+            testCase.verifyEqual(result.DebtToAssets(2), 0.4, AbsTol=1e-12);
+        end
+
+        function factorScreenRanksCompanies(testCase)
+            payload = struct( ...
+                "symbol", {"AAPL"; "MSFT"; "NVDA"}, ...
+                "companyName", {"Apple"; "Microsoft"; "NVIDIA"}, ...
+                "marketCap", {4; 3; 5}, ...
+                "sector", {"Technology"; "Technology"; "Technology"});
+            recorder = RequestRecorder(payload);
+            client = fmp.Client(ApiKey="test-key", RequestFunction=@recorder.request);
+
+            result = client.factorScreen(Sector="Technology", MinMarketCap=1);
+
+            testCase.verifyEqual(result.FactorRank, [1; 2; 3]);
+            testCase.verifyEqual(string(result.symbol), ["NVDA"; "AAPL"; "MSFT"]);
+            testCase.verifyEqual(string({recorder.LastParams.Name}), ...
+                ["sector", "marketCapMoreThan", "limit"]);
+        end
     end
 end

@@ -48,3 +48,14 @@ client = fmp.Client(MaxRetries=4, RetryDelay=seconds(2));
 ```
 
 Non-transient API and validation errors are not retried.
+
+## Endpoint Metadata
+
+Use `endpointInfo` to inspect one endpoint by generated method name, slug, or stable API path:
+
+```matlab
+info = client.endpointInfo("quote");
+info.ParameterTable
+```
+
+The returned struct includes the FMP title, category, path, sample URL, required parameters, optional parameters, and a table-form parameter view.

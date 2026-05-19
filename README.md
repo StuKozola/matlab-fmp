@@ -1,8 +1,13 @@
 # matlab-fmp
 
+[![CI](https://github.com/StuKozola/matlab-fmp/actions/workflows/ci.yml/badge.svg)](https://github.com/StuKozola/matlab-fmp/actions/workflows/ci.yml)
+[![Live FMP Smoke Test](https://github.com/StuKozola/matlab-fmp/actions/workflows/live.yml/badge.svg)](https://github.com/StuKozola/matlab-fmp/actions/workflows/live.yml)
+[![Latest Release](https://img.shields.io/github/v/release/StuKozola/matlab-fmp)](https://github.com/StuKozola/matlab-fmp/releases/latest)
+[![License](https://img.shields.io/github/license/StuKozola/matlab-fmp)](LICENSE)
+
 MATLAB toolbox for working with [Financial Modeling Prep](https://site.financialmodelingprep.com/developer/docs) data.
 
-`matlab-fmp` targets MATLAB R2024b and newer. It provides a `fmp.Client` object, secure API key lookup, generated wrappers for the FMP stable REST API, pagination helpers, retry handling, endpoint parameter validation, and table/timetable-first outputs.
+`matlab-fmp` targets MATLAB R2024b and newer. It provides a `fmp.Client` object, secure API key lookup, generated wrappers for the FMP stable REST API, pagination helpers, retry handling, endpoint parameter validation, higher-level finance workflows, and table/timetable-first outputs.
 
 ## Install
 
@@ -49,9 +54,13 @@ quote = client.quote(symbol="AAPL");
 prices = client.historicalPrices(symbol="AAPL", from=datetime(2024,1,1));
 income = client.incomeStatement(symbol="AAPL", period="annual");
 largeCaps = client.allPages("stockScreener", marketCapMoreThan=10e9, MaxPages=3);
+peers = client.peerComparison("AAPL");
+summary = client.statementSummary("AAPL");
+screen = client.factorScreen(Sector="Technology", MinMarketCap=10e9);
 
 raw = client.endpoint("/stable/profile", symbol="MSFT", OutputFormat="raw");
 catalog = client.endpoints;
+quoteInfo = client.endpointInfo("quote");
 ```
 
 By default, tabular responses are returned as `table`. Responses with a recognizable date or timestamp field are returned as `timetable`. Use `OutputFormat="raw"` to receive decoded JSON-compatible MATLAB structs.
@@ -84,7 +93,7 @@ results = runtests("tests/liveClientTest.m");
 
 GitHub Actions runs `buildtool package` on pushes and pull requests. The CI path uses mocked tests only and does not require an FMP API key.
 
-The live smoke workflow runs on a weekly schedule and can be run manually after the repository secret `FMP_API_KEY` is configured.
+The live smoke workflow runs on a weekly schedule and can be run manually after the repository secret `FMP_API_KEY` is configured. Live coverage includes quote, historical prices, income statements, and the stock screener.
 
 ## Examples
 
@@ -97,6 +106,7 @@ Focused examples live in `examples/`:
 - `analystEstimatesWorkflow.m`
 - `secFilingsWorkflow.m`
 - `valuationWorkflow.m`
+- `researchWorkflow.m`
 
 Tutorial-style plain-text Live Scripts live in `docs/tutorials/`.
 
@@ -110,6 +120,6 @@ buildtool package
 
 The package target writes `dist/matlab-fmp.mltbx`.
 
-The toolbox project file is `matlab-fmp.prj`. Pushing a tag like `v0.2.0` runs the release workflow, builds the toolbox in GitHub Actions, and attaches the `.mltbx` artifact to the GitHub release.
+The toolbox project file is `matlab-fmp.prj`. Pushing a tag like `v0.3.0` runs the release workflow, builds the toolbox in GitHub Actions, and attaches the `.mltbx` artifact to the GitHub release.
 
 File Exchange submission notes are in `docs/file-exchange.md`.
