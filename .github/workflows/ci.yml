@@ -1,5 +1,8 @@
 name: CI
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 on:
   push:
     branches: [main]
@@ -21,7 +24,9 @@ jobs:
           release: R2024b
 
       - name: Run mocked tests, static analysis, and package
-        run: matlab -batch "buildtool package"
+        uses: matlab-actions/run-build@v2
+        with:
+          tasks: package
 
       - name: Upload toolbox artifact
         uses: actions/upload-artifact@v5

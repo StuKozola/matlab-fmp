@@ -1,5 +1,8 @@
 name: Release
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 on:
   push:
     tags:
@@ -23,7 +26,9 @@ jobs:
           release: R2024b
 
       - name: Build toolbox package
-        run: matlab -batch "buildtool package"
+        uses: matlab-actions/run-build@v2
+        with:
+          tasks: package
 
       - name: Publish GitHub release
         env:
