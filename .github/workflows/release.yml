@@ -30,6 +30,19 @@ jobs:
         with:
           tasks: package
 
+      - name: Extract release notes
+        shell: bash
+        run: |
+          version="${GITHUB_REF_NAME#v}"
+          awk -v version="$version" '
+            $0 ~ "^## v" version " - " { capture=1; next }
+            capture && /^## / { exit }
+            capture { print }
+          ' CHANGELOG.md | sed '/^[[:space:]]*$/d' > release-notes.md
+          if [ ! -s release-notes.md ]; then
+            echo "MATLAB toolbox package for Financial Modeling Prep data." > release-notes.md
+          fi
+
       - name: Publish GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
@@ -37,4 +50,4 @@ jobs:
           gh release create "${{ github.ref_name }}"
           dist/matlab-fmp.mltbx
           --title "matlab-fmp ${{ github.ref_name }}"
-          --notes "MATLAB toolbox package for Financial Modeling Prep data."
+          --notes-file release-notes.md
