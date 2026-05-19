@@ -6,27 +6,81 @@ import matlab.buildtool.tasks.CodeIssuesTask
 plan = buildplan(localfunctions);
 plan.DefaultTasks = "test";
 
-plan("check") = CodeIssuesTask(["+fmp", "+tools", "examples", "tests"]);
+projectRoot = getProjectRoot();
+codeIssuePaths = fullfile(projectRoot, ["+fmp", "+tools", "examples", "tests"]);
+
+plan("check") = CodeIssuesTask(codeIssuePaths);
 plan("package").Dependencies = ["test", "check"];
 end
 
 function testTask(~)
 % Run unit tests without live FMP calls.
 
-results = runtests("tests/clientTest.m");
+projectRoot = getProjectRoot();
+restorePath = addProjectPaths(projectRoot); %#ok<NASGU>
+
+results = runtests(fullfile(projectRoot, "tests", "clientTest.m"));
 assertSuccess(results);
 end
 
 function packageTask(~)
 % Build the MATLAB toolbox artifact.
 
-distFolder = fullfile(pwd, "dist");
+projectRoot = getProjectRoot();
+restorePath = addProjectPaths(projectRoot); %#ok<NASGU>
+
+distFolder = fullfile(projectRoot, "dist");
 if ~isfolder(distFolder)
     mkdir(distFolder);
 end
 
-opts = matlab.addons.toolbox.ToolboxOptions("matlab-fmp.prj");
+projectFile = fullfile(projectRoot, "matlab-fmp.prj");
+opts = matlab.addons.toolbox.ToolboxOptions(projectFile);
 opts.OutputFile = fullfile(distFolder, "matlab-fmp.mltbx");
 
 matlab.addons.toolbox.packageToolbox(opts);
+end
+
+function projectRoot = getProjectRoot()
+% Return the folder that contains this buildfile.
+
+projectRoot = string(fileparts(mfilename("fullpath")));
+end
+
+function restorePath = addProjectPaths(projectRoot)
+% Add source and test helpers to the MATLAB path for the current task.
+
+folders = [projectRoot, fullfile(projectRoot, "tests")];
+foldersToRemove = strings(1, 0);
+
+for folder = folders
+    if ~isfolder(folder)
+        continue
+    end
+
+    if ~isOnPath(folder)
+        addpath(folder);
+        foldersToRemove(end + 1) = folder; %#ok<AGROW>
+    end
+end
+
+restorePath = onCleanup(@() removeAddedPaths(foldersToRemove));
+end
+
+function tf = isOnPath(folder)
+% True when folder is already present on the MATLAB path.
+
+folder = char(folder);
+pathFolders = string(strsplit(path, pathsep));
+tf = any(pathFolders == string(folder));
+end
+
+function removeAddedPaths(folders)
+% Remove only path entries added by addProjectPaths.
+
+for folder = fliplr(folders)
+    if isOnPath(folder)
+        rmpath(folder);
+    end
+end
 end
